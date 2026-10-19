@@ -8,17 +8,17 @@
       <currency id="UAH" rate="1"/>
     </currencies>
     <categories>
-      <category id="1">Диски replica</category>
+      <category id="1">Литі диски</category>
     </categories>
     <offers>
     <offer id="WS-0001" available="true">
-      <name>Диск Replica A49</name>
+      <name>Диск A49</name>
       <price>24820</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-r-a49-gmf_27898.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A49 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A49 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A7, Audi Q3, Audi Q3 Sportback, Audi Q4 Sportback, Audi Q4 e-tron та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -30,13 +30,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0002" available="true">
-      <name>Диск Replica B74</name>
+      <name>Диск B74</name>
       <price>19700</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-r-b74-s_29259.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica B74 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B74 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 3 series, BMW 5 series, BMW 6 series, BMW 7 series, BMW M2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -48,13 +48,13 @@
       <param name="Колір">S</param>
     </offer>
     <offer id="WS-0003" available="true">
-      <name>Диск Replica B227</name>
+      <name>Диск B227</name>
       <price>18188</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-r-b227-gmf_39199.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B227 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B227 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 5 series, BMW 6 series, BMW 7 series, BMW 8 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -66,13 +66,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0004" available="true">
-      <name>Диск Replica B227</name>
+      <name>Диск B227</name>
       <price>18188</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-r-b227-gmf_39199.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B227 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B227 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW 3 series, BMW 4 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -84,13 +84,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0005" available="true">
-      <name>Диск Replica B226</name>
+      <name>Диск B226</name>
       <price>18376</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-r-b226-mgmf_39202.jpg</picture>
       <quantity_in_stock>14</quantity_in_stock>
-      <description>Диск Replica B226 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B226 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW 3 series, BMW 4 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -102,13 +102,13 @@
       <param name="Колір">MGMF</param>
     </offer>
     <offer id="WS-0006" available="true">
-      <name>Диск Replica LR019</name>
+      <name>Диск LR019</name>
       <price>35048</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lr019-gmf_38509.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LR019 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LR019 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Land Rover Discovery, Land Rover Range Rover, Land Rover Range Rover Sport
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Land Rover</param>
@@ -120,13 +120,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0007" available="true">
-      <name>Диск Replica MINI1117</name>
+      <name>Диск MINI1117</name>
       <price>14588</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mini1117-gloss_black_37953.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MINI1117 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MINI1117 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mini Clubman, Mini Countryman
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mini</param>
@@ -138,13 +138,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0008" available="true">
-      <name>Диск Replica LR8132</name>
+      <name>Диск LR8132</name>
       <price>37888</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lr8132-gmf_38514.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica LR8132 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LR8132 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Land Rover Discovery, Land Rover Range Rover, Land Rover Range Rover Sport
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Land Rover</param>
@@ -156,13 +156,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0009" available="true">
-      <name>Диск Replica FD6094</name>
+      <name>Диск FD6094</name>
       <price>23480</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-fd6094-bkf_38226.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica FD6094 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск FD6094 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Ford Expedition, Ford F-150
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Ford</param>
@@ -174,13 +174,13 @@
       <param name="Колір">BKF</param>
     </offer>
     <offer id="WS-0010" available="true">
-      <name>Диск Replica A49</name>
+      <name>Диск A49</name>
       <price>24820</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-r-a49-gmf_27898.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A49 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A49 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A4, Audi A6, Audi A7, Audi A8, Audi Q3 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -192,13 +192,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0011" available="true">
-      <name>Диск Replica MR250</name>
+      <name>Диск MR250</name>
       <price>62516</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr250-mbl_39483.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR250 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR250 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes AMG GT 4-Door, Mercedes EQC, Mercedes EQE AMG, Mercedes EQS SUV, Mercedes GLC-Class Coupe AMG та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -210,13 +210,13 @@
       <param name="Колір">MBL</param>
     </offer>
     <offer id="WS-0012" available="true">
-      <name>Диск Replica MR250</name>
+      <name>Диск MR250</name>
       <price>62516</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr250-mbl_39483.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR250 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR250 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes AMG GT, Mercedes AMG GT 4-Door, Mercedes EQC, Mercedes EQE AMG, Mercedes EQE SUV та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -228,13 +228,13 @@
       <param name="Колір">MBL</param>
     </offer>
     <offer id="WS-0013" available="true">
-      <name>Диск Replica TY718</name>
+      <name>Диск TY718</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty718-bkf_48295.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY718 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY718 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Tacoma
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -246,13 +246,13 @@
       <param name="Колір">BKF</param>
     </offer>
     <offer id="WS-0014" available="true">
-      <name>Диск Replica B3003</name>
+      <name>Диск B3003</name>
       <price>20868</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3003-dark_gunmetal_machined_face_48289.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica B3003 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3003 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -264,13 +264,13 @@
       <param name="Колір">Dark_Gunmetal_Machined_Face</param>
     </offer>
     <offer id="WS-0015" available="true">
-      <name>Диск Replica TY776</name>
+      <name>Диск TY776</name>
       <price>23480</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty776-black_machined_face_45008.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY776 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY776 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -282,13 +282,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0016" available="true">
-      <name>Диск Replica B3122</name>
+      <name>Диск B3122</name>
       <price>26088</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3122-black_machined_face_48290.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B3122 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3122 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -300,13 +300,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0017" available="true">
-      <name>Диск Replica B3122</name>
+      <name>Диск B3122</name>
       <price>26088</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3122-black_machined_face_48290.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B3122 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3122 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW 3 series, BMW 4 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -318,13 +318,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0018" available="true">
-      <name>Диск Replica MR580</name>
+      <name>Диск MR580</name>
       <price>40732</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr580-gmf_38149.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica MR580 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR580 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes CLE, Mercedes E-class, Mercedes E-class Coupe та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -336,13 +336,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0019" available="true">
-      <name>Диск Replica MR05</name>
+      <name>Диск MR05</name>
       <price>35048</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr05-mblr_38483.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR05 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR05 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -354,13 +354,13 @@
       <param name="Колір">MBLR</param>
     </offer>
     <offer id="WS-0020" available="true">
-      <name>Диск Replica MR582</name>
+      <name>Диск MR582</name>
       <price>42628</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr582-gmf_38235.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR582 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR582 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain, Mercedes C-class Sport Coupe та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -372,13 +372,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0021" available="true">
-      <name>Диск Replica MR582</name>
+      <name>Диск MR582</name>
       <price>42628</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr582-gmf_38235.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR582 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR582 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes CLA, Mercedes CLA AMG та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -390,13 +390,13 @@
       <param name="Колір">GMF</param>
     </offer>
     <offer id="WS-0022" available="true">
-      <name>Диск Replica TY1174</name>
+      <name>Диск TY1174</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty1174-matt_black_painted_37189.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY1174 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY1174 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Sequoia
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -408,13 +408,13 @@
       <param name="Колір">Matt_Black_Painted</param>
     </offer>
     <offer id="WS-0023" available="true">
-      <name>Диск Replica MR1289</name>
+      <name>Диск MR1289</name>
       <price>21788</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr1289-closs_black_machined_face_37965.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MR1289 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR1289 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes AMG GT, Mercedes EQA, Mercedes EQB, Mercedes EQE, Mercedes EQE AMG та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -426,13 +426,13 @@
       <param name="Колір">Closs_Black_Machined_Face</param>
     </offer>
     <offer id="WS-0024" available="true">
-      <name>Диск Replica MINI5536</name>
+      <name>Диск MINI5536</name>
       <price>16104</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mini5536-satin_black_38041.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica MINI5536 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MINI5536 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mini Clubman, Mini Countryman
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mini</param>
@@ -444,13 +444,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0025" available="true">
-      <name>Диск Replica A436</name>
+      <name>Диск A436</name>
       <price>14212</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a436-silver_38926.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A436 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A436 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A6, Audi A7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -462,13 +462,13 @@
       <param name="Колір">Silver</param>
     </offer>
     <offer id="WS-0026" available="true">
-      <name>Диск Replica A482</name>
+      <name>Диск A482</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a482-silver_38938.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A482 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A482 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A4, Audi A5, Audi A6, Audi A7, Audi A8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -480,13 +480,13 @@
       <param name="Колір">Silver</param>
     </offer>
     <offer id="WS-0027" available="true">
-      <name>Диск Replica MR921</name>
+      <name>Диск MR921</name>
       <price>47360</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr921-matt_black_lip_polish_39819.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR921 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR921 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -498,13 +498,13 @@
       <param name="Колір">MATT_BLACK_LIP_POLISH</param>
     </offer>
     <offer id="WS-0028" available="true">
-      <name>Диск Replica MR8010</name>
+      <name>Диск MR8010</name>
       <price>56832</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr8010-matt_black_red_lip_39810.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR8010 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR8010 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes G-class AMG
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -516,13 +516,13 @@
       <param name="Колір">Matt_Black_Red_Lip</param>
     </offer>
     <offer id="WS-0029" available="true">
-      <name>Диск Replica TY962</name>
+      <name>Диск TY962</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty962-black_machined_face_42673.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY962 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY962 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Fortuner, Toyota Hilux, Toyota Land Cruiser Prado, Toyota Tacoma
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -534,13 +534,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0030" available="true">
-      <name>Диск Replica TY963</name>
+      <name>Диск TY963</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty963-black_machined_face_42755.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica TY963 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY963 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Tacoma
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -552,13 +552,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0031" available="true">
-      <name>Диск Replica GAC3007</name>
+      <name>Диск GAC3007</name>
       <price>18960</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-gac3007-matt_black_40151.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica GAC3007 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск GAC3007 — литий диск у стилі оригінального заводського колеса.
 Підходить для: GAC Empow
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">GAC</param>
@@ -570,13 +570,13 @@
       <param name="Колір">MATT_BLACK</param>
     </offer>
     <offer id="WS-0032" available="true">
-      <name>Диск Replica MR864</name>
+      <name>Диск MR864</name>
       <price>47360</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr864-mg_40283.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR864 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR864 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes CLS-class, Mercedes CLS-class AMG, Mercedes E-class та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -588,13 +588,13 @@
       <param name="Колір">MG</param>
     </offer>
     <offer id="WS-0033" available="true">
-      <name>Диск Replica MR864</name>
+      <name>Диск MR864</name>
       <price>47360</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr864-mg_40283.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR864 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR864 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes CLS-class, Mercedes CLS-class AMG, Mercedes E-class та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -606,13 +606,13 @@
       <param name="Колір">MG</param>
     </offer>
     <offer id="WS-0034" available="true">
-      <name>Диск Replica A029-11</name>
+      <name>Диск A029-11</name>
       <price>40872</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a029-11-gun_metal_machined_face_41312.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica A029-11 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A029-11 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A4, Audi A5, Audi A6, Audi A7, Audi A8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -624,13 +624,13 @@
       <param name="Колір">Gun_Metal_Machined_Face</param>
     </offer>
     <offer id="WS-0035" available="true">
-      <name>Диск Replica TY706</name>
+      <name>Диск TY706</name>
       <price>20868</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty706-black_machined_face_40534.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica TY706 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY706 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -642,13 +642,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0036" available="true">
-      <name>Диск Replica LX742</name>
+      <name>Диск LX742</name>
       <price>20868</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lx742-black_machined_face_40525.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LX742 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LX742 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Lexus LX
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Lexus</param>
@@ -660,13 +660,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0037" available="true">
-      <name>Диск Replica VV5647</name>
+      <name>Диск VV5647</name>
       <price>28696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv5647-gloss_black_machined_face_40636.jpg</picture>
       <quantity_in_stock>10</quantity_in_stock>
-      <description>Диск Replica VV5647 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV5647 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen ID.3 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -678,13 +678,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0038" available="true">
-      <name>Диск Replica VV5647</name>
+      <name>Диск VV5647</name>
       <price>28696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv5647-gloss_black_machined_face_40636.jpg</picture>
       <quantity_in_stock>10</quantity_in_stock>
-      <description>Диск Replica VV5647 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV5647 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen ID.3 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -696,13 +696,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0039" available="true">
-      <name>Диск Replica SK5635</name>
+      <name>Диск SK5635</name>
       <price>26088</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-sk5635-satin_gray_machined_face_40679.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica SK5635 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск SK5635 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Skoda Elroq, Skoda Enyaq, Skoda Kodiaq, Skoda Superb
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Skoda</param>
@@ -714,13 +714,13 @@
       <param name="Колір">Satin_Gray_Machined_Face</param>
     </offer>
     <offer id="WS-0040" available="true">
-      <name>Диск Replica A5639</name>
+      <name>Диск A5639</name>
       <price>27472</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a5639-gloss_gray_machined_face_40653.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A5639 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A5639 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi S8, Audi SQ5, Audi SQ7, Audi SQ8 Sportback e-tron та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -732,13 +732,13 @@
       <param name="Колір">Gloss_Gray_Machined_Face</param>
     </offer>
     <offer id="WS-0041" available="true">
-      <name>Диск Replica NS1145</name>
+      <name>Диск NS1145</name>
       <price>15156</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ns1145-gloss_black_machined_face_40861.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica NS1145 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск NS1145 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Nissan Frontier, Nissan Navara, Nissan Pathfinder, Nissan Titan, Nissan XTerra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Nissan</param>
@@ -750,13 +750,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0042" available="true">
-      <name>Диск Replica B021-008</name>
+      <name>Диск B021-008</name>
       <price>33156</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b021-008-machined_face_gunmetal_41152.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica B021-008 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B021-008 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -768,13 +768,13 @@
       <param name="Колір">Machined_Face_Gunmetal</param>
     </offer>
     <offer id="WS-0043" available="true">
-      <name>Диск Replica B021-10</name>
+      <name>Диск B021-10</name>
       <price>33156</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b021-10-gloss_black_41156.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica B021-10 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B021-10 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -786,13 +786,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0044" available="true">
-      <name>Диск Replica B021-008</name>
+      <name>Диск B021-008</name>
       <price>33156</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b021-008-machined_face_gunmetal_41152.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica B021-008 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B021-008 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW X1, BMW X2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -804,13 +804,13 @@
       <param name="Колір">Machined_Face_Gunmetal</param>
     </offer>
     <offer id="WS-0045" available="true">
-      <name>Диск Replica B021-10</name>
+      <name>Диск B021-10</name>
       <price>33156</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b021-10-gloss_black_41156.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica B021-10 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B021-10 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW X1, BMW X2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -822,13 +822,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0046" available="true">
-      <name>Диск Replica MR021-026</name>
+      <name>Диск MR021-026</name>
       <price>37888</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr021-026-machined_face_black_41161.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR021-026 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR021-026 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -840,13 +840,13 @@
       <param name="Колір">Machined_Face_Black</param>
     </offer>
     <offer id="WS-0047" available="true">
-      <name>Диск Replica MR021-026</name>
+      <name>Диск MR021-026</name>
       <price>37888</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr021-026-machined_face_black_41161.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR021-026 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR021-026 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -858,13 +858,13 @@
       <param name="Колір">Machined_Face_Black</param>
     </offer>
     <offer id="WS-0048" available="true">
-      <name>Диск Replica MR593</name>
+      <name>Диск MR593</name>
       <price>56832</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr593-mb_matt_41201.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica MR593 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR593 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes G-class, Mercedes G-class AMG
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -876,13 +876,13 @@
       <param name="Колір">MB_Matt</param>
     </offer>
     <offer id="WS-0049" available="true">
-      <name>Диск Replica TY3131</name>
+      <name>Диск TY3131</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3131-black_machined_face_41421.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica TY3131 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3131 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Tacoma
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -894,13 +894,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0050" available="true">
-      <name>Диск Replica B3155</name>
+      <name>Диск B3155</name>
       <price>20840</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3155-gray_machined_face_41397.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B3155 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3155 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -912,13 +912,13 @@
       <param name="Колір">Gray_Machined_Face</param>
     </offer>
     <offer id="WS-0051" available="true">
-      <name>Диск Replica B3155</name>
+      <name>Диск B3155</name>
       <price>20840</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3155-gray_machined_face_41397.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B3155 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3155 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW X1, BMW X2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -930,13 +930,13 @@
       <param name="Колір">Gray_Machined_Face</param>
     </offer>
     <offer id="WS-0052" available="true">
-      <name>Диск Replica LI3164</name>
+      <name>Диск LI3164</name>
       <price>32176</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-li3164-gunmetal_machined_face_44672.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica LI3164 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LI3164 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Li L6, Li L7, Li L8, Li L9, Li i6 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Li</param>
@@ -948,13 +948,13 @@
       <param name="Колір">Gunmetal_Machined_Face</param>
     </offer>
     <offer id="WS-0053" available="true">
-      <name>Диск Replica MR021-062</name>
+      <name>Диск MR021-062</name>
       <price>30312</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr021-062-black_machined_face_41892.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR021-062 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR021-062 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain, Mercedes C-class Sport Coupe та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -966,13 +966,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0054" available="true">
-      <name>Диск Replica H1836</name>
+      <name>Диск H1836</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-h1836-mb_41948.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica H1836 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск H1836 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Honda Accord, Honda CR-V, Honda Civic, Honda Pilot
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Honda</param>
@@ -984,13 +984,13 @@
       <param name="Колір">MB</param>
     </offer>
     <offer id="WS-0055" available="true">
-      <name>Диск Replica A5348</name>
+      <name>Диск A5348</name>
       <price>33156</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a5348-gloss_black_41989.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A5348 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A5348 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi Q8, Audi RS Q8, Audi RS6, Audi S8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1002,13 +1002,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0056" available="true">
-      <name>Диск Replica LX521</name>
+      <name>Диск LX521</name>
       <price>18944</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lx521-hs_42429.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica LX521 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LX521 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Lexus ES, Lexus GS, Lexus HS, Lexus IS, Lexus LBX та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Lexus</param>
@@ -1020,13 +1020,13 @@
       <param name="Колір">HS</param>
     </offer>
     <offer id="WS-0057" available="true">
-      <name>Диск Replica A624</name>
+      <name>Диск A624</name>
       <price>29364</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a624-black_machined_face_42467.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A624 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A624 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A4, Audi A4 Allroad Quattro, Audi A5, Audi A6, Audi A7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1038,13 +1038,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0058" available="true">
-      <name>Диск Replica TY3124</name>
+      <name>Диск TY3124</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3124-black_machined_face_42672.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY3124 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3124 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Tacoma
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -1056,13 +1056,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0059" available="true">
-      <name>Диск Replica LX3219</name>
+      <name>Диск LX3219</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lx3219-black_machined_face_42683.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LX3219 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LX3219 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Lexus LX
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Lexus</param>
@@ -1074,13 +1074,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0060" available="true">
-      <name>Диск Replica ZE3165</name>
+      <name>Диск ZE3165</name>
       <price>31304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ze3165-matte_black_red_r_41394.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica ZE3165 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск ZE3165 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Zeekr 001, Zeekr 7X
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Zeekr</param>
@@ -1092,13 +1092,13 @@
       <param name="Колір">Matte_BLACK_Red_R</param>
     </offer>
     <offer id="WS-0061" available="true">
-      <name>Диск Replica VV5428</name>
+      <name>Диск VV5428</name>
       <price>17048</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv5428-gloss_black_42793.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica VV5428 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV5428 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Bora, Volkswagen Golf, Volkswagen T-Cross, Volkswagen Taigo
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -1110,13 +1110,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0062" available="true">
-      <name>Диск Replica TY706</name>
+      <name>Диск TY706</name>
       <price>17048</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty706-gunmetal_machined_face_43059.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY706 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY706 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -1128,13 +1128,13 @@
       <param name="Колір">Gunmetal_Machined_Face</param>
     </offer>
     <offer id="WS-0063" available="true">
-      <name>Диск Replica B77</name>
+      <name>Диск B77</name>
       <price>56832</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b77-mg_43157.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica B77 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B77 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X7, BMW iX, BMW iX3
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1146,13 +1146,13 @@
       <param name="Колір">MG</param>
     </offer>
     <offer id="WS-0064" available="true">
-      <name>Диск Replica B77</name>
+      <name>Диск B77</name>
       <price>56832</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b77-mg_43157.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica B77 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B77 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 5 series, BMW X2, BMW X5, BMW X6, BMW X7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1164,13 +1164,13 @@
       <param name="Колір">MG</param>
     </offer>
     <offer id="WS-0065" available="true">
-      <name>Диск Replica LR52341</name>
+      <name>Диск LR52341</name>
       <price>66304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lr52341-gloss_black_43160.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica LR52341 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LR52341 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Land Rover Range Rover Velar
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Land Rover</param>
@@ -1182,13 +1182,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0066" available="true">
-      <name>Диск Replica LR52341</name>
+      <name>Диск LR52341</name>
       <price>66304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lr52341-gunmetall_mg_43282.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LR52341 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LR52341 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Land Rover Range Rover Velar
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Land Rover</param>
@@ -1200,13 +1200,13 @@
       <param name="Колір">Gunmetall_MG</param>
     </offer>
     <offer id="WS-0067" available="true">
-      <name>Диск Replica MR82</name>
+      <name>Диск MR82</name>
       <price>89988</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr82-matt_black_machined_face_44684.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica MR82 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR82 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes G-class AMG
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1218,13 +1218,13 @@
       <param name="Колір">MATT_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0068" available="true">
-      <name>Диск Replica VV3308</name>
+      <name>Диск VV3308</name>
       <price>17220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv3308-black_machined_face_44566.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica VV3308 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV3308 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy, Volkswagen CrossGolf та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -1236,13 +1236,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0069" available="true">
-      <name>Диск Replica MR29</name>
+      <name>Диск MR29</name>
       <price>47360</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr29-matt_black_lip_polish_43698.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica MR29 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR29 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1254,13 +1254,13 @@
       <param name="Колір">MATT_BLACK_LIP_POLISH</param>
     </offer>
     <offer id="WS-0070" available="true">
-      <name>Диск Replica NS901</name>
+      <name>Диск NS901</name>
       <price>31304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ns901-black_machined_face_43635.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica NS901 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск NS901 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Nissan Armada, Nissan Titan, Nissan Titan XD
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Nissan</param>
@@ -1272,13 +1272,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0071" available="true">
-      <name>Диск Replica A624</name>
+      <name>Диск A624</name>
       <price>37392</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a624-black_machined_face_42467.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A624 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A624 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A6, Audi A7, Audi A8, Audi Q4 Sportback, Audi Q4 e-tron та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1290,13 +1290,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0072" available="true">
-      <name>Диск Replica MR3355</name>
+      <name>Диск MR3355</name>
       <price>66304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr3355-platinum_43678.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MR3355 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR3355 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes G-class AMG
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1308,13 +1308,13 @@
       <param name="Колір">Platinum</param>
     </offer>
     <offer id="WS-0073" available="true">
-      <name>Диск Replica MR143</name>
+      <name>Диск MR143</name>
       <price>21740</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr143-gloss_black_machined_face_44097.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MR143 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR143 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain, Mercedes C-class Sport Coupe та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1326,13 +1326,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0074" available="true">
-      <name>Диск Replica VV766</name>
+      <name>Диск VV766</name>
       <price>24348</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv766-gloss_black_machined_face_44098.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV766 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV766 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen CrossGolf, Volkswagen CrossTouran та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -1344,13 +1344,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0075" available="true">
-      <name>Диск Replica MR143</name>
+      <name>Диск MR143</name>
       <price>21740</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr143-gloss_black_machined_face_44097.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MR143 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR143 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1362,13 +1362,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0076" available="true">
-      <name>Диск Replica A5565</name>
+      <name>Диск A5565</name>
       <price>28696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a5565-gloss_black_machined_face_38071.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A5565 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A5565 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A6, Audi A7, Audi A8, Audi Q4 Sportback, Audi Q4 e-tron та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1380,13 +1380,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0077" available="true">
-      <name>Диск Replica MR953</name>
+      <name>Диск MR953</name>
       <price>33044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr953-satin_black_44090.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MR953 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR953 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes AMG GT, Mercedes AMG GT 4-Door, Mercedes E-class, Mercedes EQE SUV, Mercedes EQE SUV AMG та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1398,13 +1398,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0078" available="true">
-      <name>Диск Replica MR953</name>
+      <name>Диск MR953</name>
       <price>33044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr953-satin_black_44090.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MR953 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR953 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes AMG GT, Mercedes E-class, Mercedes EQE SUV, Mercedes EQE SUV AMG, Mercedes EQS та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1416,13 +1416,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0079" available="true">
-      <name>Диск Replica VV5389</name>
+      <name>Диск VV5389</name>
       <price>23684</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv5389-gloss_black_machined_face_42886.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV5389 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV5389 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen CC, Volkswagen ID.3, Volkswagen ID.4 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -1434,13 +1434,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0080" available="true">
-      <name>Диск Replica B695</name>
+      <name>Диск B695</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b695-gloss_black_machined_face_44483.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B695 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B695 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1452,13 +1452,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0081" available="true">
-      <name>Диск Replica SK19931</name>
+      <name>Диск SK19931</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-sk19931-gloss_black_machined_face_44472.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica SK19931 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск SK19931 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Skoda Elroq, Skoda Enyaq, Skoda Karoq, Skoda Kodiaq, Skoda Octavia та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Skoda</param>
@@ -1470,13 +1470,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0082" available="true">
-      <name>Диск Replica A5553</name>
+      <name>Диск A5553</name>
       <price>23480</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a5553-gloss_black_machined_face_44460.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A5553 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A5553 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A4 Allroad Quattro, Audi A5 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1488,13 +1488,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0083" available="true">
-      <name>Диск Replica B651</name>
+      <name>Диск B651</name>
       <price>23684</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b651-gloss_black_machined_face_44484.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B651 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B651 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 7 series, BMW M3, BMW M4, BMW M5, BMW M8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1506,13 +1506,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0084" available="true">
-      <name>Диск Replica B651</name>
+      <name>Диск B651</name>
       <price>23684</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b651-gloss_black_machined_face_44484.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B651 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B651 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 5 series, BMW M5, BMW M8, BMW X1, BMW X2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1524,13 +1524,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0085" available="true">
-      <name>Диск Replica VV3336</name>
+      <name>Диск VV3336</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv3336-black_machined_face_44505.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica VV3336 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV3336 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Atlas, Volkswagen ID.4, Volkswagen ID.4 X, Volkswagen ID.5, Volkswagen ID.6 Crozz та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -1542,13 +1542,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0086" available="true">
-      <name>Диск Replica TES3130</name>
+      <name>Диск TES3130</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-tes3130-matte_black_44500.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TES3130 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TES3130 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Tesla Model Y
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Tesla</param>
@@ -1560,13 +1560,13 @@
       <param name="Колір">Matte_Black</param>
     </offer>
     <offer id="WS-0087" available="true">
-      <name>Диск Replica TES3130</name>
+      <name>Диск TES3130</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-tes3130-matte_black_44500.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TES3130 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TES3130 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Tesla Model Y
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Tesla</param>
@@ -1578,13 +1578,13 @@
       <param name="Колір">Matte_Black</param>
     </offer>
     <offer id="WS-0088" available="true">
-      <name>Диск Replica LI3114</name>
+      <name>Диск LI3114</name>
       <price>28696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-li3114-black_machined_face_44671.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LI3114 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LI3114 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Li L6, Li L7, Li i6, Li i8
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Li</param>
@@ -1596,13 +1596,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0089" available="true">
-      <name>Диск Replica NS891</name>
+      <name>Диск NS891</name>
       <price>31304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ns891-black_machined_face_44553.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica NS891 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск NS891 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Nissan Armada, Nissan Patrol, Nissan Titan, Nissan Titan XD
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Nissan</param>
@@ -1614,13 +1614,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0090" available="true">
-      <name>Диск Replica PR618</name>
+      <name>Диск PR618</name>
       <price>56832</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr618-mb_44643.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica PR618 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR618 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Cayenne
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -1632,13 +1632,13 @@
       <param name="Колір">MB</param>
     </offer>
     <offer id="WS-0091" available="true">
-      <name>Диск Replica PR618</name>
+      <name>Диск PR618</name>
       <price>56832</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr618-mb_44643.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica PR618 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR618 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Cayenne
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -1650,13 +1650,13 @@
       <param name="Колір">MB</param>
     </offer>
     <offer id="WS-0092" available="true">
-      <name>Диск Replica PR350</name>
+      <name>Диск PR350</name>
       <price>66304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr350-black_white_flange_44644.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica PR350 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR350 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Cayenne, Porsche Panamera, Porsche Taycan
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -1668,13 +1668,13 @@
       <param name="Колір">Black_White_Flange</param>
     </offer>
     <offer id="WS-0093" available="true">
-      <name>Диск Replica PR350</name>
+      <name>Диск PR350</name>
       <price>66304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr350-black_white_flange_44644.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica PR350 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR350 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Panamera, Porsche Taycan
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -1686,13 +1686,13 @@
       <param name="Колір">Black_White_Flange</param>
     </offer>
     <offer id="WS-0094" available="true">
-      <name>Диск Replica A215</name>
+      <name>Диск A215</name>
       <price>61572</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a215-mb_44646.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A215 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A215 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi Q8, Audi RS Q8, Audi RS6, Audi RS7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1704,13 +1704,13 @@
       <param name="Колір">MB</param>
     </offer>
     <offer id="WS-0095" available="true">
-      <name>Диск Replica A5269</name>
+      <name>Диск A5269</name>
       <price>16104</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a5269-gloss_black_44862.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica A5269 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A5269 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A4 Allroad Quattro, Audi A5 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1722,13 +1722,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0096" available="true">
-      <name>Диск Replica VV19051</name>
+      <name>Диск VV19051</name>
       <price>22260</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv19051-gloss_black_machined_face_44869.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV19051 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV19051 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen CrossGolf, Volkswagen CrossTouran та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -1740,13 +1740,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0097" available="true">
-      <name>Диск Replica Geely3360</name>
+      <name>Диск Geely3360</name>
       <price>27824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-geely3360-black_machined_face_44935.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica Geely3360 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск Geely3360 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Geely Monjaro, Geely Tugella
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Geely</param>
@@ -1758,13 +1758,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0098" available="true">
-      <name>Диск Replica MR3298</name>
+      <name>Диск MR3298</name>
       <price>20868</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr3298-black_machined_face_44931.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica MR3298 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR3298 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain, Mercedes CL-class та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1776,13 +1776,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0099" available="true">
-      <name>Диск Replica MR331</name>
+      <name>Диск MR331</name>
       <price>17392</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr331-silver_machined_face_45005.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica MR331 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR331 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes B-class, Mercedes C-class, Mercedes C-class All-Terrain, Mercedes C-class Sport Coupe та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1794,13 +1794,13 @@
       <param name="Колір">Silver_Machined_Face</param>
     </offer>
     <offer id="WS-0100" available="true">
-      <name>Диск Replica A396</name>
+      <name>Диск A396</name>
       <price>15652</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a396-silver_45025.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A396 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A396 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A4 Allroad Quattro, Audi A5 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1812,13 +1812,13 @@
       <param name="Колір">Silver</param>
     </offer>
     <offer id="WS-0101" available="true">
-      <name>Диск Replica KI382</name>
+      <name>Диск KI382</name>
       <price>18264</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ki382-black_machined_face_45007.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica KI382 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск KI382 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Kia Carens, Kia Carnival, Kia Ceed, Kia Cerato, Kia EV2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Kia</param>
@@ -1830,13 +1830,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0102" available="true">
-      <name>Диск Replica A58</name>
+      <name>Диск A58</name>
       <price>66304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a58-mg_45493.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A58 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A58 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi Q8, Audi RS Q8, Audi RS6, Audi RS7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -1848,13 +1848,13 @@
       <param name="Колір">MG</param>
     </offer>
     <offer id="WS-0103" available="true">
-      <name>Диск Replica B002</name>
+      <name>Диск B002</name>
       <price>61572</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b002-gloss_black_machined_face_45239.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B002 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B002 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X5, BMW X6, BMW X7, BMW iX
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1866,13 +1866,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0104" available="true">
-      <name>Диск Replica B002</name>
+      <name>Диск B002</name>
       <price>61572</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b002-gloss_black_machined_face_45239.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica B002 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B002 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X5, BMW X6, BMW X7, BMW iX
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1884,13 +1884,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0105" available="true">
-      <name>Диск Replica MR006</name>
+      <name>Диск MR006</name>
       <price>75776</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr006-matt_black_45525.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica MR006 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR006 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes EQE SUV, Mercedes EQE SUV AMG, Mercedes EQS, Mercedes EQS AMG, Mercedes GLE-class та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1902,13 +1902,13 @@
       <param name="Колір">MATT_BLACK</param>
     </offer>
     <offer id="WS-0106" available="true">
-      <name>Диск Replica MR006</name>
+      <name>Диск MR006</name>
       <price>75776</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr006-matt_black_45525.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica MR006 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR006 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes EQS AMG, Mercedes GLE-class, Mercedes GLE-class AMG, Mercedes GLE-class Coupe AMG, Mercedes GLS-class та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -1920,13 +1920,13 @@
       <param name="Колір">MATT_BLACK</param>
     </offer>
     <offer id="WS-0107" available="true">
-      <name>Диск Replica LR6742</name>
+      <name>Диск LR6742</name>
       <price>52100</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lr6742-mbmf_45276.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica LR6742 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LR6742 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Land Rover Defender, Land Rover Discovery, Land Rover Range Rover, Land Rover Range Rover Sport
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Land Rover</param>
@@ -1938,13 +1938,13 @@
       <param name="Колір">MBMF</param>
     </offer>
     <offer id="WS-0108" available="true">
-      <name>Диск Replica B3430</name>
+      <name>Диск B3430</name>
       <price>33044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3430-mb_46969.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B3430 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3430 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 7 series, BMW M3, BMW M4, BMW M5, BMW M8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1956,13 +1956,13 @@
       <param name="Колір">MB</param>
     </offer>
     <offer id="WS-0109" available="true">
-      <name>Диск Replica B3430</name>
+      <name>Диск B3430</name>
       <price>33044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3430-mb_46969.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B3430 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3430 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X1, BMW X2, BMW X5, BMW X6, BMW X7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -1974,13 +1974,13 @@
       <param name="Колір">MB</param>
     </offer>
     <offer id="WS-0110" available="true">
-      <name>Диск Replica FD18206</name>
+      <name>Диск FD18206</name>
       <price>20172</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-fd18206-gloss_black_45620.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica FD18206 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск FD18206 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Ford C-Max, Ford Focus, Ford Galaxy, Ford Kuga, Ford Mondeo та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Ford</param>
@@ -1992,13 +1992,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0111" available="true">
-      <name>Диск Replica A20683</name>
+      <name>Диск A20683</name>
       <price>27824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a20683-gloss_black_machined_face_45624.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica A20683 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A20683 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A4, Audi A4 Allroad Quattro, Audi A5, Audi A7, Audi A8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2010,13 +2010,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0112" available="true">
-      <name>Диск Replica A19816</name>
+      <name>Диск A19816</name>
       <price>24348</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a19816-gloss_black_machined_face_45922.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A19816 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A19816 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3 Allstreet, Audi A4, Audi A4 Allroad Quattro, Audi A5, Audi A6 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2028,13 +2028,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0113" available="true">
-      <name>Диск Replica A22434</name>
+      <name>Диск A22434</name>
       <price>40872</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a22434-gloss_black_machined_face_45926.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica A22434 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A22434 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi Q8, Audi RS Q8, Audi RS6, Audi S8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2046,13 +2046,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0114" available="true">
-      <name>Диск Replica A23714</name>
+      <name>Диск A23714</name>
       <price>46956</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a23714-gloss_black_45927.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A23714 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A23714 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q8, Audi RS Q8, Audi SQ8
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2064,13 +2064,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0115" available="true">
-      <name>Диск Replica V22670</name>
+      <name>Диск V22670</name>
       <price>34784</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-v22670-gloss_black_machined_face_46466.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica V22670 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск V22670 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volvo XC90
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volvo</param>
@@ -2082,13 +2082,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0116" available="true">
-      <name>Диск Replica DO20750</name>
+      <name>Диск DO20750</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-do20750-satin_black_46465.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica DO20750 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск DO20750 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Dodge Challenger
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Dodge</param>
@@ -2100,13 +2100,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0117" available="true">
-      <name>Диск Replica A22714</name>
+      <name>Диск A22714</name>
       <price>40872</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a22714-gloss_black_46468.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A22714 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A22714 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi Q8, Audi RS Q8, Audi RS6, Audi S8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2118,13 +2118,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0118" available="true">
-      <name>Диск Replica FD17</name>
+      <name>Диск FD17</name>
       <price>47360</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-fd17-matt_black_46861.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica FD17 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск FD17 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Ford Expedition, Ford F-150
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Ford</param>
@@ -2136,13 +2136,13 @@
       <param name="Колір">MATT_BLACK</param>
     </offer>
     <offer id="WS-0119" available="true">
-      <name>Диск Replica FD17</name>
+      <name>Диск FD17</name>
       <price>47360</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-fd17-matt_grey_46862.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica FD17 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск FD17 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Ford Expedition, Ford F-150
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Ford</param>
@@ -2154,13 +2154,13 @@
       <param name="Колір">Matt_Grey</param>
     </offer>
     <offer id="WS-0120" available="true">
-      <name>Диск Replica FD17048</name>
+      <name>Диск FD17048</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-fd17048-gloss_black_46576.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica FD17048 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск FD17048 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Ford Bronco, Ford Ranger
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Ford</param>
@@ -2172,13 +2172,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0121" available="true">
-      <name>Диск Replica KI18007</name>
+      <name>Диск KI18007</name>
       <price>20172</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ki18007-gloss_black_machined_face_46572.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica KI18007 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск KI18007 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Kia Carens, Kia Carnival, Kia Ceed, Kia Cerato, Kia EV2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Kia</param>
@@ -2190,13 +2190,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0122" available="true">
-      <name>Диск Replica A22599</name>
+      <name>Диск A22599</name>
       <price>43476</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a22599-satin_black_46575.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A22599 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A22599 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q7, Audi Q8, Audi RS Q8, Audi RS6, Audi SQ7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2208,13 +2208,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0123" available="true">
-      <name>Диск Replica V3460</name>
+      <name>Диск V3460</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-v3460-black_machined_face_47006.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica V3460 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск V3460 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volvo XC90
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volvo</param>
@@ -2226,13 +2226,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0124" available="true">
-      <name>Диск Replica VV3484</name>
+      <name>Диск VV3484</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv3484-black_machined_face_46982.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica VV3484 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV3484 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2244,13 +2244,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0125" available="true">
-      <name>Диск Replica TY18917</name>
+      <name>Диск TY18917</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty18917-hyper_black_46970.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica TY18917 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY18917 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Avalon, Toyota Avensis, Toyota Avensis Verso, Toyota C-HR, Toyota C-HR+ та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2262,13 +2262,13 @@
       <param name="Колір">Hyper_Black</param>
     </offer>
     <offer id="WS-0126" available="true">
-      <name>Диск Replica A3416</name>
+      <name>Диск A3416</name>
       <price>24348</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a3416-black_machined_face_46927.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A3416 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A3416 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3 Allstreet, Audi A4, Audi A4 Allroad Quattro, Audi A5, Audi A6 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2280,13 +2280,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0127" available="true">
-      <name>Диск Replica TY3529</name>
+      <name>Диск TY3529</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3529-matte_black_46928.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY3529 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3529 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2298,13 +2298,13 @@
       <param name="Колір">Matte_Black</param>
     </offer>
     <offer id="WS-0128" available="true">
-      <name>Диск Replica LR3498</name>
+      <name>Диск LR3498</name>
       <price>43476</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lr3498-gloss_black_46929.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LR3498 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LR3498 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Land Rover Range Rover Velar
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Land Rover</param>
@@ -2316,13 +2316,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0129" available="true">
-      <name>Диск Replica VV3417</name>
+      <name>Диск VV3417</name>
       <price>23480</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv3417-matte_gunmetal_47008.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica VV3417 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV3417 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen CrossGolf, Volkswagen CrossTouran та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2334,13 +2334,13 @@
       <param name="Колір">Matte_Gunmetal</param>
     </offer>
     <offer id="WS-0130" available="true">
-      <name>Диск Replica A3386</name>
+      <name>Диск A3386</name>
       <price>40872</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a3386-black_machined_face_46908.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica A3386 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A3386 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi Q8, Audi RS Q8, Audi SQ8
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -2352,13 +2352,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0131" available="true">
-      <name>Диск Replica B2085</name>
+      <name>Диск B2085</name>
       <price>26956</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b2085-matte_gunmetall_machined_face_47683.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica B2085 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B2085 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 5 series, BMW M5, BMW M8, BMW X1, BMW X2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2370,13 +2370,13 @@
       <param name="Колір">Matte_GunMetall_Machined_Face</param>
     </offer>
     <offer id="WS-0132" available="true">
-      <name>Диск Replica MI3259</name>
+      <name>Диск MI3259</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mi3259-gunmetal_machined_face_47802.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MI3259 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MI3259 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mitsubishi L200, Mitsubishi Pajero, Mitsubishi Pajero Sport
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mitsubishi</param>
@@ -2388,13 +2388,13 @@
       <param name="Колір">Gunmetal_Machined_Face</param>
     </offer>
     <offer id="WS-0133" available="true">
-      <name>Диск Replica CA3301</name>
+      <name>Диск CA3301</name>
       <price>16696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ca3301-silver_48053.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica CA3301 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск CA3301 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Cadillac ATS, Cadillac CT4, Cadillac CTS
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Cadillac</param>
@@ -2406,13 +2406,13 @@
       <param name="Колір">Silver</param>
     </offer>
     <offer id="WS-0134" available="true">
-      <name>Диск Replica TY3435</name>
+      <name>Диск TY3435</name>
       <price>20868</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3435-black_machined_face_47776.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY3435 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3435 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2424,13 +2424,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0135" available="true">
-      <name>Диск Replica MI3259</name>
+      <name>Диск MI3259</name>
       <price>21740</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mi3259-gunmetal_machined_face_47802.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica MI3259 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MI3259 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mitsubishi Pajero, Mitsubishi Pajero Sport
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mitsubishi</param>
@@ -2442,13 +2442,13 @@
       <param name="Колір">Gunmetal_Machined_Face</param>
     </offer>
     <offer id="WS-0136" available="true">
-      <name>Диск Replica TY3485</name>
+      <name>Диск TY3485</name>
       <price>22608</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3485-gunmetal_47739.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica TY3485 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3485 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2460,13 +2460,13 @@
       <param name="Колір">Gunmetal</param>
     </offer>
     <offer id="WS-0137" available="true">
-      <name>Диск Replica TY3494</name>
+      <name>Диск TY3494</name>
       <price>22608</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3494-grey_47790.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica TY3494 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3494 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2478,13 +2478,13 @@
       <param name="Колір">Grey</param>
     </offer>
     <offer id="WS-0138" available="true">
-      <name>Диск Replica B3521</name>
+      <name>Диск B3521</name>
       <price>33044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3521-black_machined_face_47779.jpg</picture>
       <quantity_in_stock>18</quantity_in_stock>
-      <description>Диск Replica B3521 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3521 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 3 series, BMW 4 series, BMW 7 series, BMW M3 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2496,13 +2496,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0139" available="true">
-      <name>Диск Replica B3521</name>
+      <name>Диск B3521</name>
       <price>33044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b3521-black_machined_face_47779.jpg</picture>
       <quantity_in_stock>18</quantity_in_stock>
-      <description>Диск Replica B3521 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B3521 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X1, BMW X2, BMW X5, BMW X6, BMW X7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2514,13 +2514,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0140" available="true">
-      <name>Диск Replica VV17703</name>
+      <name>Диск VV17703</name>
       <price>18264</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv17703-gloss_black_machined_face_47840.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV17703 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV17703 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy, Volkswagen CrossGolf та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2532,13 +2532,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0141" available="true">
-      <name>Диск Replica TY17143</name>
+      <name>Диск TY17143</name>
       <price>18088</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty17143-gloss_black_47841.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY17143 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY17143 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Alphard, Toyota Avalon, Toyota Avensis, Toyota Avensis Verso, Toyota C-HR та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2550,13 +2550,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0142" available="true">
-      <name>Диск Replica TY3558</name>
+      <name>Диск TY3558</name>
       <price>17044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3558-matte_black_47842.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica TY3558 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3558 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Alphard, Toyota Avalon, Toyota Avensis, Toyota Avensis Verso, Toyota C-HR та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2568,13 +2568,13 @@
       <param name="Колір">Matte_Black</param>
     </offer>
     <offer id="WS-0143" available="true">
-      <name>Диск Replica TY3363</name>
+      <name>Диск TY3363</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3363-gunmetal_machined_face_47843.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica TY3363 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3363 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Sequoia, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2586,13 +2586,13 @@
       <param name="Колір">Gunmetal_Machined_Face</param>
     </offer>
     <offer id="WS-0144" available="true">
-      <name>Диск Replica VV18423</name>
+      <name>Диск VV18423</name>
       <price>20172</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv18423-gloss_black_machined_face_47844.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV18423 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV18423 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2604,13 +2604,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0145" available="true">
-      <name>Диск Replica TY3494</name>
+      <name>Диск TY3494</name>
       <price>22608</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty3494-gunmetal_47839.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica TY3494 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY3494 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -2622,13 +2622,13 @@
       <param name="Колір">Gunmetal</param>
     </offer>
     <offer id="WS-0146" available="true">
-      <name>Диск Replica VV19333</name>
+      <name>Диск VV19333</name>
       <price>24000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv19333-gloss_black_47824.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV19333 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV19333 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen CrossGolf, Volkswagen CrossTouran та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2640,13 +2640,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0147" available="true">
-      <name>Диск Replica B20034</name>
+      <name>Диск B20034</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20034-gloss_black_machined_face_47855.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20034 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20034 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 7 series, BMW M3, BMW M4, BMW M5, BMW M8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2658,13 +2658,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0148" available="true">
-      <name>Диск Replica B20362</name>
+      <name>Диск B20362</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20362-gloss_black_47856.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20362 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20362 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 7 series, BMW M3, BMW M4, BMW M5, BMW M8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2676,13 +2676,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0149" available="true">
-      <name>Диск Replica B20354</name>
+      <name>Диск B20354</name>
       <price>27824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20354-gloss_black_machined_face_47857.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20354 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20354 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 3 series, BMW 4 series, BMW 7 series, BMW M3 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2694,13 +2694,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0150" available="true">
-      <name>Диск Replica MR3573</name>
+      <name>Диск MR3573</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr3573-black_machined_face_47887.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica MR3573 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR3573 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes AMG GT 4-Door, Mercedes CLS-class, Mercedes CLS-class AMG та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -2712,13 +2712,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0151" available="true">
-      <name>Диск Replica B20699</name>
+      <name>Диск B20699</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20699-gloss_black_machined_face_47888.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20699 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20699 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series, BMW 6 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2730,13 +2730,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0152" available="true">
-      <name>Диск Replica B20699</name>
+      <name>Диск B20699</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20699-gloss_black_machined_face_47888.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20699 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20699 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 5 series, BMW M5, BMW M8, BMW X1, BMW X2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2748,13 +2748,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0153" available="true">
-      <name>Диск Replica B20362</name>
+      <name>Диск B20362</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20362-gloss_black_47856.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20362 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20362 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X1, BMW X2, BMW X5, BMW X6, BMW X7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2766,13 +2766,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0154" available="true">
-      <name>Диск Replica MR3573</name>
+      <name>Диск MR3573</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr3573-black_machined_face_47887.jpg</picture>
       <quantity_in_stock>6</quantity_in_stock>
-      <description>Диск Replica MR3573 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR3573 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes A-class, Mercedes AMG GT, Mercedes CLS-class, Mercedes CLS-class AMG, Mercedes E-class та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -2784,13 +2784,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0155" available="true">
-      <name>Диск Replica B20034</name>
+      <name>Диск B20034</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20034-gloss_black_machined_face_47855.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20034 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20034 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X1, BMW X2, BMW X5, BMW X6, BMW X7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2802,13 +2802,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0156" available="true">
-      <name>Диск Replica B20354</name>
+      <name>Диск B20354</name>
       <price>27824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20354-gloss_black_machined_face_47857.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20354 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20354 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW X1, BMW X2, BMW X5, BMW X6, BMW X7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -2820,13 +2820,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0157" available="true">
-      <name>Диск Replica MZ3523</name>
+      <name>Диск MZ3523</name>
       <price>26436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mz3523-gloss_black_47889.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica MZ3523 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MZ3523 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mazda 3, Mazda CX-5, Mazda CX-50, Mazda CX-60, Mazda CX-7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mazda</param>
@@ -2838,13 +2838,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0158" available="true">
-      <name>Диск Replica V3562</name>
+      <name>Диск V3562</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-v3562-black_machined_face_47903.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica V3562 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск V3562 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volvo XC90
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volvo</param>
@@ -2856,13 +2856,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0159" available="true">
-      <name>Диск Replica V3460</name>
+      <name>Диск V3460</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-v3460-black_machined_face_47006.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica V3460 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск V3460 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volvo XC90
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volvo</param>
@@ -2874,13 +2874,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0160" available="true">
-      <name>Диск Replica MR21844</name>
+      <name>Диск MR21844</name>
       <price>33740</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr21844-gloss_black_47890.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica MR21844 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR21844 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes E-class, Mercedes EQE SUV, Mercedes EQE SUV AMG, Mercedes EQS, Mercedes EQS AMG та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -2892,13 +2892,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0161" available="true">
-      <name>Диск Replica MR21844</name>
+      <name>Диск MR21844</name>
       <price>33740</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mr21844-gloss_black_47890.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica MR21844 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MR21844 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mercedes AMG GT, Mercedes EQE AMG, Mercedes EQE SUV, Mercedes EQE SUV AMG, Mercedes EQS та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mercedes</param>
@@ -2910,13 +2910,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0162" available="true">
-      <name>Диск Replica LX3449</name>
+      <name>Диск LX3449</name>
       <price>36520</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lx3449-hyper_black_47891.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica LX3449 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LX3449 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Lexus LX
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Lexus</param>
@@ -2928,13 +2928,13 @@
       <param name="Колір">Hyper_Black</param>
     </offer>
     <offer id="WS-0163" available="true">
-      <name>Диск Replica VV18270</name>
+      <name>Диск VV18270</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv18270-gloss_black_47821.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica VV18270 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV18270 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2946,13 +2946,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0164" available="true">
-      <name>Диск Replica VV18703</name>
+      <name>Диск VV18703</name>
       <price>20172</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv18703-gloss_black_machined_face_47904.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV18703 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV18703 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -2964,13 +2964,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0165" available="true">
-      <name>Диск Replica RN18877</name>
+      <name>Диск RN18877</name>
       <price>20172</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-rn18877-gloss_black_machined_face_47892.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica RN18877 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск RN18877 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Renault 5 E-Tech, Renault Austral, Renault Captur, Renault Clio, Renault Duster та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Renault</param>
@@ -2982,13 +2982,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0166" available="true">
-      <name>Диск Replica KI18996</name>
+      <name>Диск KI18996</name>
       <price>20172</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ki18996-gloss_black_machined_face_47822.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica KI18996 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск KI18996 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Kia Carens, Kia Carnival, Kia Ceed, Kia Cerato, Kia EV2 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Kia</param>
@@ -3000,13 +3000,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0167" available="true">
-      <name>Диск Replica VV18515</name>
+      <name>Диск VV18515</name>
       <price>20868</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv18515-gloss_black_machined_face_47901.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica VV18515 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV18515 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Amarok, Volkswagen Crafter, Volkswagen Multivan, Volkswagen Touareg, Volkswagen Transporter
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3018,13 +3018,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0168" available="true">
-      <name>Диск Replica B19492</name>
+      <name>Диск B19492</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b19492-satin_black_lip_polish_47911.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B19492 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B19492 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 5 series, BMW 6 series, BMW 7 series, BMW 8 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3036,13 +3036,13 @@
       <param name="Колір">Satin_Black_Lip_Polish</param>
     </offer>
     <offer id="WS-0169" available="true">
-      <name>Диск Replica B19484</name>
+      <name>Диск B19484</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b19484-satin_black_47969.jpg</picture>
       <quantity_in_stock>10</quantity_in_stock>
-      <description>Диск Replica B19484 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B19484 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3054,13 +3054,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0170" available="true">
-      <name>Диск Replica B19492</name>
+      <name>Диск B19492</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b19492-satin_black_lip_polish_47911.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B19492 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B19492 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW 5 series, BMW 8 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3072,13 +3072,13 @@
       <param name="Колір">Satin_Black_Lip_Polish</param>
     </offer>
     <offer id="WS-0171" available="true">
-      <name>Диск Replica B19484</name>
+      <name>Диск B19484</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b19484-satin_black_47969.jpg</picture>
       <quantity_in_stock>10</quantity_in_stock>
-      <description>Диск Replica B19484 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B19484 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW 5 series, BMW 8 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3090,13 +3090,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0172" available="true">
-      <name>Диск Replica PR20395</name>
+      <name>Диск PR20395</name>
       <price>27824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr20395-gloss_black_machined_face_47881.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica PR20395 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR20395 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Macan
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -3108,13 +3108,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0173" available="true">
-      <name>Диск Replica PR20395</name>
+      <name>Диск PR20395</name>
       <price>27824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr20395-gloss_black_machined_face_47881.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica PR20395 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR20395 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Macan
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -3126,13 +3126,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0174" available="true">
-      <name>Диск Replica VV21846</name>
+      <name>Диск VV21846</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv21846-gloss_black_machined_face_47905.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV21846 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV21846 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Atlas, Volkswagen ID.4, Volkswagen ID.4 X, Volkswagen ID.5, Volkswagen ID.6 Crozz та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3144,13 +3144,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0175" available="true">
-      <name>Диск Replica VV21846</name>
+      <name>Диск VV21846</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv21846-gloss_black_machined_face_47905.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV21846 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV21846 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Atlas, Volkswagen ID.4, Volkswagen ID.4 X, Volkswagen ID.5, Volkswagen ID.6 Crozz та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3162,13 +3162,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0176" available="true">
-      <name>Диск Replica VV17082</name>
+      <name>Диск VV17082</name>
       <price>17044</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv17082-gloss_black_machined_face_47927.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica VV17082 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV17082 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy, Volkswagen CrossGolf та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3180,13 +3180,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0177" available="true">
-      <name>Диск Replica H18388</name>
+      <name>Диск H18388</name>
       <price>19824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-h18388-gloss_black_48313.jpg</picture>
       <quantity_in_stock>16</quantity_in_stock>
-      <description>Диск Replica H18388 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск H18388 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Honda Accord, Honda CR-V, Honda Civic, Honda Crosstour, Honda Element та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Honda</param>
@@ -3198,13 +3198,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0178" available="true">
-      <name>Диск Replica H18052</name>
+      <name>Диск H18052</name>
       <price>19824</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-h18052-gloss_black_47936.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica H18052 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск H18052 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Honda Accord, Honda CR-V, Honda Civic, Honda Crosstour, Honda Element та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Honda</param>
@@ -3216,13 +3216,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0179" available="true">
-      <name>Диск Replica H18442</name>
+      <name>Диск H18442</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-h18442-gloss_black_machined_face_48184.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica H18442 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск H18442 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Honda Accord, Honda CR-V, Honda Civic, Honda Crosstour, Honda Element та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Honda</param>
@@ -3234,13 +3234,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0180" available="true">
-      <name>Диск Replica V19733</name>
+      <name>Диск V19733</name>
       <price>23828</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-v19733-gloss_black_machined_face_47929.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica V19733 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск V19733 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volvo C30, Volvo C40, Volvo EC40, Volvo EX30, Volvo EX30 Cross Country та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volvo</param>
@@ -3252,13 +3252,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0181" available="true">
-      <name>Диск Replica MZ20701</name>
+      <name>Диск MZ20701</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-mz20701-gloss_black_47930.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica MZ20701 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск MZ20701 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Mazda 3, Mazda CX-5, Mazda CX-50, Mazda CX-60, Mazda CX-7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Mazda</param>
@@ -3270,13 +3270,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0182" available="true">
-      <name>Диск Replica LX20912</name>
+      <name>Диск LX20912</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-lx20912-gloss_black_machined_face_47937.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica LX20912 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск LX20912 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Lexus LX
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Lexus</param>
@@ -3288,13 +3288,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0183" available="true">
-      <name>Диск Replica TY20925</name>
+      <name>Диск TY20925</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty20925-satin_black_47931.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY20925 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY20925 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3306,13 +3306,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0184" available="true">
-      <name>Диск Replica TY19954</name>
+      <name>Диск TY19954</name>
       <price>24000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty19954-hyper_black_47984.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY19954 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY19954 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Avalon, Toyota C-HR, Toyota Camry, Toyota Crown, Toyota Harrier та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3324,13 +3324,13 @@
       <param name="Колір">Hyper_Black</param>
     </offer>
     <offer id="WS-0185" available="true">
-      <name>Диск Replica TY193</name>
+      <name>Диск TY193</name>
       <price>24696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty193-hyper_black_48936.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica TY193 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY193 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Avalon, Toyota C-HR, Toyota Camry, Toyota Crown, Toyota Harrier та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3342,13 +3342,13 @@
       <param name="Колір">Hyper_Black</param>
     </offer>
     <offer id="WS-0186" available="true">
-      <name>Диск Replica VV17967</name>
+      <name>Диск VV17967</name>
       <price>17392</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv17967-gloss_black_machined_face_47971.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV17967 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV17967 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy, Volkswagen CrossGolf та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3360,13 +3360,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0187" available="true">
-      <name>Диск Replica RN17367</name>
+      <name>Диск RN17367</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-rn17367-gloss_black_machined_face_47972.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica RN17367 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск RN17367 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Renault Arkana, Renault Austral, Renault Captur, Renault Clio, Renault Duster та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Renault</param>
@@ -3378,13 +3378,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0188" available="true">
-      <name>Диск Replica B18492</name>
+      <name>Диск B18492</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b18492-satin_black_lip_polish_45921.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B18492 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B18492 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 3 series, BMW 4 series, BMW 5 series, BMW 6 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3396,13 +3396,13 @@
       <param name="Колір">Satin_Black_Lip_Polish</param>
     </offer>
     <offer id="WS-0189" available="true">
-      <name>Диск Replica SK18726</name>
+      <name>Диск SK18726</name>
       <price>20520</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-sk18726-gloss_black_machined_face_47963.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica SK18726 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск SK18726 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Skoda Enyaq, Skoda Karoq, Skoda Kodiaq, Skoda Octavia, Skoda Octavia Scout та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Skoda</param>
@@ -3414,13 +3414,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0190" available="true">
-      <name>Диск Replica VV18247</name>
+      <name>Диск VV18247</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv18247-gloss_black_47985.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV18247 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV18247 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3432,13 +3432,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0191" available="true">
-      <name>Диск Replica VV18686</name>
+      <name>Диск VV18686</name>
       <price>20000</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv18686-gloss_black_47964.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV18686 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV18686 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen Caddy та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3450,13 +3450,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0192" available="true">
-      <name>Диск Replica VV19247</name>
+      <name>Диск VV19247</name>
       <price>24348</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv19247-gloss_black_machined_face_48314.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV19247 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV19247 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Beetle, Volkswagen CC, Volkswagen CrossGolf, Volkswagen CrossTouran та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3468,13 +3468,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0193" available="true">
-      <name>Диск Replica A19046</name>
+      <name>Диск A19046</name>
       <price>24348</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a19046-gloss_black_machined_face_47987.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A19046 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A19046 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A6, Audi A7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -3486,13 +3486,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0194" available="true">
-      <name>Диск Replica A19936</name>
+      <name>Диск A19936</name>
       <price>24348</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a19936-gloss_black_machined_face_47965.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica A19936 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A19936 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A6, Audi A7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -3504,13 +3504,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0195" available="true">
-      <name>Диск Replica A0436</name>
+      <name>Диск A0436</name>
       <price>26088</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-a0436-matt_dark_gun_metal_48286.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica A0436 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск A0436 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Audi A3, Audi A3 Allstreet, Audi A4, Audi A6, Audi A7 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Audi</param>
@@ -3522,13 +3522,13 @@
       <param name="Колір">Matt_Dark_Gun_Metal</param>
     </offer>
     <offer id="WS-0196" available="true">
-      <name>Диск Replica VV5696</name>
+      <name>Диск VV5696</name>
       <price>28696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv5696-gloss_black_48287.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica VV5696 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV5696 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen Beetle, Volkswagen CC, Volkswagen ID.3 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3540,13 +3540,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0197" available="true">
-      <name>Диск Replica PR5584</name>
+      <name>Диск PR5584</name>
       <price>31304</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-pr5584-black_machined_face_48288.jpg</picture>
       <quantity_in_stock>4</quantity_in_stock>
-      <description>Диск Replica PR5584 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск PR5584 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Porsche Cayenne
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Porsche</param>
@@ -3558,13 +3558,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0198" available="true">
-      <name>Диск Replica B023</name>
+      <name>Диск B023</name>
       <price>18264</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b023-black_machined_face_48282.jpg</picture>
       <quantity_in_stock>8</quantity_in_stock>
-      <description>Диск Replica B023 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B023 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 1 series, BMW 2 Series, BMW 2 series, BMW 3 series, BMW 4 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3576,13 +3576,13 @@
       <param name="Колір">Black_Machined_Face</param>
     </offer>
     <offer id="WS-0199" available="true">
-      <name>Диск Replica TY18087</name>
+      <name>Диск TY18087</name>
       <price>22608</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty18087-matt_black_48807.jpg</picture>
       <quantity_in_stock>12</quantity_in_stock>
-      <description>Диск Replica TY18087 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY18087 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3594,13 +3594,13 @@
       <param name="Колір">MATT_BLACK</param>
     </offer>
     <offer id="WS-0200" available="true">
-      <name>Диск Replica TY20088</name>
+      <name>Диск TY20088</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty20088-gloss_black_48833.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY20088 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY20088 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota 4Runner, Toyota Land Cruiser, Toyota Land Cruiser Prado, Toyota Sequoia, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3612,13 +3612,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0201" available="true">
-      <name>Диск Replica TY18087</name>
+      <name>Диск TY18087</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty18087-matt_black_48807.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY18087 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY18087 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3630,13 +3630,13 @@
       <param name="Колір">MATT_BLACK</param>
     </offer>
     <offer id="WS-0202" available="true">
-      <name>Диск Replica TY17253</name>
+      <name>Диск TY17253</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty17253-gloss_black_48835.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY17253 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY17253 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Alphard, Toyota Avalon, Toyota Avensis, Toyota Avensis Verso, Toyota C-HR та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3648,13 +3648,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0203" available="true">
-      <name>Диск Replica NS17433</name>
+      <name>Диск NS17433</name>
       <price>19132</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ns17433-gloss_black_machined_face_48836.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica NS17433 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск NS17433 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Nissan Almera Tino, Nissan Altima, Nissan Juke, Nissan Leaf, Nissan Maxima та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Nissan</param>
@@ -3666,13 +3666,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0204" available="true">
-      <name>Диск Replica B18293</name>
+      <name>Диск B18293</name>
       <price>21216</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b18293-gloss_black_machined_face_48837.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B18293 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B18293 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 5 series
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3684,13 +3684,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0205" available="true">
-      <name>Диск Replica TY18584</name>
+      <name>Диск TY18584</name>
       <price>22608</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-ty18584-satin_black_48838.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica TY18584 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск TY18584 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Toyota Land Cruiser, Toyota Tundra
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Toyota</param>
@@ -3702,13 +3702,13 @@
       <param name="Колір">SATIN_BLACK</param>
     </offer>
     <offer id="WS-0206" available="true">
-      <name>Диск Replica B19654</name>
+      <name>Диск B19654</name>
       <price>25220</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b19654-gloss_black_machined_face_48814.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B19654 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B19654 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 2 series, BMW 5 series, BMW 6 series, BMW 7 series, BMW 8 series та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3720,13 +3720,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0207" available="true">
-      <name>Диск Replica B20515</name>
+      <name>Диск B20515</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20515-gloss_black_48839.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20515 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20515 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 7 series, BMW M3, BMW M4, BMW M5, BMW M8 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3738,13 +3738,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0208" available="true">
-      <name>Диск Replica VV20146</name>
+      <name>Диск VV20146</name>
       <price>28696</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-vv20146-gloss_black_machined_face_48815.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica VV20146 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск VV20146 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volkswagen Arteon, Volkswagen Atlas, Volkswagen CC, Volkswagen ID.3, Volkswagen ID.4 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volkswagen</param>
@@ -3756,13 +3756,13 @@
       <param name="Колір">GLOSS_BLACK_MACHINED_FACE</param>
     </offer>
     <offer id="WS-0209" available="true">
-      <name>Диск Replica B20515</name>
+      <name>Диск B20515</name>
       <price>29564</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-b20515-gloss_black_48839.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica B20515 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск B20515 — литий диск у стилі оригінального заводського колеса.
 Підходить для: BMW 5 series, BMW X1, BMW X2, BMW X5, BMW X6 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">BMW</param>
@@ -3774,13 +3774,13 @@
       <param name="Колір">GLOSS_BLACK</param>
     </offer>
     <offer id="WS-0210" available="true">
-      <name>Диск Replica V21064</name>
+      <name>Диск V21064</name>
       <price>30436</price>
       <currencyId>UAH</currencyId>
       <categoryId>1</categoryId>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/replica-v21064-gloss_black_machined_face_48816.jpg</picture>
       <quantity_in_stock>20</quantity_in_stock>
-      <description>Диск Replica V21064 — литий диск у стилі оригінального заводського колеса.
+      <description>Диск V21064 — литий диск у стилі оригінального заводського колеса.
 Підходить для: Volvo C40, Volvo EX30, Volvo EX90, Volvo S90, Volvo V90 та інші моделі
 Ціна вказана за комплект 4 шт. Продаємо тільки комплектом.</description>
       <param name="Бренд авто">Volvo</param>
