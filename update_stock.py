@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Update price / stock in feed.yml from the WheelShop B2B CSV (windows-1251, tab separated).
-Env: WS_EMAIL, WS_PASSWD. Only <price>, <quantity_in_stock>, available= and the catalog date change."""
+Env: WS_EMAIL, WS_PASSWD, optional PRICE_MARKUP (default 1.07). Only <value>, <quantity_in_stock>, available= and the catalog date change.
+Staggered sets (offers WS-Pnn: Ширина "8.5 / 9.5" and ET "25 / 39") are matched as two sizes: sets = min(front, rear) // 2, stock = 4 * sets,
+price per disc = average of the two supplier prices * markup."""
 import os, re, sys, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 MIN_SET = 4          # Prom sells only sets of 4
+MARKUP = float(os.environ.get("PRICE_MARKUP", "1.07"))   # +7% to the supplier recommended price ("Цiна")
+ROUND_TO = 10        # round the final price to 10 UAH
 MAX_DROP = 0.4       # abort if more than 40% of offers would become unavailable
 FEED = os.environ.get("FEED_PATH", "feed.yml")
 
@@ -45,7 +49,7 @@ def build_index(rows):
 def main():
     idx = build_index(load_csv())
     feed = open(FEED, encoding="utf-8").read()
-    blocks = list(re.finditer(r'<offer id="(WS-\d+)"( selling_type="\w")? available="(true|false)">(.*?)</offer>', feed, re.S))
+    blocks = list(re.finditer(r'<offer id="(WS-P?\d+)"( selling_type="\w")? available="(true|false)">(.*?)</offer>', feed, re.S))
     if len(blocks) < 100:
         sys.exit("feed looks wrong: %d offers" % len(blocks))
     out, pos, changed, to_false, missing = [], 0, 0, 0, []
@@ -55,16 +59,27 @@ def main():
             x = re.search(r'<param name="%s">(.*?)</param>' % n, body)
             return x.group(1).strip() if x else ""
         name = re.search(r"<name>(.*?)</name>", body).group(1)
-        model = re.sub(r"^Диск\s+", "", name).strip().lower()
+        model = re.sub(r"^Диск\s+", "", name).split(" (")[0].strip().lower()
+        pair = "/" in par("ET")
         try:
-            key = (model, par("Колір").lower(), round(num(par("Діаметр"))), round(num(par("Ширина")), 1), par("PCD").lower())
-            et = num(par("ET"))
+            if pair:
+                ws = [x.strip() for x in par("Ширина").split("/")]
+                ets = [num(x) for x in par("ET").split("/")]
+                keys = [(model, par("Колір").lower(), round(num(par("Діаметр"))), round(num(w), 1), par("PCD").lower()) for w in ws]
+            else:
+                keys = [(model, par("Колір").lower(), round(num(par("Діаметр"))), round(num(par("Ширина")), 1), par("PCD").lower())]
+                ets = [num(par("ET"))]
         except ValueError:
             out.append(feed[pos:m.end()]); pos = m.end(); continue
-        cands = [c for c in idx.get(key, []) if abs(c[0] - et) <= 1.0]
-        if cands:
-            _, qty, price_disk = min(cands, key=lambda c: abs(c[0] - et))
-            price = int(round(price_disk))   # price per disc (wholesale tier, min order 4)
+        found = []
+        for key, et in zip(keys, ets):
+            cands = [c for c in idx.get(key, []) if abs(c[0] - et) <= 1.0]
+            found.append(min(cands, key=lambda c: abs(c[0] - et)) if cands else None)
+        if all(found):
+            qtys = [f[1] for f in found]
+            price_disk = sum(f[2] for f in found) / len(found)
+            price = int(round(price_disk * MARKUP / ROUND_TO)) * ROUND_TO
+            qty = 4 * (min(qtys) // 2) if pair else qtys[0]
         else:
             qty, price = 0, None
             missing.append(m.group(1))
