@@ -45,12 +45,12 @@ def build_index(rows):
 def main():
     idx = build_index(load_csv())
     feed = open(FEED, encoding="utf-8").read()
-    blocks = list(re.finditer(r'<offer id="(WS-\d+)" available="(true|false)">(.*?)</offer>', feed, re.S))
+    blocks = list(re.finditer(r'<offer id="(WS-\d+)"( selling_type="\w")? available="(true|false)">(.*?)</offer>', feed, re.S))
     if len(blocks) < 100:
         sys.exit("feed looks wrong: %d offers" % len(blocks))
     out, pos, changed, to_false, missing = [], 0, 0, 0, []
     for m in blocks:
-        body = m.group(3)
+        body = m.group(4)
         def par(n):
             x = re.search(r'<param name="%s">(.*?)</param>' % n, body)
             return x.group(1).strip() if x else ""
@@ -64,7 +64,7 @@ def main():
         cands = [c for c in idx.get(key, []) if abs(c[0] - et) <= 1.0]
         if cands:
             _, qty, price_disk = min(cands, key=lambda c: abs(c[0] - et))
-            price = int(round(price_disk * 4))
+            price = int(round(price_disk))   # price per disc (wholesale tier, min order 4)
         else:
             qty, price = 0, None
             missing.append(m.group(1))
@@ -73,13 +73,13 @@ def main():
         new = body
         new = re.sub(r"<quantity_in_stock>\d+</quantity_in_stock>", f"<quantity_in_stock>{qty_out}</quantity_in_stock>", new)
         if price:
-            new = re.sub(r"<price>\d+</price>", f"<price>{price}</price>", new)
+            new = re.sub(r"<value>\d+</value>", f"<value>{price}</value>", new, count=1)
         avail = "true" if sellable else "false"
-        if avail == "false" and m.group(2) == "true":
+        if avail == "false" and m.group(3) == "true":
             to_false += 1
-        if new != body or avail != m.group(2):
+        if new != body or avail != m.group(3):
             changed += 1
-        out.append(feed[pos:m.start()] + f'<offer id="{m.group(1)}" available="{avail}">{new}</offer>')
+        out.append(feed[pos:m.start()] + f'<offer id="{m.group(1)}"{m.group(2) or ""} available="{avail}">{new}</offer>')
         pos = m.end()
     out.append(feed[pos:])
     res = "".join(out)
