@@ -41,7 +41,11 @@ def build_index(rows):
     for c in rows:
         try:
             key = (c[1].strip().lower(), c[2].strip().lower(), round(num(c[3])), round(num(c[4]), 1), c[5].strip().lower())
-            idx.setdefault(key, []).append((num(c[6]), int(float(c[8])), num(c[10])))
+            try:
+                dia = num(c[7])
+            except ValueError:
+                dia = None
+            idx.setdefault(key, []).append((num(c[6]), int(float(c[8])), num(c[10]), dia))
         except ValueError:
             continue
     return idx
@@ -58,8 +62,12 @@ def main():
         def par(n):
             x = re.search(r'<param name="%s">(.*?)</param>' % n, body)
             return x.group(1).strip() if x else ""
-        name = re.search(r"<name>(.*?)</name>", body).group(1)
-        model = re.sub(r"^Диск\s+", "", name).split(" (")[0].strip().lower()
+        mm = re.search(r"<!--MODEL (.*?)-->", body)
+        if mm:
+            model = mm.group(1).strip().lower()
+        else:
+            name = re.search(r"<name>(.*?)</name>", body).group(1)
+            model = re.sub(r"^Диск\s+", "", name).split(" (")[0].strip().lower()
         pm = re.search(r"<!--PAIR W=([\d.,]+) ET=([\d.,-]+)-->", body)
         pair = pm is not None
         try:
@@ -75,6 +83,12 @@ def main():
         found = []
         for key, et in zip(keys, ets):
             cands = [c for c in idx.get(key, []) if abs(c[0] - et) <= 1.0]
+            try:
+                want_dia = num(par("DIA"))
+            except ValueError:
+                want_dia = None
+            if want_dia is not None and any(c[3] is not None and abs(c[3] - want_dia) < 0.05 for c in cands):
+                cands = [c for c in cands if c[3] is not None and abs(c[3] - want_dia) < 0.05]
             found.append(min(cands, key=lambda c: abs(c[0] - et)) if cands else None)
         if all(found):
             qtys = [f[1] for f in found]
