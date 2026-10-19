@@ -1,0 +1,31 @@
+name: Update stock
+on:
+  schedule:
+    - cron: "10 4,10,15 * * *"   # UTC: 07:10, 13:10, 18:10 Kyiv (summer) / 06:10, 12:10, 17:10 (winter)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: update-stock
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Update feed from supplier CSV
+        env:
+          WS_EMAIL: ${{ secrets.WS_EMAIL }}
+          WS_PASSWD: ${{ secrets.WS_PASSWD }}
+        run: python update_stock.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet feed.yml; then echo "no changes"; exit 0; fi
+          git config user.name "stock-bot"
+          git config user.email "stock-bot@users.noreply.github.com"
+          git add feed.yml
+          git commit -m "Update stock and prices from supplier"
+          git push
