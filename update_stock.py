@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Update price / stock in feed.yml from the WheelShop B2B CSV (windows-1251, tab separated).
 Env: WS_EMAIL, WS_PASSWD, optional PRICE_MARKUP (default 1.07). Only <value>, <quantity_in_stock>, available= and the catalog date change.
-Staggered sets (offers WS-Pnn: Ширина "8.5 / 9.5" and ET "25 / 39") are matched as two sizes: sets = min(front, rear) // 2, stock = 4 * sets,
-price per disc = average of the two supplier prices * markup."""
+Staggered sets (offers WS-Pnn with a hidden <!--PAIR W=8.5,9.5 ET=25,39--> comment) are matched as two sizes: sets = min(front, rear) // 2,
+stock = 4 * sets, price per disc = average of the two supplier prices * markup."""
 import os, re, sys, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
@@ -60,11 +60,12 @@ def main():
             return x.group(1).strip() if x else ""
         name = re.search(r"<name>(.*?)</name>", body).group(1)
         model = re.sub(r"^Диск\s+", "", name).split(" (")[0].strip().lower()
-        pair = "/" in par("ET")
+        pm = re.search(r"<!--PAIR W=([\d.,]+) ET=([\d.,-]+)-->", body)
+        pair = pm is not None
         try:
             if pair:
-                ws = [x.strip() for x in par("Ширина").split("/")]
-                ets = [num(x) for x in par("ET").split("/")]
+                ws = pm.group(1).split(",")
+                ets = [num(x) for x in pm.group(2).split(",")]
                 keys = [(model, par("Колір").lower(), round(num(par("Діаметр"))), round(num(w), 1), par("PCD").lower()) for w in ws]
             else:
                 keys = [(model, par("Колір").lower(), round(num(par("Діаметр"))), round(num(par("Ширина")), 1), par("PCD").lower())]
