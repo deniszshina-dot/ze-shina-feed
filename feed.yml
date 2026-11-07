@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-06 20:51">
+<yml_catalog date="2026-11-07 11:00">
   <shop>
     <name>ZE-Shina WheelShop</name>
     <company>ZE-Shina</company>
@@ -1315,7 +1315,7 @@
       <name_ua>Литий диск Mercedes MR593 R20 9.5J 5x130 ET35 Mb Matt</name_ua>
       <prices>
         <price>
-          <value>16120</value>
+          <value>15040</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1418,7 +1418,7 @@
       <name_ua>Литий диск Li LI3164 R21 9J 5x120 ET45 Gunmetal Machined Face</name_ua>
       <prices>
         <price>
-          <value>9120</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2032,7 +2032,7 @@
       <name_ua>Литий диск Audi A624 R21 9.5J 5x112 ET35 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>10600</value>
+          <value>9940</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2065,7 +2065,7 @@
       <name_ua>Литий диск Mercedes MR3355 R22 10J 5x130 ET36 Platinum</name_ua>
       <prices>
         <price>
-          <value>18800</value>
+          <value>17460</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2133,7 +2133,7 @@
       <name_ua>Литий диск Volkswagen VV766 R19 8.5J 5x112 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6900</value>
+          <value>6450</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2169,7 +2169,7 @@
       <name_ua>Литий диск Audi A5565 R21 8.5J 5x112 ET34 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8140</value>
+          <value>7250</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2205,7 +2205,7 @@
       <name_ua>Литі диски Mercedes MR953 R21 5x112 Satin Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>9370</value>
+          <value>8600</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2343,7 +2343,7 @@
       <name_ua>Литий диск Audi A5553 R19 8.5J 5x112 ET39 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6660</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2408,7 +2408,7 @@
       <name_ua>Литий диск Volkswagen VV3336 R21 9J 5x112 ET34 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8630</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2443,7 +2443,7 @@
       <name_ua>Литі диски Tesla TES3130 R21 5x114.3 Matte Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8380</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2477,7 +2477,7 @@
       <name_ua>Литий диск Li LI3114 R20 8.5J 5x120 ET45 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8140</value>
+          <value>6720</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2613,7 +2613,7 @@
       <name_ua>Литий диск Audi A215 R22 10J 5x112 ET21</name_ua>
       <prices>
         <price>
-          <value>17460</value>
+          <value>15580</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2644,7 +2644,7 @@
       <param name="Код запчастини">A215</param>
       <param name="Ширина диску в дюймах">10</param>
     </offer>
-    <offer id="WS-0095" selling_type="w" available="false"><!--MODEL A5269-->
+    <offer id="WS-0095" selling_type="w" available="true"><!--MODEL A5269-->
       <name>Литой диск Audi A5269 R18 8J 5x112 ET40 Gloss Black</name>
       <name_ua>Литий диск Audi A5269 R18 8J 5x112 ET40 Gloss Black</name_ua>
       <prices>
@@ -2663,7 +2663,7 @@
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-5620154e-4.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-5620154e-5.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-5620154e-6.jpg</picture>
-      <quantity_in_stock>0</quantity_in_stock>
+      <quantity_in_stock>4</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Размер: R18, ширина 8J</li><li>PCD 5x112, вылет ET40, DIA 66.5</li><li>Цвет: Gloss Black (чёрный глянец)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Продаём комплектом из 4 дисков, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для:</strong></p><ul><li>Audi A3 IV (8Y) (2020-2026) (через центровочные кольца)</li><li>Audi A4 (1995-2014)</li><li>Audi A4 (B9, 8W) (2015-2026)</li><li>Audi A6 (1998-2011) (через центровочные кольца)</li><li>Audi A6 (C7, 4G) (2011-2018)</li><li>Audi A6 (C8) (2018-2025)</li><li>Audi A6 (C9) (2025-2026)</li><li>Audi Allroad (2006-2011) (через центровочные кольца)</li><li>Audi Q3 III (FJ) (2025-2026) (через центровочные кольца)</li><li>Audi Q5 (2008-2017)</li><li>Audi Q5 II (FY) (2017-2025)</li><li>Audi Q5 Sportback (FY) (2021-2025)</li><li>Audi S3 (8P) (2006-2013) (через центровочные кольца)</li><li>Audi S3 III (8V) (2013-2020) (через центровочные кольца)</li><li>Audi S3 IV (8Y) (2020-2026) (через центровочные кольца)</li><li>Audi S4 (2003-2005) (через центровочные кольца)</li><li>Audi S4 (B7) (2005-2009) (через центровочные кольца)</li><li>Audi S4 (B8, 8E) (2009-2015)</li><li>Audi S4 (B9, 8K) (2016-2026)</li><li>Audi S5 III (B10) (2024-2026) (через центровочные кольца)</li><li>Audi SQ2 (2019-2026) (через центровочные кольца)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Розмір: R18, ширина 8J</li><li>PCD 5x112, виліт ET40, DIA 66.5</li><li>Колір: Gloss Black (чорний глянець)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Продаємо комплектом з 4 дисків, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для:</strong></p><ul><li>Audi A3 IV (8Y) (2020-2026) (через центрувальні кільця)</li><li>Audi A4 (1995-2014)</li><li>Audi A4 (B9, 8W) (2015-2026)</li><li>Audi A6 (1998-2011) (через центрувальні кільця)</li><li>Audi A6 (C7, 4G) (2011-2018)</li><li>Audi A6 (C8) (2018-2025)</li><li>Audi A6 (C9) (2025-2026)</li><li>Audi Allroad (2006-2011) (через центрувальні кільця)</li><li>Audi Q3 III (FJ) (2025-2026) (через центрувальні кільця)</li><li>Audi Q5 (2008-2017)</li><li>Audi Q5 II (FY) (2017-2025)</li><li>Audi Q5 Sportback (FY) (2021-2025)</li><li>Audi S3 (8P) (2006-2013) (через центрувальні кільця)</li><li>Audi S3 III (8V) (2013-2020) (через центрувальні кільця)</li><li>Audi S3 IV (8Y) (2020-2026) (через центрувальні кільця)</li><li>Audi S4 (2003-2005) (через центрувальні кільця)</li><li>Audi S4 (B7) (2005-2009) (через центрувальні кільця)</li><li>Audi S4 (B8, 8E) (2009-2015)</li><li>Audi S4 (B9, 8K) (2016-2026)</li><li>Audi S5 III (B10) (2024-2026) (через центрувальні кільця)</li><li>Audi SQ2 (2019-2026) (через центрувальні кільця)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">Audi</param>
@@ -2686,7 +2686,7 @@
       <name_ua>Литий диск Volkswagen VV19051 R19 8J 5x112 ET43 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6310</value>
+          <value>5750</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2756,7 +2756,7 @@
       <name_ua>Литий диск Mercedes MR3298 R18 7.5J 5x112 ET52 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5920</value>
+          <value>5370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2895,7 +2895,7 @@
       <name_ua>Литий диск Audi A58 R22 10J 5x112 ET26</name_ua>
       <prices>
         <price>
-          <value>18800</value>
+          <value>16120</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2928,7 +2928,7 @@
       <name_ua>Литі диски BMW B002 R22 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>17460</value>
+          <value>15310</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2958,7 +2958,7 @@
       <name_ua>Литі диски Mercedes MR006 R22 5x112 Matt Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>21490</value>
+          <value>20150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2988,7 +2988,7 @@
       <name_ua>Литий диск Land Rover LR6742 R22 9J 5x120 ET42</name_ua>
       <prices>
         <price>
-          <value>14780</value>
+          <value>13970</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3021,7 +3021,7 @@
       <name_ua>Литі диски BMW B3430 R20 5x112 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>9370</value>
+          <value>7250</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3157,7 +3157,7 @@
       <name_ua>Литий диск Audi A22434 R22 9.5J 5x112 ET26 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>11590</value>
+          <value>9370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3190,7 +3190,7 @@
       <name_ua>Литий диск Audi A23714 R23 10J 5x112 ET15 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>13320</value>
+          <value>11820</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3292,7 +3292,7 @@
       <name_ua>Литий диск Audi A22714 R22 9.5J 5x112 ET26 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>11590</value>
+          <value>9130</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3461,7 +3461,7 @@
       <name_ua>Литий диск Audi A22599 R22 10J 5x112 ET15 Satin Black</name_ua>
       <prices>
         <price>
-          <value>12330</value>
+          <value>9860</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3698,7 +3698,7 @@
       <name_ua>Литий диск Audi A3386 R23 10J 5x112 ET20 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>11590</value>
+          <value>11340</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4135,7 +4135,7 @@
       <name_ua>Литий диск Volkswagen VV18423 R18 8J 5x112 ET44 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5720</value>
+          <value>5640</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4277,7 +4277,7 @@
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-9bb14feb-2.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-9bb14feb-3.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-9bb14feb-4.jpg</picture>
-      <quantity_in_stock>40</quantity_in_stock>
+      <quantity_in_stock>36</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Перед, 2 шт.: R20, 8J, ET27</li><li>Зад, 2 шт.: R20, 9.5J, ET43</li><li>PCD 5x112, DIA 66.6</li><li>Цвет: Gloss Black (чёрный глянец)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Разноширокий комплект 2+2: 2 диска на переднюю ось и 2 на заднюю. Продаём только комплектом, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для (разноширокая схема перед/зад):</strong></p><ul><li>BMW X3 III (G01) (2017-2024)</li><li>BMW X4 (G02) (2018-2026)</li><li>BMW iX3 (2020-2025)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Перед, 2 шт.: R20, 8J, ET27</li><li>Зад, 2 шт.: R20, 9.5J, ET43</li><li>PCD 5x112, DIA 66.6</li><li>Колір: Gloss Black (чорний глянець)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Різноширокий комплект 2+2: 2 диски на передню вісь і 2 на задню. Продаємо тільки комплектом, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для (різноширока схема перед/зад):</strong></p><ul><li>BMW X3 III (G01) (2017-2024)</li><li>BMW X4 (G02) (2018-2026)</li><li>BMW iX3 (2020-2025)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">BMW</param>
@@ -4489,7 +4489,7 @@
       <name_ua>Литі диски Mercedes MR21844 R21 5x112 Gloss Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>9570</value>
+          <value>9130</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4619,7 +4619,7 @@
       <name_ua>Литий диск Renault RN18877 R18 7J 5x114.3 ET45 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5720</value>
+          <value>5640</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4765,7 +4765,7 @@
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-3de4eb63-4.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-3de4eb63-5.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-3de4eb63-6.jpg</picture>
-      <quantity_in_stock>12</quantity_in_stock>
+      <quantity_in_stock>16</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Перед, 2 шт.: R19, 8.5J, ET30</li><li>Зад, 2 шт.: R19, 9.5J, ET40</li><li>PCD 5x112, DIA 66.6</li><li>Цвет: Satin Black (чёрный сатин)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Разноширокий комплект 2+2: 2 диска на переднюю ось и 2 на заднюю. Продаём только комплектом, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Перед, 2 шт.: R19, 8.5J, ET30</li><li>Зад, 2 шт.: R19, 9.5J, ET40</li><li>PCD 5x112, DIA 66.6</li><li>Колір: Satin Black (чорний сатин)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Різноширокий комплект 2+2: 2 диски на передню вісь і 2 на задню. Продаємо тільки комплектом, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">BMW</param>
@@ -4816,7 +4816,7 @@
       <name_ua>Литі диски Volkswagen VV21846 R21 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8630</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4945,7 +4945,7 @@
       <name_ua>Литий диск Honda H18442 R18 8J 5x114.3 ET50 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5670</value>
+          <value>5640</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4988,7 +4988,7 @@
       <portal_category_id>801220</portal_category_id>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-fa77cb36-1.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-fa77cb36-2.jpg</picture>
-      <quantity_in_stock>16</quantity_in_stock>
+      <quantity_in_stock>20</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Размер: R19, ширина 8.5J</li><li>PCD 5x108, вылет ET48, DIA 63.4</li><li>Цвет: Gloss Black Machined Face (чёрный глянец с проточкой)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Продаём комплектом из 4 дисков, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для:</strong></p><ul><li>Volvo S60 II (2010-2018)</li><li>Volvo S90 II (2016-2026)</li><li>Volvo V90 II (2016-2026)</li><li>Volvo XC70 III (2007-2016) (через центровочные кольца)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Розмір: R19, ширина 8.5J</li><li>PCD 5x108, виліт ET48, DIA 63.4</li><li>Колір: Gloss Black Machined Face (чорний глянець з проточкою)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Продаємо комплектом з 4 дисків, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для:</strong></p><ul><li>Volvo S60 II (2010-2018)</li><li>Volvo S90 II (2016-2026)</li><li>Volvo V90 II (2016-2026)</li><li>Volvo XC70 III (2007-2016) (через центрувальні кільця)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">Volvo</param>
@@ -5198,7 +5198,7 @@
       <portal_category_id>801220</portal_category_id>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-5579b38d-1.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-5579b38d-2.jpg</picture>
-      <quantity_in_stock>16</quantity_in_stock>
+      <quantity_in_stock>20</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Размер: R17, ширина 7J</li><li>PCD 5x112, вылет ET45, DIA 57.1</li><li>Цвет: Gloss Black Machined Face (чёрный глянец с проточкой)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Продаём комплектом из 4 дисков, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для:</strong></p><ul><li>Volkswagen Beetle (A5) (2011-2026)</li><li>Volkswagen CrossGolf (2007-2009)</li><li>Volkswagen CrossTouran (2007-2015)</li><li>Volkswagen Eos (2006-2015)</li><li>Volkswagen Golf V (2003-2008)</li><li>Volkswagen Golf V Plus (2005-2009)</li><li>Volkswagen Golf VI (2009-2013)</li><li>Volkswagen Golf VII (2013-2020)</li><li>Volkswagen Jetta (2005-2011)</li><li>Volkswagen Jetta VI (A6) (2010-2019)</li><li>Volkswagen Jetta VII (A7) (2018-2026)</li><li>Volkswagen Passat VIII (B8) (2014-2026)</li><li>Volkswagen Sharan (1995-2009)</li><li>Volkswagen Sharan II (2010-2022)</li><li>Volkswagen T-Roc (2017-2026)</li><li>Volkswagen T-Roc R (2019-2026)</li><li>Volkswagen Taos (2020-2026)</li><li>Volkswagen Touran (2003-2015)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Розмір: R17, ширина 7J</li><li>PCD 5x112, виліт ET45, DIA 57.1</li><li>Колір: Gloss Black Machined Face (чорний глянець з проточкою)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Продаємо комплектом з 4 дисків, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для:</strong></p><ul><li>Volkswagen Beetle (A5) (2011-2026)</li><li>Volkswagen CrossGolf (2007-2009)</li><li>Volkswagen CrossTouran (2007-2015)</li><li>Volkswagen Eos (2006-2015)</li><li>Volkswagen Golf V (2003-2008)</li><li>Volkswagen Golf V Plus (2005-2009)</li><li>Volkswagen Golf VI (2009-2013)</li><li>Volkswagen Golf VII (2013-2020)</li><li>Volkswagen Jetta (2005-2011)</li><li>Volkswagen Jetta VI (A6) (2010-2019)</li><li>Volkswagen Jetta VII (A7) (2018-2026)</li><li>Volkswagen Passat VIII (B8) (2014-2026)</li><li>Volkswagen Sharan (1995-2009)</li><li>Volkswagen Sharan II (2010-2022)</li><li>Volkswagen T-Roc (2017-2026)</li><li>Volkswagen T-Roc R (2019-2026)</li><li>Volkswagen Taos (2020-2026)</li><li>Volkswagen Touran (2003-2015)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">Volkswagen</param>
@@ -5355,7 +5355,7 @@
       <name_ua>Литий диск Volkswagen VV18686 R18 7.5J 5x112 ET45 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>5670</value>
+          <value>5370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5388,7 +5388,7 @@
       <name_ua>Литий диск Volkswagen VV19247 R19 8J 5x112 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6900</value>
+          <value>6450</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5421,7 +5421,7 @@
       <name_ua>Литий диск Audi A19046 R19 8J 5x112 ET45 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6900</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5455,7 +5455,7 @@
       <name_ua>Литий диск Audi A19936 R19 8J 5x112 ET45 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6900</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5872,7 +5872,7 @@
       <portal_category_id>801220</portal_category_id>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-d06b10ee-1.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-d06b10ee-2.jpg</picture>
-      <quantity_in_stock>16</quantity_in_stock>
+      <quantity_in_stock>20</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Размер: R19, ширина 8.5J</li><li>PCD 5x112, вылет ET26, DIA 66.6</li><li>Цвет: Gloss Black Machined Face (чёрный глянец с проточкой)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Продаём комплектом из 4 дисков, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для:</strong></p><ul><li>BMW 5 series (G60, G61, G68) (2023-2026)</li><li>BMW 6 series Gran Turismo (G32) (2017-2023)</li><li>BMW 7 series VI (G11, G12) (2015-2022)</li><li>BMW 7 series VII (G70) (2022-2026)</li><li>BMW X3 IV (G45) (2024-2026)</li><li>BMW i5 (G60, G61) (2023-2026)</li><li>BMW i7 (G70) (2022-2026)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Розмір: R19, ширина 8.5J</li><li>PCD 5x112, виліт ET26, DIA 66.6</li><li>Колір: Gloss Black Machined Face (чорний глянець з проточкою)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Продаємо комплектом з 4 дисків, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для:</strong></p><ul><li>BMW 5 series (G60, G61, G68) (2023-2026)</li><li>BMW 6 series Gran Turismo (G32) (2017-2023)</li><li>BMW 7 series VI (G11, G12) (2015-2022)</li><li>BMW 7 series VII (G70) (2022-2026)</li><li>BMW X3 IV (G45) (2024-2026)</li><li>BMW i5 (G60, G61) (2023-2026)</li><li>BMW i7 (G70) (2022-2026)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">BMW</param>
