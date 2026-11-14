@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-14 11:25">
+<yml_catalog date="2026-11-14 19:55">
   <shop>
     <name>ZE-Shina WheelShop</name>
     <company>ZE-Shina</company>
@@ -147,7 +147,7 @@
       <name_ua>Литий диск Land Rover R21 9.5J 5x120 ET49 ZE-0006</name_ua>
       <prices>
         <price>
-          <value>9440</value>
+          <value>9940</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -180,7 +180,7 @@
       <name_ua>Литий диск Mini R17 7.5J 5x112 ET54 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>3930</value>
+          <value>4140</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -216,7 +216,7 @@
       <name_ua>Литий диск Land Rover R21 9.5J 5x120 ET49 ZE-0008</name_ua>
       <prices>
         <price>
-          <value>10210</value>
+          <value>10740</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -249,7 +249,7 @@
       <name_ua>Литий диск Ford R17 7.5J 6x135 ET44</name_ua>
       <prices>
         <price>
-          <value>6330</value>
+          <value>6660</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -316,7 +316,7 @@
       <name_ua>Литі диски Mercedes R21 5x112 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>16840</value>
+          <value>17730</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -446,7 +446,7 @@
       <name_ua>Литі диски BMW R19 5x112 Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>7030</value>
+          <value>7400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -476,7 +476,7 @@
       <name_ua>Литий диск Mercedes R20 10J 5x112 ET48</name_ua>
       <prices>
         <price>
-          <value>10970</value>
+          <value>11550</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -510,7 +510,7 @@
       <name_ua>Литий диск Mercedes R19 8J 5x112 ET48</name_ua>
       <prices>
         <price>
-          <value>9440</value>
+          <value>9940</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -544,7 +544,7 @@
       <name_ua>Литі диски Mercedes R19 5x112 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>11480</value>
+          <value>12090</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -574,7 +574,7 @@
       <name_ua>Литий диск Toyota R22 9J 6x139.7 ET15 Matt Black Painted</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -608,7 +608,7 @@
       <name_ua>Литий диск Mercedes R20 8.5J 5x112 ET62 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5870</value>
+          <value>6180</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -643,7 +643,7 @@
       <name_ua>Литий диск Mini R18 7.5J 5x112 ET45 Satin Black</name_ua>
       <prices>
         <price>
-          <value>4340</value>
+          <value>4570</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -677,7 +677,7 @@
       <name_ua>Литий диск Audi R17 8J 5x112 ET48 Silver</name_ua>
       <prices>
         <price>
-          <value>3830</value>
+          <value>4030</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -710,7 +710,7 @@
       <name_ua>Литий диск Audi R20 9J 5x112 ET37 Silver</name_ua>
       <prices>
         <price>
-          <value>6790</value>
+          <value>7150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -745,7 +745,7 @@
       <name_ua>Литий диск Mercedes R19 8.5J 5x112 ET46 Matt Black Lip Polish</name_ua>
       <prices>
         <price>
-          <value>12760</value>
+          <value>13430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -778,7 +778,7 @@
       <name_ua>Литий диск Mercedes R22 10J 5x130 ET36 Matt Black Red Lip</name_ua>
       <prices>
         <price>
-          <value>15310</value>
+          <value>16120</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -877,7 +877,7 @@
       <name_ua>Литий диск GAC R18 8J 5x108 ET46 Matt Black</name_ua>
       <prices>
         <price>
-          <value>4590</value>
+          <value>4840</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -913,7 +913,7 @@
       <name_ua>Литі диски Mercedes R20 5x112 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>12760</value>
+          <value>13430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -944,7 +944,7 @@
       <name_ua>Литий диск Audi R20 8.5J 5x112 ET43 Gun Metal Machined Face</name_ua>
       <prices>
         <price>
-          <value>11010</value>
+          <value>11590</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -980,7 +980,7 @@
       <name_ua>Литий диск Toyota R18 8.5J 5x150 ET58 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5620</value>
+          <value>5920</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1013,7 +1013,7 @@
       <name_ua>Литий диск Lexus R18 8J 5x150 ET60 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5620</value>
+          <value>5920</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1082,7 +1082,7 @@
       <name_ua>Литий диск Skoda R20 8.5J 5x112 ET38 Satin Gray Machined Face</name_ua>
       <prices>
         <price>
-          <value>7030</value>
+          <value>7400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1115,7 +1115,7 @@
       <name_ua>Литий диск Audi R22 9.5J 5x112 ET36 Gloss Gray Machined Face</name_ua>
       <prices>
         <price>
-          <value>7400</value>
+          <value>7790</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1150,7 +1150,7 @@
       <name_ua>Литий диск Nissan R17 7.5J 6x114.3 ET25 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>4080</value>
+          <value>4300</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1185,7 +1185,7 @@
       <name_ua>Литі диски BMW R19 5x112 Machined Face Gunmetal (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8930</value>
+          <value>9400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1215,7 +1215,7 @@
       <name_ua>Литі диски BMW R19 5x112 Gloss Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8930</value>
+          <value>9400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1246,7 +1246,7 @@
       <name_ua>Литі диски Mercedes R19 5x112 Machined Face Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>10210</value>
+          <value>10740</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1278,7 +1278,7 @@
       <name_ua>Литий диск Mercedes R20 9.5J 5x130 ET35 Mb Matt</name_ua>
       <prices>
         <price>
-          <value>14290</value>
+          <value>15040</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1314,7 +1314,7 @@
       <name_ua>Литий диск Toyota R17 7.5J 6x139.7 ET25 Black Machined Face ZE-0049</name_ua>
       <prices>
         <price>
-          <value>5150</value>
+          <value>5430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1348,7 +1348,7 @@
       <name_ua>Литі диски BMW R19 5x112 Gray Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>5610</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1379,7 +1379,7 @@
       <name_ua>Литий диск Li Auto R21 9J 5x120 ET45 Gunmetal Machined Face</name_ua>
       <prices>
         <price>
-          <value>7660</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1413,7 +1413,7 @@
       <name_ua>Литий диск Mercedes R19 8.5J 5x112 ET35 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8170</value>
+          <value>8600</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1446,7 +1446,7 @@
       <name_ua>Литий диск Honda R20 8.5J 5x114.3 ET45</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1479,7 +1479,7 @@
       <name_ua>Литий диск Audi R22 9.5J 5x112 ET26 Gloss Black ZE-0055</name_ua>
       <prices>
         <price>
-          <value>8930</value>
+          <value>9400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1514,7 +1514,7 @@
       <name_ua>Литий диск Lexus R18 7.5J 5x114.3 ET40</name_ua>
       <prices>
         <price>
-          <value>5100</value>
+          <value>5370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1547,7 +1547,7 @@
       <name_ua>Литий диск Audi R20 9J 5x112 ET35 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>7910</value>
+          <value>8330</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1679,7 +1679,7 @@
       <name_ua>Литий диск Volkswagen R18 7.5J 5x100 ET42 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>4590</value>
+          <value>4840</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1752,7 +1752,7 @@
       <name_ua>Литі диски BMW R21 5x112 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>15310</value>
+          <value>16120</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1782,7 +1782,7 @@
       <name_ua>Литий диск Land Rover R22 9J 5x108 ET45 Gloss Black ZE-0065</name_ua>
       <prices>
         <price>
-          <value>17860</value>
+          <value>18800</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1819,7 +1819,7 @@
       <name_ua>Литий диск Land Rover R22 9J 5x108 ET45 Gunmetal Mg</name_ua>
       <prices>
         <price>
-          <value>17860</value>
+          <value>18800</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1853,7 +1853,7 @@
       <name_ua>Литий диск Mercedes R22 10J 5x130 ET36 Matt Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>24250</value>
+          <value>25520</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1886,7 +1886,7 @@
       <name_ua>Литий диск Volkswagen R17 7J 5x112 ET46 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>4640</value>
+          <value>4880</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1920,7 +1920,7 @@
       <name_ua>Литий диск Mercedes R19 9J 5x112 ET52 Matt Black Lip Polish</name_ua>
       <prices>
         <price>
-          <value>12760</value>
+          <value>13430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1953,7 +1953,7 @@
       <name_ua>Литий диск Nissan R20 8J 6x139.7 ET35 Black Machined Face ZE-0070</name_ua>
       <prices>
         <price>
-          <value>8430</value>
+          <value>8880</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -1987,7 +1987,7 @@
       <name_ua>Литий диск Audi R21 9.5J 5x112 ET35 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>9440</value>
+          <value>9940</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2020,7 +2020,7 @@
       <name_ua>Литий диск Mercedes R22 10J 5x130 ET36 Platinum</name_ua>
       <prices>
         <price>
-          <value>16590</value>
+          <value>17460</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2054,7 +2054,7 @@
       <name_ua>Литі диски Mercedes R19 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>5860</value>
+          <value>6170</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2085,7 +2085,7 @@
       <name_ua>Литий диск Volkswagen R19 8.5J 5x112 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6120</value>
+          <value>6450</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2118,7 +2118,7 @@
       <name_ua>Литий диск Audi R21 8.5J 5x112 ET34 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6890</value>
+          <value>7250</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2154,7 +2154,7 @@
       <name_ua>Литі диски Mercedes R21 5x112 Satin Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8170</value>
+          <value>8600</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2164,7 +2164,7 @@
       <portal_category_id>801220</portal_category_id>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-87970241-1.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-87970241-2.jpg</picture>
-      <quantity_in_stock>40</quantity_in_stock>
+      <quantity_in_stock>36</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Перед, 2 шт.: R21, 10J, ET44</li><li>Зад, 2 шт.: R21, 11J, ET42</li><li>PCD 5x112, DIA 66.6</li><li>Цвет: Satin Black (чёрный сатин)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Разноширокий комплект 2+2: 2 диска на переднюю ось и 2 на заднюю. Продаём только комплектом, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для (разноширокая схема перед/зад):</strong></p><ul><li>Mercedes GLE-class AMG II (W167) (2018-2026)</li><li>Mercedes GLE-class Coupe AMG II (С167) (2020-2026)</li><li>Mercedes GLE-class II (W167) (2018-2026)</li><li>Mercedes GLS-class (X167) (2019-2026)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Перед, 2 шт.: R21, 10J, ET44</li><li>Зад, 2 шт.: R21, 11J, ET42</li><li>PCD 5x112, DIA 66.6</li><li>Колір: Satin Black (чорний сатин)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Різноширокий комплект 2+2: 2 диски на передню вісь і 2 на задню. Продаємо тільки комплектом, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для (різноширока схема перед/зад):</strong></p><ul><li>Mercedes GLE-class AMG II (W167) (2018-2026)</li><li>Mercedes GLE-class Coupe AMG II (С167) (2020-2026)</li><li>Mercedes GLE-class II (W167) (2018-2026)</li><li>Mercedes GLS-class (X167) (2019-2026)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">Mercedes</param>
@@ -2184,7 +2184,7 @@
       <name_ua>Литий диск Volkswagen R20 8.5J 5x112 ET34 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>7030</value>
+          <value>7400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2218,7 +2218,7 @@
       <name_ua>Литий диск BMW R19 8J 5x112 ET32 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6790</value>
+          <value>7150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2284,7 +2284,7 @@
       <name_ua>Литий диск Audi R19 8.5J 5x112 ET39 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5610</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2319,7 +2319,7 @@
       <name_ua>Литі диски BMW R20 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад) ZE-P14</name_ua>
       <prices>
         <price>
-          <value>6380</value>
+          <value>6720</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2352,7 +2352,7 @@
       <name_ua>Литий диск Volkswagen R21 9J 5x112 ET34 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>7660</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2386,7 +2386,7 @@
       <name_ua>Литі диски Tesla R21 5x114.3 Matte Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>7660</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2420,7 +2420,7 @@
       <name_ua>Литий диск Li Auto R20 8.5J 5x120 ET45 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6380</value>
+          <value>6720</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2454,7 +2454,7 @@
       <name_ua>Литий диск Nissan R20 8J 6x139.7 ET35 Black Machined Face ZE-0089</name_ua>
       <prices>
         <price>
-          <value>8430</value>
+          <value>8880</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2488,7 +2488,7 @@
       <name_ua>Литі диски Porsche R21 5x130 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>15310</value>
+          <value>16120</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2520,7 +2520,7 @@
       <name_ua>Литі диски Porsche R21 5x130 Black White Flange (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>17860</value>
+          <value>18800</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2554,7 +2554,7 @@
       <name_ua>Литий диск Audi R22 10J 5x112 ET21</name_ua>
       <prices>
         <price>
-          <value>14800</value>
+          <value>15580</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2625,7 +2625,7 @@
       <name_ua>Литий диск Volkswagen R19 8J 5x112 ET43 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5460</value>
+          <value>5750</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2658,7 +2658,7 @@
       <name_ua>Литий диск Geely R20 8J 5x108 ET52 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>7500</value>
+          <value>7890</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2693,7 +2693,7 @@
       <name_ua>Литий диск Mercedes R18 7.5J 5x112 ET52 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5100</value>
+          <value>5370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2726,7 +2726,7 @@
       <name_ua>Литий диск Mercedes R17 8J 5x112 ET37 Silver Machined Face</name_ua>
       <prices>
         <price>
-          <value>5150</value>
+          <value>5430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2761,7 +2761,7 @@
       <name_ua>Литий диск Audi R17 8J 5x112 ET38 Silver</name_ua>
       <prices>
         <price>
-          <value>4220</value>
+          <value>4440</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2830,7 +2830,7 @@
       <name_ua>Литий диск Audi R22 10J 5x112 ET26</name_ua>
       <prices>
         <price>
-          <value>15310</value>
+          <value>16120</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2863,7 +2863,7 @@
       <name_ua>Литі диски BMW R22 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>14550</value>
+          <value>15310</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2893,7 +2893,7 @@
       <name_ua>Литі диски Mercedes R22 5x112 Matt Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>19140</value>
+          <value>20150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2923,7 +2923,7 @@
       <name_ua>Литий диск Land Rover R22 9J 5x120 ET42</name_ua>
       <prices>
         <price>
-          <value>13270</value>
+          <value>13970</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2956,7 +2956,7 @@
       <name_ua>Литі диски BMW R20 5x112 (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>6890</value>
+          <value>7250</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -2991,7 +2991,7 @@
       <name_ua>Литий диск Ford R18 8J 5x108 ET45 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>4850</value>
+          <value>5100</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3028,7 +3028,7 @@
       <name_ua>Литий диск Audi R20 9J 5x112 ET26 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>7500</value>
+          <value>7890</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3064,7 +3064,7 @@
       <name_ua>Литий диск Audi R19 8.5J 5x112 ET32 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6560</value>
+          <value>6900</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3097,7 +3097,7 @@
       <name_ua>Литий диск Audi R22 9.5J 5x112 ET26 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8900</value>
+          <value>9370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3133,7 +3133,7 @@
       <name_ua>Литий диск Audi R23 10J 5x112 ET15 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>11230</value>
+          <value>11820</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3169,7 +3169,7 @@
       <name_ua>Литий диск Volvo R22 9J 5x108 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>9370</value>
+          <value>9860</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3202,7 +3202,7 @@
       <name_ua>Литий диск Dodge R20 9J 5x115 ET21 Satin Black</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3215,7 +3215,7 @@
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-14b1cc3f-3.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-14b1cc3f-4.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-14b1cc3f-5.jpg</picture>
-      <quantity_in_stock>16</quantity_in_stock>
+      <quantity_in_stock>20</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Размер: R20, ширина 9J</li><li>PCD 5x115, вылет ET21, DIA 71.5</li><li>Цвет: Satin Black (чёрный сатин)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Продаём комплектом из 4 дисков, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для:</strong></p><ul><li>Dodge Challenger (2008-2026)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Розмір: R20, ширина 9J</li><li>PCD 5x115, виліт ET21, DIA 71.5</li><li>Колір: Satin Black (чорний сатин)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Продаємо комплектом з 4 дисків, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для:</strong></p><ul><li>Dodge Challenger (2008-2026)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">Dodge</param>
@@ -3238,7 +3238,7 @@
       <name_ua>Литий диск Audi R22 9.5J 5x112 ET26 Gloss Black ZE-0117</name_ua>
       <prices>
         <price>
-          <value>8680</value>
+          <value>9130</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3271,7 +3271,7 @@
       <name_ua>Литий диск Ford R17 8.5J 6x135 ET34 Matt Black</name_ua>
       <prices>
         <price>
-          <value>12760</value>
+          <value>13430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3305,7 +3305,7 @@
       <name_ua>Литий диск Ford R17 8.5J 6x135 ET34 Matt Grey</name_ua>
       <prices>
         <price>
-          <value>12760</value>
+          <value>13430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3338,7 +3338,7 @@
       <name_ua>Литий диск Ford R17 8.5J 6x139.7 ET55 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>4850</value>
+          <value>5100</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3406,7 +3406,7 @@
       <name_ua>Литий диск Audi R22 10J 5x112 ET15 Satin Black</name_ua>
       <prices>
         <price>
-          <value>9370</value>
+          <value>9860</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3439,7 +3439,7 @@
       <name_ua>Литий диск Volkswagen R18 8J 5x112 ET44 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5390</value>
+          <value>5670</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3539,7 +3539,7 @@
       <name_ua>Литий диск Toyota R20 8J 6x139.7 ET60 Matte Black</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3575,7 +3575,7 @@
       <name_ua>Литий диск Land Rover R22 9J 5x108 ET45 Gloss Black ZE-0128</name_ua>
       <prices>
         <price>
-          <value>11710</value>
+          <value>12330</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3643,7 +3643,7 @@
       <name_ua>Литий диск Audi R23 10J 5x112 ET20 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>10780</value>
+          <value>11340</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3677,7 +3677,7 @@
       <name_ua>Литий диск BMW R20 9.5J 5x112 ET40 Matte Gunmetal Machined Face</name_ua>
       <prices>
         <price>
-          <value>7260</value>
+          <value>7650</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3710,7 +3710,7 @@
       <name_ua>Литий диск Mitsubishi R17 7J 6x139.7 ET38 Gunmetal Machined Face</name_ua>
       <prices>
         <price>
-          <value>5150</value>
+          <value>5430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3743,7 +3743,7 @@
       <name_ua>Литий диск Cadillac R17 8J 5x115 ET32 Silver</name_ua>
       <prices>
         <price>
-          <value>4290</value>
+          <value>4510</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3778,7 +3778,7 @@
       <name_ua>Литий диск Toyota R18 8J 5x150 ET60 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5620</value>
+          <value>5920</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3844,7 +3844,7 @@
       <name_ua>Литий диск Toyota R18 8J 6x139.7 ET50 Gunmetal</name_ua>
       <prices>
         <price>
-          <value>6090</value>
+          <value>6410</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3913,7 +3913,7 @@
       <name_ua>Литі диски BMW R20 5x112 Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8900</value>
+          <value>9370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3943,7 +3943,7 @@
       <name_ua>Литий диск Volkswagen R17 7J 5x112 ET46 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>4920</value>
+          <value>5180</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -3976,7 +3976,7 @@
       <name_ua>Литий диск Toyota R17 6.5J 5x114.3 ET35 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>4870</value>
+          <value>5130</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4044,7 +4044,7 @@
       <name_ua>Литий диск Toyota R17 7.5J 6x139.7 ET15 Gunmetal Machined Face</name_ua>
       <prices>
         <price>
-          <value>5150</value>
+          <value>5430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4077,7 +4077,7 @@
       <name_ua>Литий диск Volkswagen R18 8J 5x112 ET44 Gloss Black Machined Face ZE-0144</name_ua>
       <prices>
         <price>
-          <value>5360</value>
+          <value>5640</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4143,7 +4143,7 @@
       <name_ua>Литий диск Volkswagen R19 8J 5x112 ET40 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>6470</value>
+          <value>6810</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4177,7 +4177,7 @@
       <name_ua>Литі диски BMW R20 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад) ZE-P23</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4207,7 +4207,7 @@
       <name_ua>Литі диски BMW R20 5x112 Gloss Black (комплект 2+2, різні перед і зад) ZE-P24</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4238,7 +4238,7 @@
       <name_ua>Литі диски BMW R20 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад) ZE-P25</name_ua>
       <prices>
         <price>
-          <value>7500</value>
+          <value>7890</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4268,7 +4268,7 @@
       <name_ua>Литі диски Mercedes R20 5x112 Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4298,7 +4298,7 @@
       <name_ua>Литі диски BMW R20 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад) ZE-P27</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4329,7 +4329,7 @@
       <name_ua>Литий диск Mazda R20 7.5J 5x114.3 ET45 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>7120</value>
+          <value>7500</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4365,7 +4365,7 @@
       <name_ua>Литий диск Volvo R21 9J 5x108 ET38 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4428,7 +4428,7 @@
       <name_ua>Литі диски Mercedes R21 5x112 Gloss Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>8680</value>
+          <value>9130</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4525,7 +4525,7 @@
       <name_ua>Литий диск Volkswagen R18 8J 5x112 ET44 Gloss Black Machined Face ZE-0164</name_ua>
       <prices>
         <price>
-          <value>5440</value>
+          <value>5720</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4558,7 +4558,7 @@
       <name_ua>Литий диск Renault R18 7J 5x114.3 ET45 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5360</value>
+          <value>5640</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4591,7 +4591,7 @@
       <name_ua>Литий диск Kia R18 7.5J 5x114.3 ET51 Gloss Black Machined Face ZE-0166</name_ua>
       <prices>
         <price>
-          <value>5440</value>
+          <value>5720</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4657,7 +4657,7 @@
       <name_ua>Литі диски BMW R19 5x112 Satin Black Lip Polish (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>6790</value>
+          <value>7150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4689,7 +4689,7 @@
       <name_ua>Литі диски BMW R19 5x112 Satin Black (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>6790</value>
+          <value>7150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4721,7 +4721,7 @@
       <name_ua>Литі диски Porsche R20 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>7500</value>
+          <value>7890</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4752,7 +4752,7 @@
       <name_ua>Литі диски Volkswagen R21 5x112 Gloss Black Machined Face (комплект 2+2, різні перед і зад)</name_ua>
       <prices>
         <price>
-          <value>7660</value>
+          <value>8060</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4782,7 +4782,7 @@
       <name_ua>Литий диск Volkswagen R17 7.5J 5x112 ET40 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>4590</value>
+          <value>4830</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4815,7 +4815,7 @@
       <name_ua>Литий диск Honda R18 8J 5x114.3 ET45 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>5340</value>
+          <value>5620</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4848,7 +4848,7 @@
       <name_ua>Литий диск Honda R18 8J 5x114.3 ET50 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>5340</value>
+          <value>5620</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4881,7 +4881,7 @@
       <name_ua>Литий диск Honda R18 8J 5x114.3 ET50 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5360</value>
+          <value>5640</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -4914,7 +4914,7 @@
       <name_ua>Литий диск Volvo R19 8.5J 5x108 ET48 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6420</value>
+          <value>6760</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5015,7 +5015,7 @@
       <name_ua>Литий диск Toyota R20 8J 6x139.7 ET60 Satin Black</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5050,7 +5050,7 @@
       <name_ua>Литий диск Toyota R19 7.5J 5x114.3 ET40 Hyper Black</name_ua>
       <prices>
         <price>
-          <value>6470</value>
+          <value>6810</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5083,7 +5083,7 @@
       <name_ua>Литий диск Toyota R19 8.5J 5x114.3 ET40 Hyper Black</name_ua>
       <prices>
         <price>
-          <value>6650</value>
+          <value>7000</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5119,7 +5119,7 @@
       <name_ua>Литий диск Volkswagen R17 7J 5x112 ET45 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>4690</value>
+          <value>4930</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5224,7 +5224,7 @@
       <name_ua>Литий диск Skoda R18 7.5J 5x112 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5530</value>
+          <value>5820</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5257,7 +5257,7 @@
       <name_ua>Литий диск Volkswagen R18 8J 5x112 ET40 Gloss Black ZE-0190</name_ua>
       <prices>
         <price>
-          <value>5390</value>
+          <value>5670</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5291,7 +5291,7 @@
       <name_ua>Литий диск Volkswagen R18 7.5J 5x112 ET45 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>5100</value>
+          <value>5370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5324,7 +5324,7 @@
       <name_ua>Литий диск Volkswagen R19 8J 5x112 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6120</value>
+          <value>6450</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5357,7 +5357,7 @@
       <name_ua>Литий диск Audi R19 8J 5x112 ET45 Gloss Black Machined Face ZE-0193</name_ua>
       <prices>
         <price>
-          <value>5610</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5391,7 +5391,7 @@
       <name_ua>Литий диск Audi R19 8J 5x112 ET45 Gloss Black Machined Face ZE-0194</name_ua>
       <prices>
         <price>
-          <value>5610</value>
+          <value>5910</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5425,7 +5425,7 @@
       <name_ua>Литий диск Audi R19 8J 5x112 ET45 Matt Dark Gun Metal</name_ua>
       <prices>
         <price>
-          <value>7030</value>
+          <value>7400</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5458,7 +5458,7 @@
       <name_ua>Литий диск Volkswagen R20 8.5J 5x112 ET38 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>7730</value>
+          <value>8140</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5491,7 +5491,7 @@
       <name_ua>Литий диск Porsche R21 9.5J 5x130 ET46 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8430</value>
+          <value>8880</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5524,7 +5524,7 @@
       <name_ua>Литий диск BMW R17 7.5J 5x112 ET35 Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>4920</value>
+          <value>5180</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5591,7 +5591,7 @@
       <name_ua>Литий диск Toyota R20 8.5J 6x139.7 ET55 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5624,7 +5624,7 @@
       <name_ua>Литий диск Toyota R20 7.5J 6x139.7 ET60 Matt Black</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5658,7 +5658,7 @@
       <name_ua>Литий диск Toyota R17 7J 5x114.3 ET35 Gloss Black</name_ua>
       <prices>
         <price>
-          <value>5150</value>
+          <value>5430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5694,7 +5694,7 @@
       <name_ua>Литий диск Nissan R17 7.5J 5x114.3 ET45 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>5150</value>
+          <value>5430</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5761,7 +5761,7 @@
       <name_ua>Литий диск Toyota R18 8J 6x139.7 ET60 Satin Black</name_ua>
       <prices>
         <price>
-          <value>6090</value>
+          <value>6410</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5795,7 +5795,7 @@
       <name_ua>Литий диск BMW R19 8.5J 5x112 ET26 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>6790</value>
+          <value>7150</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5828,7 +5828,7 @@
       <name_ua>Литі диски BMW R20 5x112 Gloss Black (комплект 2+2, різні перед і зад) ZE-P33</name_ua>
       <prices>
         <price>
-          <value>7970</value>
+          <value>8380</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5862,7 +5862,7 @@
       <name_ua>Литий диск Volkswagen R20 9J 5x112 ET33 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>7730</value>
+          <value>8140</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5897,7 +5897,7 @@
       <name_ua>Литий диск Volvo R21 9J 5x108 ET38 Gloss Black Machined Face</name_ua>
       <prices>
         <price>
-          <value>8200</value>
+          <value>8630</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -5907,7 +5907,7 @@
       <portal_category_id>801220</portal_category_id>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-d94e235a-1.jpg</picture>
       <picture>https://deniszshina-dot.github.io/ze-shina-feed/photos/ze-d94e235a-2.jpg</picture>
-      <quantity_in_stock>16</quantity_in_stock>
+      <quantity_in_stock>20</quantity_in_stock>
       <description><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Размер: R21, ширина 9J</li><li>PCD 5x108, вылет ET38, DIA 63.4</li><li>Цвет: Gloss Black Machined Face (чёрный глянец с проточкой)</li><li>Новые, в наличии</li></ul><p><strong>Цена и комплект:</strong></p><ul><li>Цена за 1 диск. Продаём комплектом из 4 дисков, минимальный заказ 4 шт.</li><li>В комплекте 4 центральные заглушки.</li></ul><p><strong>Подходят для:</strong></p><ul><li>Volvo XC60 II (2017-2026)</li><li>Volvo XC90 II (2014-2026)</li></ul><p>Перед покупкой проверим совместимость по марке, модели, году выпуска и двигателю вашего авто: напишите эти данные в чат.</p><p><strong>Можем сразу докомплектовать:</strong></p><ul><li>датчики давления в шинах (TPMS)</li><li>крепёж: болты, гайки, секретки</li><li>вентили и центровочные кольца</li></ul><p><strong>Самовывоз, примерка и установка:</strong> Харьков (шоурум: ул. Шевченко, 24), Киев, Одесса, Днепр, Львов, Винница, Хмельницкий, Полтава, Мукачево и другие города, уточняйте в чате.</p><p><strong>Доставка и оплата:</strong> Новой почтой по всей Украине, отправка в день заказа или на следующий день. Оплата на карту или счёт ФОП (с НДС), частями через Монобанк.</p><p>Работаем с 2007 года.</p>]]></description>
       <description_ua><![CDATA[<p><strong>Характеристики:</strong></p><ul><li>Розмір: R21, ширина 9J</li><li>PCD 5x108, виліт ET38, DIA 63.4</li><li>Колір: Gloss Black Machined Face (чорний глянець з проточкою)</li><li>Нові, у наявності</li></ul><p><strong>Ціна та комплект:</strong></p><ul><li>Ціна за 1 диск. Продаємо комплектом з 4 дисків, мінімальне замовлення 4 шт.</li><li>У комплекті 4 центральні заглушки.</li></ul><p><strong>Підходять для:</strong></p><ul><li>Volvo XC60 II (2017-2026)</li><li>Volvo XC90 II (2014-2026)</li></ul><p>Перед покупкою перевіримо сумісність за маркою, моделлю, роком випуску та двигуном вашого авто: напишіть ці дані в чат.</p><p><strong>Можемо одразу доукомплектувати:</strong></p><ul><li>датчики тиску в шинах (TPMS)</li><li>кріплення: болти, гайки, секретки</li><li>вентилі та центрувальні кільця</li></ul><p><strong>Самовивіз, примірка та встановлення:</strong> Харків (шоурум: вул. Шевченка, 24), Київ, Одеса, Дніпро, Львів, Вінниця, Хмельницький, Полтава, Мукачево та інші міста, уточнюйте в чаті.</p><p><strong>Доставка та оплата:</strong> Новою поштою по всій Україні, відправка в день замовлення або наступного дня. Оплата на картку або рахунок ФОП (з ПДВ), частинами через Монобанк.</p><p>Працюємо з 2007 року.</p>]]></description_ua>
       <param name="Бренд авто">Volvo</param>
@@ -7329,7 +7329,7 @@
       <name_ua>Литий диск Cupra R19 8.5J 5x112 ET38 Satin Black Machined Spokes Bronze Coating</name_ua>
       <prices>
         <price>
-          <value>5870</value>
+          <value>6180</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -7366,7 +7366,7 @@
       <name_ua>Литий диск Cupra R18 8J 5x112 ET45 Satin Black Machined Spokes Bronze Coating</name_ua>
       <prices>
         <price>
-          <value>5100</value>
+          <value>5370</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -7403,7 +7403,7 @@
       <name_ua>Литий диск Chevrolet R17 8J 6x139.7 ET24 Silver Machined Face</name_ua>
       <prices>
         <price>
-          <value>6090</value>
+          <value>6410</value>
           <quantity>4</quantity>
         </price>
       </prices>
@@ -7440,7 +7440,7 @@
       <name_ua>Литий диск Suzuki R17 7.5J 5x139.7 ET10 Gloss Black Lip Polish</name_ua>
       <prices>
         <price>
-          <value>6090</value>
+          <value>6410</value>
           <quantity>4</quantity>
         </price>
       </prices>
