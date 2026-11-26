@@ -146,7 +146,7 @@ input.good{border-color:#4ADE80}
   </div>
   <div class="g3">
     <a class="btn" href="https://t.me/Den_ZEshina">Telegram</a>
-    <a class="btn" href="viber://chat?number=%2B380957722173">Viber</a>
+    <a class="btn" id="vb" href="viber://chat?number=%2B380957722173">Viber</a>
     <a class="btn" href="tel:+380957722173">Подзвонити</a>
   </div>
   <div class="place">
@@ -216,6 +216,7 @@ function go(v){LASTSTEP=-1;S.errCard='';document.querySelectorAll('.view').forEa
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
 function openNow(){const n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()/60;const end=d===0?0:d===6?15:18;const o=d!==0&&h>=9&&h<end;const e=$('#open');e.querySelector('span').textContent=o?'Відчинено до '+end+':00':'Зараз зачинено';e.style.background=o?'#1B2A1F':'#2A1B1B';e.style.color=o?'#7BE39A':'#F0A3A3';e.querySelector('i').style.background=o?'#4ADE80':'#F87171';}
 openNow();
+(function(){const v=document.getElementById('vb');if(v&&/Android/i.test(navigator.userAgent))v.href='viber://chat?number=380957722173';})();
 let BOT='';
 function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)||'null');if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,JSON.stringify(v));}catch(e){return null;}}
 function saveMine(o){ls('zb',o);showMine();}
