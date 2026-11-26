@@ -147,7 +147,7 @@ input.good{border-color:#4ADE80}
   <div class="g3">
     <a class="btn" href="https://t.me/Den_ZEshina">Telegram</a>
     <a class="btn" href="viber://chat?number=%2B380992232552">Viber</a>
-    <a class="btn" href="tel:+380992232552">Подзвонити</a>
+    <a class="btn" href="tel:+380957722173">Подзвонити</a>
   </div>
   <div class="place">
     <div class="row"><div class="h" style="font-size:18px">ХАРКІВ</div><a class="pill" href="https://www.google.com/maps/dir/?api=1&destination=%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%2C+%D0%B2%D1%83%D0%BB.+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0%2C+24">Маршрут</a></div>
@@ -229,7 +229,7 @@ function cancelMine(btn){const o=ls('zb');if(!o)return;
  btn.disabled=true;btn.textContent='Скасовуємо…';
  fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'cancel',id:o.id,phone:o.phone})}).then(r=>r.json()).then(j=>{
   if(j.ok){ls('zb',null);delete SL[o.date];btn.textContent='Запис скасовано ✓';setTimeout(()=>{showMine();if(S.step===3)go('links');},1200);}
-  else{btn.disabled=false;delete btn.dataset.sure;btn.textContent='Не вдалося — подзвоніть 099 223 25 52';}
+  else{btn.disabled=false;delete btn.dataset.sure;btn.textContent='Не вдалося — подзвоніть 095 772 21 73';}
  }).catch(()=>{btn.disabled=false;delete btn.dataset.sure;btn.textContent='Немає зв’язку — спробуйте ще раз';});}
 showMine();
 const SL={};
@@ -321,14 +321,14 @@ function render(){
    if(show==='p'||okP||S.plate.replace(/\s/g,'').length>=8||(S.plate&&show==='t')){pi.classList.toggle('bad',!okP);pi.classList.toggle('good',okP);$('#e-plate').textContent=okP?'':'Формат: 2 літери, 4 цифри, 2 літери — напр. AX 1234 KA';}
    if(show==='t'||okT||S.phone.replace(/\D/g,'').length>=9){ph.classList.toggle('bad',!okT);ph.classList.toggle('good',okT);$('#e-phone').textContent=okT?'':'Введіть мобільний номер повністю: +38 0XX XXX XX XX';}
    $('#next').disabled=!(okP&&okT);if(okP)lookup();else showHit();}
-  if(S.errCard)b.insertAdjacentHTML('afterbegin','<div class="errcard"><div><b>⚠ </b>'+S.errCard+'</div><a class="btn" href="tel:+380992232552">📞 Подзвонити 099 223 25 52</a></div>');
+  if(S.errCard)b.insertAdjacentHTML('afterbegin','<div class="errcard"><div><b>⚠ </b>'+S.errCard+'</div><a class="btn" href="tel:+380957722173">📞 Подзвонити 095 772 21 73</a></div>');
   $('#hint').textContent='* Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();flash();return;
  }else{
   b.insertAdjacentHTML('beforeend','<div class="ok"><div class="c"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>'+
    '<div class="h" style="font-size:22px">Ви записані!</div><div style="font-size:17px;color:#C9CCD0">'+whenTxt()+'<br>'+svcText()+'<br>'+S.plate+(S.car?' · '+S.car:'')+'<br>Шини: '+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase()+'<br>+38 0'+S.phone+'<br>вул. Шевченка, 24</div>'+
    (BOT&&S.bid?'<a class="tg" target="_blank" rel="noopener" href="https://t.me/'+BOT+'?start='+S.bid+'">🔔 Нагадати мені в Telegram</a>':'')+
    '<div class="note">🔑 Не забудьте ключ від секреток, якщо вони стоять.<br>🚨 Під час повітряної тривоги роботу призупиняємо, можлива невелика затримка.<br>Плани змінились? Скасуйте запис — місце знадобиться іншим.</div>'+
-   '<a class="btn" style="width:100%;min-height:52px;font-size:17px" href="tel:+380992232552">📞 Подзвонити нам · 099 223 25 52</a>'+
+   '<a class="btn" style="width:100%;min-height:52px;font-size:17px" href="tel:+380957722173">📞 Подзвонити нам · 095 772 21 73</a>'+
    '<button class="lnk" type="button" id="cxl">Скасувати запис</button>'+
    '<button class="tile" style="min-height:48px;width:100%" type="button" id="home">← На головну</button></div>');
   $('#home').onclick=()=>go('links');$('#cxl').onclick=()=>cancelMine($('#cxl'));
