@@ -2,7 +2,7 @@
 // Токен бота НЕ в коді: Налаштування проєкту → Властивості скрипту → BOT_TOKEN.
 var SHEET_ID = '1Ao7XECDUYsqZKzbzvkwmcvZkr8LAwoo9Fciv22IKq4c';
 var PER_HOUR = 2;                       // машин на годину
-var HOURS = {1:[9,17],2:[9,17],3:[9,17],4:[9,17],5:[9,17],6:[9,14]}; // день тижня → [перша, остання] година запису; неділя — вихідний
+var HOURS = {1:[9,16],2:[9,16],3:[9,16],4:[9,16],5:[9,16],6:[9,14]}; // день тижня → [перша, остання] година запису; неділя — вихідний
 var TZ = 'Europe/Kyiv';
 var DAYS_AHEAD = 60;
 var TYRES = { storage: 'на зберіганні у нас', 'new': 'нові, куплені у нас (чекають монтажу)', bring: 'привезе з собою' };
@@ -109,7 +109,7 @@ function slots_(ymd) {
 function book_(b) {
   var plate = normPlate_(b.plate || '');
   var phone = String(b.phone || '').replace(/\D/g, '').replace(/^380/, '').replace(/^0/, '');
-  if (!/^[ABCEHIKMOPTX]{2}\d{4}[A-Z]{2}$/.test(plate)) return { ok: false, error: 'bad_plate' };
+  if ((plate || b.source === 'сайт') && !/^[ABCEHIKMOPTX]{2}\d{4}[A-Z]{2}$/.test(plate)) return { ok: false, error: 'bad_plate' };
   if (b.source === 'сайт' && !/^(39|50|63|66|67|68|73|75|77|91|92|93|94|95|96|97|98|99)\d{7}$/.test(phone)) return { ok: false, error: 'bad_phone' };
   var di = dayInfo_(String(b.date || ''));
   if (!di || di.closed) return { ok: false, error: 'bad_date' };
@@ -123,26 +123,26 @@ function book_(b) {
     var busy = busyMap_(b.date);
     if ((busy[t] || 0) >= PER_HOUR) return { ok: false, error: 'full' };
     var sh = bookSheet_();
-    var plateF0 = plate.slice(0, 2) + ' ' + plate.slice(2, 6) + ' ' + plate.slice(6);
+    var plateF0 = plate ? plate.slice(0, 2) + ' ' + plate.slice(2, 6) + ' ' + plate.slice(6) : '';
     var ex = sh.getDataRange().getDisplayValues();
-    for (var k = 1; k < ex.length; k++) {
+    for (var k = 1; plate && k < ex.length; k++) {
       if (ex[k][2] === b.date && ex[k][4] === plateF0 && ex[k][10] !== 'скасовано') return { ok: false, error: 'dup' };
     }
     var id = String(Date.now()).slice(-6);
-    var st = storageFor_(plate);
+    var st = plate ? storageFor_(plate) : null;
     var stTxt = st ? (st.unsure ? 'є запис, примітка: ' + st.note : st.tyres + (st.discs ? ' + диски' : '') + (st.note ? ' [' + st.note + ']' : '')) : '';
     var services = String(b.services || '').slice(0, 200);
     var tyres = TYRES[b.tyres] || String(b.tyres || '').slice(0, 60);
-    var car = String(b.car || '').slice(0, 60);
-    var plateF = plate.slice(0, 2) + ' ' + plate.slice(2, 6) + ' ' + plate.slice(6);
-    var phoneF = phone ? '+380' + phone : '';
+    var car = String(b.car || '').slice(0, 120);
+    var plateF = plateF0;
+    var phoneF = phone.length === 9 ? '0' + phone.slice(0, 2) + ' ' + phone.slice(2, 5) + ' ' + phone.slice(5, 7) + ' ' + phone.slice(7) : '';
     sh.appendRow([id, Utilities.formatDate(new Date(), TZ, 'dd.MM.yyyy HH:mm'), b.date, t, plateF, car, phoneF, services, tyres, b.source, 'нова', stTxt, '']);
     var row = sh.getLastRow();
     var left = PER_HOUR - (busy[t] || 0) - 1;
     var msg = tg_('sendMessage', {
       chat_id: chatId_(), parse_mode: 'HTML',
       text: '🆕 <b>Новий запис</b> (' + esc_(b.source) + ')\n' + niceDate_(b.date) + ' · <b>' + t + '</b> (вільних місць на цю годину: ' + left + ')\n\n' +
-            '🚗 <b>' + plateF + '</b>' + (car ? ' · ' + esc_(car) : '') + '\n' +
+            '🚗 <b>' + (plateF || 'без номера') + '</b>' + (car ? ' · ' + esc_(car) : '') + '\n' +
             (phoneF ? '📞 ' + phoneF + '\n' : '') +
             (services ? '🔧 ' + esc_(services) + '\n' : '') +
             '📦 Шини: ' + esc_(tyres) + (stTxt ? '\n🗄 На зберіганні: ' + esc_(stTxt) : ''),
@@ -215,24 +215,57 @@ function handle_(u) {
   }
   if (String(m.chat.id) !== String(chatId_())) return;
   if (/^\/(plan|план)/i.test(text)) { sendPlan_(m.chat.id, text.split(/\s+/)[1]); return; }
-  if (/^\/(zapis|запис)/i.test(text)) {
-    var args = text.replace(/^\/\S+\s*/, '');
-    var mm = args.match(/^(\d{1,2})\.(\d{1,2})\s+(\d{1,2})(?::00)?\s+(.+)$/);
-    var pm = mm && mm[4].match(/([A-Za-zА-Яа-яІіЙй]{2})\s?(\d{4})\s?([A-Za-zА-Яа-яІіЙй]{2})/);
-    if (!mm || !pm) {
-      tg_('sendMessage', { chat_id: m.chat.id, text: 'Формат: /запис 28.11 10 AX1234KA Toyota RAV4 своя\n(шини: своя / зберігання / нові)' });
-      return;
-    }
-    var y = Number(Utilities.formatDate(new Date(), TZ, 'yyyy'));
-    var ymd = y + '-' + ('0' + mm[2]).slice(-2) + '-' + ('0' + mm[1]).slice(-2);
-    if (ymd < Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd')) ymd = (y + 1) + ymd.slice(4);
-    var tail = mm[4].replace(pm[0], ' ').replace(/\s+/g, ' ').trim();
-    var ty = /збер|хран/i.test(tail) ? 'storage' : /нов/i.test(tail) ? 'new' : 'bring';
-    var car = tail.replace(/(^|\s)(своя|свої|свои|збер\S*|хран\S*|нов\S*)(\s|$)/ig, ' ').trim();
-    var res = book_({ date: ymd, time: ('0' + mm[3]).slice(-2) + ':00', plate: pm[1] + pm[2] + pm[3], car: car,
-                      phone: '', services: 'телефонний запис', tyres: ty, source: 'телефон (' + (m.from.first_name || '') + ')' });
-    if (!res.ok) tg_('sendMessage', { chat_id: m.chat.id, text: 'Не записав: ' + ({ full: 'на цю годину вже 2 машини', bad_plate: 'не бачу номер авто', bad_date: 'дата поза графіком', bad_time: 'час поза графіком', dup: 'це авто вже записане на цей день' }[res.error] || res.error) });
+  if (/^\/(zapis|запис)/i.test(text)) { cmdBook_(m, text); return; }
+  if (/^\/(cancel|otmena|скасувати|отмена)/i.test(text)) { cmdCancel_(m, text); return; }
+}
+
+var PLATE_RE = /(^|[^A-Za-zА-Яа-яІіЇїЙй0-9])([A-Za-zА-Яа-яІіЇїЙй]{2})\s?(\d{4})\s?([A-Za-zА-Яа-яІіЇїЙй]{2})(?=$|[^A-Za-zА-Яа-яІіЇїЙй0-9])/;
+var PHONE_RE = /(?:\+?38\s?)?0(?:[\s-]?\d){9}(?!\d)/;
+
+// "28.11 10 ..." → {ymd, time, rest}
+function parseDT_(args) {
+  var mm = args.match(/^(\d{1,2})\.(\d{1,2})\s+(\d{1,2})(?:[:.-]\d{2})?(?:\s+([\s\S]*))?$/);
+  if (!mm) return null;
+  var y = Number(Utilities.formatDate(new Date(), TZ, 'yyyy'));
+  var ymd = y + '-' + ('0' + mm[2]).slice(-2) + '-' + ('0' + mm[1]).slice(-2);
+  if (ymd < Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd')) ymd = (y + 1) + ymd.slice(4);
+  return { ymd: ymd, time: ('0' + mm[3]).slice(-2) + ':00', rest: (mm[4] || '').trim() };
+}
+
+function cmdBook_(m, text) {
+  var dt = parseDT_(text.replace(/^\/\S+\s*/, ''));
+  var help = 'Формат: /zapis 28.11 10 AX1234KA Шкода Октавія 0671234567 збер\n' +
+             'Номер авто і телефон — якщо є. Шини: збер (зі зберігання) / нові / без слова = привезе свої.';
+  if (!dt || !dt.rest) { tg_('sendMessage', { chat_id: m.chat.id, text: help }); return; }
+  var tail = dt.rest, plate = '', phone = '';
+  var pm = tail.match(PLATE_RE);
+  if (pm) { plate = pm[2] + pm[3] + pm[4]; tail = tail.replace(pm[0], pm[1] + ' '); }
+  var ph = tail.match(PHONE_RE);
+  if (ph) { phone = ph[0]; tail = tail.replace(ph[0], ' '); }
+  var ty = /збер|хран/i.test(tail) ? 'storage' : /нов|оплач/i.test(tail) ? 'new' : 'bring';
+  var car = tail.replace(/(^|\s)(своя|свої|свои|збер\S*|хран\S*)(?=\s|$)/ig, ' ').replace(/\s+/g, ' ').trim();
+  if (!plate && !car) { tg_('sendMessage', { chat_id: m.chat.id, text: help }); return; }
+  var res = book_({ date: dt.ymd, time: dt.time, plate: plate, car: car, phone: phone,
+                    services: '', tyres: ty, source: 'чат (' + (m.from.first_name || '') + ')' });
+  if (!res.ok) tg_('sendMessage', { chat_id: m.chat.id, text: 'Не записав: ' + ({ full: 'на цю годину вже 2 машини', bad_plate: 'номер авто неповний — напишіть повністю або приберіть', bad_date: 'дата поза графіком (неділя або минула дата)', bad_time: 'час поза графіком (Пн–Пт 9–16, Сб 9–14)', dup: 'це авто вже записане на цей день' }[res.error] || res.error) });
+}
+
+function cmdCancel_(m, text) {
+  var dt = parseDT_(text.replace(/^\/\S+\s*/, ''));
+  var help = 'Формат: /cancel 28.11 10 AX1234KA\n(дата, година і номер авто або слово із запису, напр. Шкода)';
+  if (!dt || !dt.rest) { tg_('sendMessage', { chat_id: m.chat.id, text: help }); return; }
+  var key = normPlate_(dt.rest), word = dt.rest.toLowerCase();
+  var sh = bookSheet_(), v = sh.getDataRange().getDisplayValues(), hit = [];
+  for (var i = 1; i < v.length; i++) {
+    if (v[i][2] !== dt.ymd || v[i][3] !== dt.time || v[i][10] === 'скасовано') continue;
+    var pl = v[i][4].replace(/\s/g, '');
+    if ((key.length >= 4 && pl && pl.indexOf(key) >= 0) || v[i][5].toLowerCase().indexOf(word) >= 0) hit.push(i);
   }
+  if (!hit.length) { tg_('sendMessage', { chat_id: m.chat.id, text: 'Не знайшов такого запису на ' + niceDate_(dt.ymd) + ' ' + dt.time + '. Перевірте: /plan ' + dt.ymd.slice(8) + '.' + dt.ymd.slice(5, 7) }); return; }
+  if (hit.length > 1) { tg_('sendMessage', { chat_id: m.chat.id, text: 'Підходить кілька записів, уточніть:\n' + hit.map(function (i) { return '• ' + (v[i][4] || '') + ' ' + v[i][5]; }).join('\n') }); return; }
+  var r = hit[0];
+  sh.getRange(r + 1, 11).setValue('скасовано');
+  tg_('sendMessage', { chat_id: m.chat.id, text: '❌ Скасовано: ' + niceDate_(dt.ymd) + ' ' + dt.time + ' — ' + ((v[r][4] ? v[r][4] + ' ' : '') + v[r][5]).slice(0, 150) + '\nМісце звільнилось.' });
 }
 
 function sendPlan_(chat, arg) {
