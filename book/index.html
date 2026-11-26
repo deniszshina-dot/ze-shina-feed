@@ -47,6 +47,17 @@ a{color:var(--acc)}
 .svc.on{border-color:var(--acc)}.svc.on .box{background:var(--acc);border-color:var(--acc)}
 .svc .t{display:flex;flex-direction:column;gap:3px;flex:1}.svc .t b{font-size:14px}.svc .t span{font-size:12px;color:var(--mut)}
 .svc .p{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:11px;color:var(--mut)}.svc .p b{font-size:13px;color:var(--acc)}
+.seg{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}.seg::-webkit-scrollbar{display:none}
+.seg button{flex:none;min-height:38px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.seg button.on{background:var(--acc);border-color:var(--acc);color:var(--ink)}
+.pt{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.pt th{font-size:10px;font-weight:700;color:var(--mut);text-align:right;padding:6px 4px;vertical-align:bottom;line-height:1.25}
+.pt th:first-child,.pt td:first-child{text-align:left}
+.pt td{padding:9px 4px;border-top:1px solid var(--line);text-align:right}
+.pt td:first-child{font-weight:800;color:var(--acc)}
+.pcard{border-radius:14px;background:var(--card);border:1px solid var(--line);padding:12px}
+.pcard h3{margin:0 0 6px;font-size:13px}
+.ex{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13px}.ex:first-of-type{border-top:0}.ex b{white-space:nowrap}
 .days{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;-webkit-overflow-scrolling:touch}
 .days::-webkit-scrollbar{display:none}
 .days .day{flex:0 0 52px;scroll-snap-align:start}
@@ -100,7 +111,7 @@ input.good{border-color:#4ADE80}
     ЗАПИС НА ШИНОМОНТАЖ
   </button>
   <div class="g3">
-    <button class="tile" data-go="book" type="button"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg>Шиномонтаж</button>
+    <button class="tile" data-go="price" type="button"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>Ціни</button>
     <button class="tile" data-go="book" type="button"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" aria-hidden="true"><path d="M3 8l9-5 9 5v12H3z"/><path d="M8 20v-7h8v7"/></svg>Зберігання</button>
     <a class="tile" href="https://t.me/Den_ZEshina"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Підбір</a>
   </div>
@@ -121,6 +132,15 @@ input.good{border-color:#4ADE80}
   <div class="demo">Тестова версія · ze-shina.com</div>
 </section>
 
+<section class="view" id="v-price">
+  <div class="top">
+    <button class="back" data-go="links" type="button" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <div><div class="h" style="font-size:16px">Ціни на шиномонтаж</div><div class="small">за 4 колеса, грн</div></div>
+  </div>
+  <div class="body" id="pbody"></div>
+  <div class="foot" style="display:flex"><div class="i"><span class="small">Остаточну вартість підтверджує майстер</span></div><button class="next" data-go="book" type="button">ЗАПИСАТИСЬ</button></div>
+</section>
+
 <section class="view" id="v-book">
   <div class="top">
     <button class="back" id="back" type="button" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -128,7 +148,7 @@ input.good{border-color:#4ADE80}
   </div>
   <div class="steps" id="steps"><div>Послуги</div><div>Час</div><div>Контакти</div></div>
   <div class="body" id="body"></div>
-  <div class="foot" id="foot"><div class="i"><span class="small" id="hint"></span><b id="sum"></b></div><button class="next" id="next" type="button">ДАЛІ</button></div>
+  <div class="foot" id="foot"><div class="i"><span class="small" id="hint"></span></div><button class="next" id="next" type="button">ДАЛІ</button></div>
 </section>
 
 </div>
@@ -139,15 +159,6 @@ const SV=[
  {id:'bal',name:'Балансування',desc:'Прибираємо биття керма',from:400,min:30},
  {id:'store',name:'Зберігання шин',desc:'Здати або забрати комплект',from:0,min:15},
  {id:'fit',name:'Встановлення дисків',desc:'Підберемо й встановимо',from:300,min:60}];
-// Орієнтовна сума «від» за прейскурантом (найменший діаметр, легкове авто).
-function estSum(p){
- if(p.tyres)return 900;                 // повний шиномонтаж 4 шт уже з балансуванням
- let x=0;
- if(p.set&&p.bal)x=500;                 // балансування зі зняттям/встановленням
- else{if(p.set)x+=300;if(p.bal)x+=400;}
- if(p.fit&&!p.set)x+=300;               // зняти/встановити колеса
- return x;
-}
 const DOW=['Нд','Пн','Вт','Ср','Чт','Пт','Сб'];
 const MONN=['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
 const MONS=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
@@ -155,7 +166,28 @@ const MON=['січня','лютого','березня','квітня','трав
 const S={step:0,picked:{set:true},day:0,time:null,tyres:'storage',plate:'',car:'',phone:''};
 const days=[];{let d=new Date();d.setHours(0,0,0,0);while(days.length<60){days.push(new Date(d));d.setDate(d.getDate()+1);}}
 const $=s=>document.querySelector(s);
-function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));window.scrollTo(0,0);if(v==='book'){S.step=0;render();}}
+const PRT=[
+ {n:'Легкове',d:'',r:[[13,300,300,400,500,900,1100],[14,300,300,400,500,900,1100],[15,400,300,400,500,1000,1200],[16,400,400,400,600,1000,1200],[17,400,400,400,700,1300,1500],[18,400,400,500,700,1300,1500],[19,500,400,600,800,1500,1700],[20,500,400,600,800,1600,1800],[21,600,500,700,1000,1800,2000],[22,600,500,700,1100,1900,2100],[23,600,500,800,1200,2000,2200]]},
+ {n:'Кросовер',d:'',r:[[15,400,300,400,500,1200,1400],[16,400,400,400,600,1300,1500],[17,500,400,500,700,1500,1700],[18,500,400,500,700,1500,1700],[19,600,400,600,800,1800,2000],[20,600,400,600,800,1800,2000]]},
+ {n:'Позашляховик',d:'',r:[[17,500,500,600,800,1600,1800],[18,500,500,600,900,1600,1800],[19,600,600,800,900,1800,2000],[20,600,600,800,1000,1800,2000],[21,700,700,800,1200,2100,2200],[22,700,700,900,1300,2300,2500],[23,700,700,900,1500,2500,2700]]},
+ {n:'Мікроавтобус',d:'Транспортер, Трафік і подібні',r:[[15,500,400,500,700,1300,1500],[16,500,400,500,700,1300,1500],[17,500,500,700,800,1500,1700]]},
+ {n:'Великий бус',d:'Спринтер, Крафтер, Мастер і подібні',r:[[15,600,400,500,750,1400,1600],[16,600,400,600,750,1400,1600],[17,600,500,700,850,1600,1800]]}];
+const PEX=[['Утилізація шин','100 грн / комплект'],['Пакети для шин','50 грн / комплект'],['Заміна вентилів','200 грн / комплект'],['Зняття старого скотчу від грузиків','100 грн / диск'],['Встановлення датчиків тиску','400 грн / комплект'],['Рихтування дисків','від 1000 грн / шт'],['Ремонт шин і дисків','за погодженням з майстром']];
+let PT=0;
+function renderPrice(){
+ const t=PRT[PT],pb=document.getElementById('pbody');
+ let h='<div class="seg">'+PRT.map((x,i)=>'<button type="button" data-pt="'+i+'" class="'+(i===PT?'on':'')+'">'+x.n+'</button>').join('')+'</div>';
+ if(t.d)h+='<div class="small">'+t.d+'</div>';
+ h+='<div class="pcard"><h3>Повний шиномонтаж</h3><div class="small" style="margin-bottom:4px">зняти, розібрати, зібрати, відбалансувати й поставити</div><table class="pt"><tr><th>Диск</th><th>Звичайні шини</th><th>RunFlat, профіль 45 і нижче, MT/AT</th></tr>'+
+   t.r.map(r=>'<tr><td>R'+r[0]+'</td><td>'+r[5]+'</td><td>'+r[6]+'</td></tr>').join('')+'</table></div>';
+ h+='<div class="pcard"><h3>Окремі послуги</h3><table class="pt"><tr><th>Диск</th><th>Зняти й поставити колеса</th><th>Монтаж / демонтаж шин</th><th>Баланс. (колеса привезли)</th><th>Баланс. зі зняттям</th></tr>'+
+   t.r.map(r=>'<tr><td>R'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td>'+r[4]+'</td></tr>').join('')+'</table></div>';
+ h+='<div class="pcard"><h3>Зберігання (пів року)</h3><div class="ex"><span>Шини</span><b>1000 грн</b></div><div class="ex"><span>Шини з дисками</span><b>1500 грн</b></div></div>';
+ h+='<div class="pcard"><h3>Додатково</h3>'+PEX.map(x=>'<div class="ex"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>').join('')+'</div>';
+ pb.innerHTML=h;
+ pb.querySelectorAll('[data-pt]').forEach(b=>b.onclick=()=>{PT=+b.dataset.pt;renderPrice();});
+}
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));window.scrollTo(0,0);if(v==='book'){S.step=0;render();}if(v==='price')renderPrice();}
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
 function openNow(){const n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()/60;const end=d===0?0:d===6?15:18;const o=d!==0&&h>=9&&h<end;const e=$('#open');e.querySelector('span').textContent=o?'Відчинено до '+end+':00':'Зараз зачинено';e.style.background=o?'#1B2A1F':'#2A1B1B';e.style.color=o?'#7BE39A':'#F0A3A3';e.querySelector('i').style.background=o?'#4ADE80':'#F87171';}
 openNow();
@@ -190,10 +222,9 @@ function render(){
  if(S.step===0){
   b.insertAdjacentHTML('beforeend','<div class="small">Що робимо? Перевзування або шиномонтаж — щось одне, решту можна додати</div>');
   SV.forEach(s=>{const on=!!S.picked[s.id];const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
-   el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p">'+(s.from?'<span>орієнтовно</span><b>від '+s.from+' грн</b>':'<b>ціну уточнимо</b>')+s.min+' хв</span>';
+   el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p">'+s.min+' хв</span>';
    el.onclick=()=>{S.picked[s.id]=!on;if(!on&&EXCL[s.id])S.picked[EXCL[s.id]]=false;render();};b.appendChild(el);});
-  b.insertAdjacentHTML('beforeend','<div class="small">Ціни орієнтовні, за нашим прейскурантом. Залежать від діаметра й типу авто (легкове, кросовер, позашляховик, бус); RunFlat і профіль 45 і нижче — дорожче. Точну суму назве майстер.</div>');
-  const c=chosen();can=c.length>0;const es=estSum(S.picked);$('#sum').textContent=c.length?(es?'Орієнтовно від '+es+' грн':'Ціну уточнимо'):'';$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
+  const c=chosen();can=c.length>0;$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
  }else if(S.step===1){
   const cur=days[S.day];
   b.insertAdjacentHTML('beforeend','<div class="mon"><span>'+MONN[cur.getMonth()]+' '+cur.getFullYear()+'</span><label class="pick">📅 Інша дата<input type="date" id="dpick"></label></div>');
