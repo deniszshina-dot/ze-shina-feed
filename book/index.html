@@ -47,7 +47,12 @@ a{color:var(--acc)}
 .svc.on{border-color:var(--acc)}.svc.on .box{background:var(--acc);border-color:var(--acc)}
 .svc .t{display:flex;flex-direction:column;gap:3px;flex:1}.svc .t b{font-size:14px}.svc .t span{font-size:12px;color:var(--mut)}
 .svc .p{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:11px;color:var(--mut)}.svc .p b{font-size:13px;color:var(--acc)}
-.days{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.days{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.days::-webkit-scrollbar{display:none}
+.days .day{flex:0 0 52px;scroll-snap-align:start}
+.mon{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:700}
+.pick{position:relative;display:flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--acc);font-size:12px;font-weight:700;overflow:hidden}
+.pick input{position:absolute;inset:0;opacity:0;height:auto;padding:0;border:0;cursor:pointer}
 .day,.slot{display:flex;flex-direction:column;align-items:center;gap:2px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;font-family:inherit;cursor:pointer}
 .day{padding:9px 0;min-height:56px}.day span{font-size:11px;font-weight:600}.day b{font-size:16px}
 .slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
@@ -56,6 +61,14 @@ a{color:var(--acc)}
 .off{background:#15171A!important;color:#5B6068!important;cursor:not-allowed}
 label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--mut)}
 input{height:48px;border-radius:12px;border:1px solid #2E333A;background:var(--card);color:var(--tx);padding:0 14px;font-size:16px;font-family:inherit}
+.err{font-size:12px;color:#F87171;min-height:0}
+.tel{display:flex;align-items:stretch}
+.tel .pre{display:flex;align-items:center;padding:0 4px 0 14px;height:48px;box-sizing:border-box;border:1px solid #2E333A;border-right:0;border-radius:12px 0 0 12px;background:var(--card);color:var(--tx);font-size:16px}
+.tel input{flex:1;min-width:0;border-left:0;border-radius:0 12px 12px 0;padding-left:2px}
+.tel:has(input.good) .pre{border-color:#4ADE80}
+.tel:has(input.bad) .pre{border-color:#F87171}
+input.bad{border-color:#F87171}
+input.good{border-color:#4ADE80}
 .opt{min-height:52px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .opt.on{border-color:var(--acc);background:#2A2312;color:var(--acc)}
 .sum{padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:13px;color:#C9CCD0}
@@ -120,9 +133,11 @@ const SV=[
  {id:'store',name:'Зберігання шин',desc:'Здати або забрати комплект',price:'[ЦІНА]/сезон',min:15},
  {id:'fit',name:'Встановлення дисків',desc:'Підберемо й встановимо',price:'[ЦІНА]',min:60}];
 const DOW=['Нд','Пн','Вт','Ср','Чт','Пт','Сб'];
+const MONN=['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
+const MONS=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
 const MON=['січня','лютого','березня','квітня','травня','червня','липня','серпня','вересня','жовтня','листопада','грудня'];
 const S={step:0,picked:{set:true},day:0,time:null,tyres:'storage',plate:'',car:'',phone:''};
-const days=[];{let d=new Date();d.setHours(0,0,0,0);while(days.length<6){days.push(new Date(d));d.setDate(d.getDate()+1);}}
+const days=[];{let d=new Date();d.setHours(0,0,0,0);while(days.length<60){days.push(new Date(d));d.setDate(d.getDate()+1);}}
 const $=s=>document.querySelector(s);
 function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));window.scrollTo(0,0);if(v==='book'){S.step=0;render();}}
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
@@ -130,6 +145,12 @@ function openNow(){const n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()
 openNow();
 function busy(h,i){const b={9:2,10:1,12:2,15:1};return Math.min(2,(b[h]||0)+((h+i)%4===0?1:0));}
 function whenTxt(){const d=days[S.day];return DOW[d.getDay()]+', '+d.getDate()+' '+MON[d.getMonth()]+(S.time?' о '+S.time:'');}
+const CYR={'А':'A','В':'B','Е':'E','І':'I','К':'K','М':'M','Н':'H','О':'O','Р':'P','С':'C','Т':'T','Х':'X'};
+function normPlate(v){return v.toUpperCase().split('').map(c=>CYR[c]||c).join('').replace(/[^A-Z0-9]/g,'');}
+function fmtPlate(v){const s=normPlate(v).slice(0,8);return [s.slice(0,2),s.slice(2,6),s.slice(6)].filter(Boolean).join(' ');}
+function plateOk(v){return /^[ABCEHIKMOPTX]{2}[0-9]{4}[ABCEHIKMOPTX]{2}$/.test(normPlate(v));}
+function fmtPhone(v){let d=v.replace(/\D/g,'');if(d.startsWith('380'))d=d.slice(3);else if(d.startsWith('38'))d=d.slice(2);else if(d.startsWith('0'))d=d.slice(1);d=d.slice(0,9);return [d.slice(0,2),d.slice(2,5),d.slice(5,7),d.slice(7,9)].filter(Boolean).join(' ');}
+function phoneOk(v){return /^(39|50|63|66|67|68|73|75|77|91|92|93|94|95|96|97|98|99)\d{7}$/.test(v.replace(/\D/g,''));}
 function chosen(){return SV.filter(s=>S.picked[s.id]);}
 function render(){
  const b=$('#body');b.innerHTML='';
@@ -144,11 +165,17 @@ function render(){
    el.onclick=()=>{S.picked[s.id]=!on;render();};b.appendChild(el);});
   const c=chosen();can=c.length>0;$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
  }else if(S.step===1){
+  const cur=days[S.day];
+  b.insertAdjacentHTML('beforeend','<div class="mon"><span>'+MONN[cur.getMonth()]+' '+cur.getFullYear()+'</span><label class="pick">📅 Інша дата<input type="date" id="dpick"></label></div>');
+  const dp=$('#dpick');const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  dp.min=iso(days[0]);dp.max=iso(days[days.length-1]);dp.value=iso(cur);
+  dp.onchange=()=>{const i=days.findIndex(d=>iso(d)===dp.value);if(i<0)return;if(days[i].getDay()===0){$('#hint').textContent='Неділя — вихідний, оберіть інший день';dp.value=iso(cur);return;}S.day=i;S.time=null;render();};
   const dd=document.createElement('div');dd.className='days';
   days.forEach((d,i)=>{const closed=d.getDay()===0;const el=document.createElement('button');el.type='button';el.className='day'+(S.day===i?' sel':'')+(closed?' off':'');
-   el.innerHTML='<span>'+DOW[d.getDay()]+'</span><b>'+d.getDate()+'</b>';el.disabled=closed;el.onclick=()=>{S.day=i;S.time=null;render();};dd.appendChild(el);});
+   el.innerHTML='<span>'+DOW[d.getDay()]+'</span><b>'+d.getDate()+'</b><span style="font-size:10px;opacity:.7">'+MONS[d.getMonth()]+'</span>';el.disabled=closed;el.onclick=()=>{S.day=i;S.time=null;render();};dd.appendChild(el);});
   b.appendChild(dd);
-  if(days[S.day].getDay()===0){S.day=1;return render();}
+  const se=dd.children[S.day];if(se)dd.scrollLeft=Math.max(0,se.offsetLeft-dd.offsetLeft-58);
+  if(days[S.day].getDay()===0){S.day=Math.min(days.length-1,S.day+1);return render();}
   const sat=days[S.day].getDay()===6;
   b.insertAdjacentHTML('beforeend','<div class="row small"><span>2 машини на годину</span><span>'+(sat?'субота: останній запис 14:00':'неділя — вихідний')+'</span></div>');
   const sl=document.createElement('div');sl.className='slots';
@@ -160,17 +187,24 @@ function render(){
   b.appendChild(sl);can=!!S.time;$('#hint').textContent=S.time?'Обрано '+whenTxt():'Оберіть вільний час';
  }else if(S.step===2){
   b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+chosen().map(s=>s.name).join(', ')+'</div>'+
-   '<label>Держномер<input id="plate" placeholder="AX 1234 KA" style="text-transform:uppercase" autocomplete="off"></label>'+
+   '<label>Держномер *<input id="plate" placeholder="AX 1234 KA" style="text-transform:uppercase" autocomplete="off" maxlength="10"><span class="err" id="e-plate"></span></label>'+
    '<label>Марка і модель авто<input id="car" placeholder="BMW X5 G05"></label>'+
-   '<label>Телефон<input id="phone" type="tel" inputmode="tel" placeholder="+38 0__ ___ __ __"></label>'+
+   '<label>Телефон *<span class="tel"><span class="pre">+38 0</span><input id="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="99 123 45 67" maxlength="20"></span><span class="err" id="e-phone"></span></label>'+
    '<div class="small">Шини</div><div class="g2" id="ty"></div>');
   [['storage','На зберіганні у вас'],['bring','Привезу з собою']].forEach(([id,l])=>{const el=document.createElement('button');el.type='button';el.className='opt'+(S.tyres===id?' on':'');el.textContent=l;el.onclick=()=>{S.tyres=id;S.plate=$('#plate').value;S.car=$('#car').value;S.phone=$('#phone').value;render();};$('#ty').appendChild(el);});
-  ['plate','car','phone'].forEach(k=>{const i=$('#'+k);i.value=S[k];i.oninput=()=>{S[k]=i.value;check();};});
-  function check(){$('#next').disabled=!(S.plate.trim()&&S.phone.replace(/\D/g,'').length>=10);}
-  $('#hint').textContent='Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();return;
+  const pi=$('#plate'),ph=$('#phone'),ci=$('#car');pi.value=S.plate;ph.value=S.phone;ci.value=S.car;
+  ci.oninput=()=>{S.car=ci.value;};
+  pi.oninput=()=>{const v=fmtPlate(pi.value);pi.value=v;S.plate=v;check(false);};
+  ph.oninput=()=>{const v=fmtPhone(ph.value);ph.value=v;S.phone=v;check(false);};
+  pi.onblur=()=>check('p');ph.onblur=()=>check('t');
+  function check(show){const okP=plateOk(S.plate),okT=phoneOk(S.phone);
+   if(show==='p'||okP||S.plate.replace(/\s/g,'').length>=8||(S.plate&&show==='t')){pi.classList.toggle('bad',!okP);pi.classList.toggle('good',okP);$('#e-plate').textContent=okP?'':'Формат: 2 літери, 4 цифри, 2 літери — напр. AX 1234 KA';}
+   if(show==='t'||okT||S.phone.replace(/\D/g,'').length>=9){ph.classList.toggle('bad',!okT);ph.classList.toggle('good',okT);$('#e-phone').textContent=okT?'':'Введіть мобільний номер повністю: +38 0XX XXX XX XX';}
+   $('#next').disabled=!(okP&&okT);}
+  $('#hint').textContent='* Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();return;
  }else{
   b.insertAdjacentHTML('beforeend','<div class="ok"><div class="c"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>'+
-   '<div class="h" style="font-size:20px">Ви записані!</div><div style="font-size:14px;color:#C9CCD0">'+whenTxt()+'<br>'+chosen().map(s=>s.name).join(', ')+'<br>'+S.plate.toUpperCase()+(S.car?' · '+S.car:'')+'<br>вул. Шевченка, 24</div>'+
+   '<div class="h" style="font-size:20px">Ви записані!</div><div style="font-size:14px;color:#C9CCD0">'+whenTxt()+'<br>'+chosen().map(s=>s.name).join(', ')+'<br>'+S.plate+(S.car?' · '+S.car:'')+'<br>+38 0'+S.phone+'<br>вул. Шевченка, 24</div>'+
    '<div class="small">Якщо плани змінились — напишіть у Telegram або подзвоніть.</div>'+
    '<div class="demo">Тестова версія: запис нікуди не відправляється</div>'+
    '<button class="tile" style="min-height:48px;width:100%" type="button" id="home">← На головну</button></div>');
@@ -178,7 +212,7 @@ function render(){
  }
  $('#next').textContent=S.step===2?'ЗАПИСАТИСЬ':'ДАЛІ';$('#next').disabled=!can;
 }
-$('#next').onclick=()=>{S.step=Math.min(3,S.step+1);render();};
+$('#next').onclick=()=>{if(S.step===2&&!(plateOk(S.plate)&&phoneOk(S.phone)))return;S.step=Math.min(3,S.step+1);render();};
 $('#back').onclick=()=>{if(S.step===0||S.step===3)go('links');else{S.step--;render();}};
 </script>
 </body>
