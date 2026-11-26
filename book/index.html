@@ -116,7 +116,7 @@ input.good{border-color:#4ADE80}
   <div class="place">
     <div class="row"><div class="h" style="font-size:15px">ХАРКІВ</div><a class="pill" href="https://www.google.com/maps/dir/?api=1&destination=%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%2C+%D0%B2%D1%83%D0%BB.+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0%2C+24">Маршрут</a></div>
     <div style="font-size:13px;color:#C9CCD0">вул. Шевченка, 24</div>
-    <div class="small">Пн–Пт 09:00–18:00 · Сб 09:00–15:00 [уточнити]<br>+38 099 223 25 52 · +38 095 772 21 73</div>
+    <div class="small">Запис: Пн–Пт 9:00–16:00 · Сб 9:00–14:00 · Нд вихідний<br>+38 099 223 25 52 · +38 095 772 21 73</div>
   </div>
   <div class="demo">Тестова версія · ze-shina.com</div>
 </section>
@@ -128,17 +128,26 @@ input.good{border-color:#4ADE80}
   </div>
   <div class="steps" id="steps"><div>Послуги</div><div>Час</div><div>Контакти</div></div>
   <div class="body" id="body"></div>
-  <div class="foot" id="foot"><div class="i"><span class="small" id="hint"></span><b>Разом: [СУМА] грн</b></div><button class="next" id="next" type="button">ДАЛІ</button></div>
+  <div class="foot" id="foot"><div class="i"><span class="small" id="hint"></span><b id="sum"></b></div><button class="next" id="next" type="button">ДАЛІ</button></div>
 </section>
 
 </div>
 <script>
 const SV=[
- {id:'set',name:'Перевзування (комплект)',desc:'Колеса на дисках, тиск',price:'[ЦІНА]',min:30},
- {id:'tyres',name:'Шиномонтаж (тільки шини)',desc:'Зняти й поставити шини на ваші диски',price:'[ЦІНА]',min:60},
- {id:'bal',name:'Балансування',desc:'Прибираємо биття керма',price:'[ЦІНА]',min:30},
- {id:'store',name:'Зберігання шин',desc:'Здати або забрати комплект',price:'[ЦІНА]/сезон',min:15},
- {id:'fit',name:'Встановлення дисків',desc:'Підберемо й встановимо',price:'[ЦІНА]',min:60}];
+ {id:'set',name:'Перевзування (комплект)',desc:'Колеса на дисках, тиск',from:300,min:30},
+ {id:'tyres',name:'Шиномонтаж (тільки шини)',desc:'Зняти й поставити шини на ваші диски, з балансуванням',from:900,min:60},
+ {id:'bal',name:'Балансування',desc:'Прибираємо биття керма',from:400,min:30},
+ {id:'store',name:'Зберігання шин',desc:'Здати або забрати комплект',from:0,min:15},
+ {id:'fit',name:'Встановлення дисків',desc:'Підберемо й встановимо',from:300,min:60}];
+// Орієнтовна сума «від» за прейскурантом (найменший діаметр, легкове авто).
+function estSum(p){
+ if(p.tyres)return 900;                 // повний шиномонтаж 4 шт уже з балансуванням
+ let x=0;
+ if(p.set&&p.bal)x=500;                 // балансування зі зняттям/встановленням
+ else{if(p.set)x+=300;if(p.bal)x+=400;}
+ if(p.fit&&!p.set)x+=300;               // зняти/встановити колеса
+ return x;
+}
 const DOW=['Нд','Пн','Вт','Ср','Чт','Пт','Сб'];
 const MONN=['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
 const MONS=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
@@ -181,9 +190,10 @@ function render(){
  if(S.step===0){
   b.insertAdjacentHTML('beforeend','<div class="small">Що робимо? Перевзування або шиномонтаж — щось одне, решту можна додати</div>');
   SV.forEach(s=>{const on=!!S.picked[s.id];const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
-   el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p"><b>'+s.price+'</b>'+s.min+' хв</span>';
+   el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p">'+(s.from?'<span>орієнтовно</span><b>від '+s.from+' грн</b>':'<b>ціну уточнимо</b>')+s.min+' хв</span>';
    el.onclick=()=>{S.picked[s.id]=!on;if(!on&&EXCL[s.id])S.picked[EXCL[s.id]]=false;render();};b.appendChild(el);});
-  const c=chosen();can=c.length>0;$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
+  b.insertAdjacentHTML('beforeend','<div class="small">Ціни орієнтовні, за нашим прейскурантом. Залежать від діаметра й типу авто (легкове, кросовер, позашляховик, бус); RunFlat і профіль 45 і нижче — дорожче. Точну суму назве майстер.</div>');
+  const c=chosen();can=c.length>0;const es=estSum(S.picked);$('#sum').textContent=c.length?(es?'Орієнтовно від '+es+' грн':'Ціну уточнимо'):'';$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
  }else if(S.step===1){
   const cur=days[S.day];
   b.insertAdjacentHTML('beforeend','<div class="mon"><span>'+MONN[cur.getMonth()]+' '+cur.getFullYear()+'</span><label class="pick">📅 Інша дата<input type="date" id="dpick"></label></div>');
