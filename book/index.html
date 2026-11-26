@@ -150,7 +150,8 @@ function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle(
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
 function openNow(){const n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()/60;const end=d===0?0:d===6?15:18;const o=d!==0&&h>=9&&h<end;const e=$('#open');e.querySelector('span').textContent=o?'Відчинено до '+end+':00':'Зараз зачинено';e.style.background=o?'#1B2A1F':'#2A1B1B';e.style.color=o?'#7BE39A':'#F0A3A3';e.querySelector('i').style.background=o?'#4ADE80':'#F87171';}
 openNow();
-function busy(h,i){const b={9:2,10:1,12:2,15:1};return Math.min(2,(b[h]||0)+((h+i)%4===0?1:0));}
+const SL={};
+function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
 function whenTxt(){const d=days[S.day];return DOW[d.getDay()]+', '+d.getDate()+' '+MON[d.getMonth()]+(S.time?' о '+S.time:'');}
 const CYR={'А':'A','В':'B','Е':'E','І':'I','К':'K','М':'M','Н':'H','О':'O','Р':'P','С':'C','Т':'T','Х':'X','Й':'Y'};
 function normPlate(v){return v.toUpperCase().split('').map(c=>CYR[c]||c).join('').replace(/[^A-Z0-9]/g,'');}
@@ -186,7 +187,7 @@ function render(){
  }else if(S.step===1){
   const cur=days[S.day];
   b.insertAdjacentHTML('beforeend','<div class="mon"><span>'+MONN[cur.getMonth()]+' '+cur.getFullYear()+'</span><label class="pick">📅 Інша дата<input type="date" id="dpick"></label></div>');
-  const dp=$('#dpick');const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  const dp=$('#dpick');
   dp.min=iso(days[0]);dp.max=iso(days[days.length-1]);dp.value=iso(cur);
   dp.onchange=()=>{const i=days.findIndex(d=>iso(d)===dp.value);if(i<0)return;if(days[i].getDay()===0){$('#hint').textContent='Неділя — вихідний, оберіть інший день';dp.value=iso(cur);return;}S.day=i;S.time=null;render();};
   const dd=document.createElement('div');dd.className='days';
@@ -198,11 +199,14 @@ function render(){
   const sat=days[S.day].getDay()===6;
   b.insertAdjacentHTML('beforeend','<div class="row small"><span>2 машини на годину</span><span>'+(sat?'субота: останній запис 14:00':'неділя — вихідний')+'</span></div>');
   const sl=document.createElement('div');sl.className='slots';
-  const hrs=sat?[9,10,11,12,13,14]:[9,10,11,12,13,14,15,16,17];
-  const now=new Date();const today=days[S.day].toDateString()===now.toDateString();
-  hrs.forEach(h=>{const t=(h<10?'0':'')+h+':00';const past=today&&h<=now.getHours();const left=past?0:2-busy(h,S.day);const el=document.createElement('button');el.type='button';
+  const ymd=iso(days[S.day]);const SLv=SL[ymd];
+  if(!SLv){SL[ymd]='load';fetch(API+'?slots='+ymd).then(r=>r.json()).then(j=>{SL[ymd]=j.slots||[];if(S.step===1)render();}).catch(()=>{SL[ymd]='err';if(S.step===1)render();});}
+  if(!SLv||SLv==='load'){sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">Завантажуємо вільний час…</div>';}
+  else if(SLv==='err'){sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">Не вдалося завантажити розклад. Перевірте інтернет і спробуйте ще раз.</div>';delete SL[ymd];}
+  else{SLv.forEach(x=>{const t=x.time,left=x.left;const el=document.createElement('button');el.type='button';
    el.className='slot'+(S.time===t?' sel':'')+(left===0?' off':'');el.disabled=left===0;
-   el.innerHTML='<b>'+t+'</b><span>'+(past?'минуло':left===0?'зайнято':'вільно '+left+' з 2')+'</span>';el.onclick=()=>{S.time=t;render();};sl.appendChild(el);});
+   el.innerHTML='<b>'+t+'</b><span>'+(left===0?'зайнято':'вільно '+left+' з 2')+'</span>';el.onclick=()=>{S.time=t;S.flash='';render();};sl.appendChild(el);});
+   if(!SLv.length)sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">На цей день запису немає</div>';}
   b.appendChild(sl);can=!!S.time;$('#hint').textContent=S.time?'Обрано '+whenTxt():'Оберіть вільний час';
  }else if(S.step===2){
   b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+chosen().map(s=>s.name).join(', ')+'</div>'+
@@ -220,18 +224,31 @@ function render(){
    if(show==='p'||okP||S.plate.replace(/\s/g,'').length>=8||(S.plate&&show==='t')){pi.classList.toggle('bad',!okP);pi.classList.toggle('good',okP);$('#e-plate').textContent=okP?'':'Формат: 2 літери, 4 цифри, 2 літери — напр. AX 1234 KA';}
    if(show==='t'||okT||S.phone.replace(/\D/g,'').length>=9){ph.classList.toggle('bad',!okT);ph.classList.toggle('good',okT);$('#e-phone').textContent=okT?'':'Введіть мобільний номер повністю: +38 0XX XXX XX XX';}
    $('#next').disabled=!(okP&&okT);if(okP)lookup();else showHit();}
-  $('#hint').textContent='* Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();return;
+  $('#hint').textContent='* Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();flash();return;
  }else{
   b.insertAdjacentHTML('beforeend','<div class="ok"><div class="c"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>'+
    '<div class="h" style="font-size:20px">Ви записані!</div><div style="font-size:14px;color:#C9CCD0">'+whenTxt()+'<br>'+chosen().map(s=>s.name).join(', ')+'<br>'+S.plate+(S.car?' · '+S.car:'')+'<br>Шини: '+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase()+'<br>+38 0'+S.phone+'<br>вул. Шевченка, 24</div>'+
    '<div class="small">Якщо плани змінились — напишіть у Telegram або подзвоніть.</div>'+
-   '<div class="demo">Тестова версія: запис нікуди не відправляється</div>'+
    '<button class="tile" style="min-height:48px;width:100%" type="button" id="home">← На головну</button></div>');
   $('#home').onclick=()=>go('links');
  }
  $('#next').textContent=S.step===2?'ЗАПИСАТИСЬ':'ДАЛІ';$('#next').disabled=!can;
+ flash();
 }
-$('#next').onclick=()=>{if(S.step===2&&!(plateOk(S.plate)&&phoneOk(S.phone)))return;S.step=Math.min(3,S.step+1);render();};
+function flash(){const h=$('#hint');if(S.flash){h.textContent=S.flash;h.style.color='#F87171';}else h.style.color='';}
+$('#next').onclick=()=>{
+ if(S.step<2){S.step++;render();return;}
+ if(S.step!==2||!(plateOk(S.plate)&&phoneOk(S.phone))||S.sending)return;
+ S.sending=true;const nb=$('#next');nb.disabled=true;nb.textContent='НАДСИЛАЄМО…';
+ const body={action:'book',date:iso(days[S.day]),time:S.time,plate:normPlate(S.plate),car:S.car,phone:'0'+S.phone.replace(/\D/g,''),services:chosen().map(s=>s.name).join(', '),tyres:S.tyres};
+ fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)}).then(r=>r.json()).then(j=>{
+  S.sending=false;
+  if(j.ok){delete SL[body.date];S.flash='';S.step=3;render();return;}
+  const msg={full:'На цей час щойно записалися — оберіть інший.',dup:'Це авто вже записане на цей день. Якщо треба змінити час — напишіть нам.',bad_date:'Цей день недоступний для запису.',bad_time:'Цей час недоступний.',bad_plate:'Перевірте номер авто.',bad_phone:'Перевірте номер телефону.',busy:'Забагато запитів, спробуйте за хвилину.'}[j.error]||'Не вдалося записати, спробуйте ще раз.';
+  if(j.error==='full'||j.error==='bad_time'){delete SL[iso(days[S.day])];S.time=null;S.step=1;render();}else{render();}
+  S.flash=msg;flash();
+ }).catch(()=>{S.sending=false;S.flash='Немає зв’язку з сервером, спробуйте ще раз.';render();});
+};
 $('#back').onclick=()=>{if(S.step===0||S.step===3)go('links');else{S.step--;render();}};
 </script>
 </body>
