@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZE-Shina — запис на шиномонтаж</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111316;--card:#1A1D21;--line:#262A30;--tx:#F2F2F0;--mut:#A9ADB3;--acc:#F5A524;--ink:#15120A}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx);font-family:Manrope,system-ui,sans-serif}
+.app{max-width:480px;margin:0 auto;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+.h{font-family:Unbounded,sans-serif;font-weight:700}
+a{color:var(--acc)}
+.view{display:none;flex:1;flex-direction:column}
+.view.on{display:flex}
+/* links */
+.links{padding:28px 16px 24px;gap:14px}
+.logo{text-align:center;font-size:30px;letter-spacing:.5px}
+.logo span{color:var(--acc)}
+.sub{text-align:center;font-size:13px;color:var(--mut)}
+.open{align-self:center;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px}
+.open i{width:7px;height:7px;border-radius:50%;display:block}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;border-radius:16px;background:var(--acc);color:var(--ink);font-family:Unbounded,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:0;width:100%;cursor:pointer}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:76px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:#E6E7E9;text-decoration:none;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+.big{align-items:flex-start;padding:14px;min-height:84px}
+.big b{font-family:Unbounded,sans-serif;font-size:14px;font-weight:600}
+.big span{font-size:12px;color:var(--mut)}
+.btn{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:#E6E7E9;text-decoration:none;font-size:13px;font-weight:600}
+.place{border-radius:16px;background:var(--card);border:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:8px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.small{font-size:12px;color:var(--mut)}
+.pill{font-size:12px;font-weight:700;color:var(--ink);background:var(--acc);padding:9px 12px;border-radius:10px;text-decoration:none}
+/* booking */
+.top{display:flex;align-items:center;gap:12px;padding:18px 16px 10px}
+.back{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:0 16px 14px}
+.steps div{display:flex;flex-direction:column;gap:5px;font-size:10px;letter-spacing:.6px;text-transform:uppercase;color:#7D828A}
+.steps div:before{content:"";height:4px;border-radius:4px;background:var(--line)}
+.steps .done:before{background:var(--acc)}
+.steps .cur{color:var(--tx)}
+.body{flex:1;overflow-y:auto;padding:0 16px 12px;display:flex;flex-direction:column;gap:10px}
+.svc{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--tx);font-family:inherit;cursor:pointer;min-height:64px;width:100%}
+.svc .box{width:22px;height:22px;flex:none;border-radius:7px;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:800}
+.svc.on{border-color:var(--acc)}.svc.on .box{background:var(--acc);border-color:var(--acc)}
+.svc .t{display:flex;flex-direction:column;gap:3px;flex:1}.svc .t b{font-size:14px}.svc .t span{font-size:12px;color:var(--mut)}
+.svc .p{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:11px;color:var(--mut)}.svc .p b{font-size:13px;color:var(--acc)}
+.days{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.day,.slot{display:flex;flex-direction:column;align-items:center;gap:2px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;font-family:inherit;cursor:pointer}
+.day{padding:9px 0;min-height:56px}.day span{font-size:11px;font-weight:600}.day b{font-size:16px}
+.slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.slot{padding:10px 0;min-height:54px}.slot b{font-size:15px}.slot span{font-size:11px}
+.sel{background:var(--acc)!important;border-color:var(--acc)!important;color:var(--ink)!important}
+.off{background:#15171A!important;color:#5B6068!important;cursor:not-allowed}
+label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--mut)}
+input{height:48px;border-radius:12px;border:1px solid #2E333A;background:var(--card);color:var(--tx);padding:0 14px;font-size:16px;font-family:inherit}
+.opt{min-height:52px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.opt.on{border-color:var(--acc);background:#2A2312;color:var(--acc)}
+.sum{padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:13px;color:#C9CCD0}
+.foot{padding:12px 16px calc(18px + env(safe-area-inset-bottom));border-top:1px solid #1F2328;display:flex;align-items:center;gap:12px;background:var(--bg);position:sticky;bottom:0}
+.foot .i{flex:1;display:flex;flex-direction:column;gap:2px}.foot .i b{font-size:15px}
+.next{min-width:128px;height:52px;border-radius:14px;border:0;background:var(--acc);color:var(--ink);font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;cursor:pointer}
+.next:disabled{background:#3A3528;cursor:not-allowed}
+.ok{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding-top:40px}
+.ok .c{width:72px;height:72px;border-radius:50%;background:#1B2A1F;display:flex;align-items:center;justify-content:center}
+.demo{font-size:11px;color:#8A8F96;text-align:center;padding:6px}
+</style>
+</head>
+<body>
+<div class="app">
+
+<section class="view links on" id="v-links">
+  <div class="logo h">ZE<span>-</span>SHINA</div>
+  <div class="sub">Диски та шини · шиномонтаж · з 2007 року</div>
+  <div class="open" id="open"><i></i><span></span></div>
+  <button class="cta" data-go="book" type="button">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    ЗАПИС НА ШИНОМОНТАЖ
+  </button>
+  <div class="g3">
+    <button class="tile" data-go="book" type="button"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg>Шиномонтаж</button>
+    <button class="tile" data-go="book" type="button"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" aria-hidden="true"><path d="M3 8l9-5 9 5v12H3z"/><path d="M8 20v-7h8v7"/></svg>Зберігання</button>
+    <a class="tile" href="https://t.me/Den_ZEshina"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Підбір</a>
+  </div>
+  <div class="g2">
+    <a class="tile big" href="https://ze-shina.com"><b>ДИСКИ</b><span>Каталог · фото на авто</span></a>
+    <a class="tile big" href="https://ze-shina.com"><b>ШИНИ</b><span>Зима · літо · спарки</span></a>
+  </div>
+  <div class="g3">
+    <a class="btn" href="https://t.me/Den_ZEshina">Telegram</a>
+    <a class="btn" href="viber://chat?number=%2B380992232552">Viber</a>
+    <a class="btn" href="tel:+380992232552">Подзвонити</a>
+  </div>
+  <div class="place">
+    <div class="row"><div class="h" style="font-size:15px">ХАРКІВ</div><a class="pill" href="https://www.google.com/maps/dir/?api=1&destination=%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%2C+%D0%B2%D1%83%D0%BB.+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0%2C+24">Маршрут</a></div>
+    <div style="font-size:13px;color:#C9CCD0">вул. Шевченка, 24</div>
+    <div class="small">Пн–Пт 09:00–18:00 · Сб 09:00–15:00 [уточнити]<br>+38 099 223 25 52 · +38 095 772 21 73</div>
+  </div>
+  <div class="demo">Тестова версія · ze-shina.com</div>
+</section>
+
+<section class="view" id="v-book">
+  <div class="top">
+    <button class="back" id="back" type="button" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <div><div class="h" style="font-size:16px" id="title">Послуги</div><div class="small">ZE-Shina · вул. Шевченка, 24</div></div>
+  </div>
+  <div class="steps" id="steps"><div>Послуги</div><div>Час</div><div>Контакти</div></div>
+  <div class="body" id="body"></div>
+  <div class="foot" id="foot"><div class="i"><span class="small" id="hint"></span><b>Разом: [СУМА] грн</b></div><button class="next" id="next" type="button">ДАЛІ</button></div>
+</section>
+
+</div>
+<script>
+const SV=[
+ {id:'set',name:'Перевзування (комплект)',desc:'Колеса на дисках, тиск',price:'[ЦІНА]',min:30},
+ {id:'tyres',name:'Шиномонтаж (тільки шини)',desc:'Зняти й поставити шини на ваші диски',price:'[ЦІНА]',min:60},
+ {id:'bal',name:'Балансування',desc:'Прибираємо биття керма',price:'[ЦІНА]',min:30},
+ {id:'store',name:'Зберігання шин',desc:'Здати або забрати комплект',price:'[ЦІНА]/сезон',min:15},
+ {id:'fit',name:'Встановлення дисків',desc:'Підберемо й встановимо',price:'[ЦІНА]',min:60}];
+const DOW=['Нд','Пн','Вт','Ср','Чт','Пт','Сб'];
+const MON=['січня','лютого','березня','квітня','травня','червня','липня','серпня','вересня','жовтня','листопада','грудня'];
+const S={step:0,picked:{set:true},day:0,time:null,tyres:'storage',plate:'',car:'',phone:''};
+const days=[];{let d=new Date();d.setHours(0,0,0,0);while(days.length<6){days.push(new Date(d));d.setDate(d.getDate()+1);}}
+const $=s=>document.querySelector(s);
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));window.scrollTo(0,0);if(v==='book'){S.step=0;render();}}
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
+function openNow(){const n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()/60;const end=d===0?0:d===6?15:18;const o=d!==0&&h>=9&&h<end;const e=$('#open');e.querySelector('span').textContent=o?'Відчинено до '+end+':00':'Зараз зачинено';e.style.background=o?'#1B2A1F':'#2A1B1B';e.style.color=o?'#7BE39A':'#F0A3A3';e.querySelector('i').style.background=o?'#4ADE80':'#F87171';}
+openNow();
+function busy(h,i){const b={9:2,10:1,12:2,15:1};return Math.min(2,(b[h]||0)+((h+i)%4===0?1:0));}
+function whenTxt(){const d=days[S.day];return DOW[d.getDay()]+', '+d.getDate()+' '+MON[d.getMonth()]+(S.time?' о '+S.time:'');}
+function chosen(){return SV.filter(s=>S.picked[s.id]);}
+function render(){
+ const b=$('#body');b.innerHTML='';
+ $('#title').textContent=['Послуги','Оберіть час','Ваші дані','Готово'][S.step];
+ [...$('#steps').children].forEach((x,i)=>{x.className=(i<=S.step?'done ':'')+(i===S.step?'cur':'');});
+ $('#foot').style.display=S.step<3?'flex':'none';
+ let can=true;
+ if(S.step===0){
+  b.insertAdjacentHTML('beforeend','<div class="small">Що робимо? Можна обрати кілька послуг</div>');
+  SV.forEach(s=>{const on=!!S.picked[s.id];const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
+   el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p"><b>'+s.price+'</b>'+s.min+' хв</span>';
+   el.onclick=()=>{S.picked[s.id]=!on;render();};b.appendChild(el);});
+  const c=chosen();can=c.length>0;$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
+ }else if(S.step===1){
+  const dd=document.createElement('div');dd.className='days';
+  days.forEach((d,i)=>{const closed=d.getDay()===0;const el=document.createElement('button');el.type='button';el.className='day'+(S.day===i?' sel':'')+(closed?' off':'');
+   el.innerHTML='<span>'+DOW[d.getDay()]+'</span><b>'+d.getDate()+'</b>';el.disabled=closed;el.onclick=()=>{S.day=i;S.time=null;render();};dd.appendChild(el);});
+  b.appendChild(dd);
+  if(days[S.day].getDay()===0){S.day=1;return render();}
+  const sat=days[S.day].getDay()===6;
+  b.insertAdjacentHTML('beforeend','<div class="row small"><span>2 машини на годину</span><span>'+(sat?'субота: останній запис 14:00':'неділя — вихідний')+'</span></div>');
+  const sl=document.createElement('div');sl.className='slots';
+  const hrs=sat?[9,10,11,12,13,14]:[9,10,11,12,13,14,15,16,17];
+  const now=new Date();const today=days[S.day].toDateString()===now.toDateString();
+  hrs.forEach(h=>{const t=(h<10?'0':'')+h+':00';const past=today&&h<=now.getHours();const left=past?0:2-busy(h,S.day);const el=document.createElement('button');el.type='button';
+   el.className='slot'+(S.time===t?' sel':'')+(left===0?' off':'');el.disabled=left===0;
+   el.innerHTML='<b>'+t+'</b><span>'+(past?'минуло':left===0?'зайнято':'вільно '+left+' з 2')+'</span>';el.onclick=()=>{S.time=t;render();};sl.appendChild(el);});
+  b.appendChild(sl);can=!!S.time;$('#hint').textContent=S.time?'Обрано '+whenTxt():'Оберіть вільний час';
+ }else if(S.step===2){
+  b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+chosen().map(s=>s.name).join(', ')+'</div>'+
+   '<label>Держномер<input id="plate" placeholder="AX 1234 KA" style="text-transform:uppercase" autocomplete="off"></label>'+
+   '<label>Марка і модель авто<input id="car" placeholder="BMW X5 G05"></label>'+
+   '<label>Телефон<input id="phone" type="tel" inputmode="tel" placeholder="+38 0__ ___ __ __"></label>'+
+   '<div class="small">Шини</div><div class="g2" id="ty"></div>');
+  [['storage','На зберіганні у вас'],['bring','Привезу з собою']].forEach(([id,l])=>{const el=document.createElement('button');el.type='button';el.className='opt'+(S.tyres===id?' on':'');el.textContent=l;el.onclick=()=>{S.tyres=id;S.plate=$('#plate').value;S.car=$('#car').value;S.phone=$('#phone').value;render();};$('#ty').appendChild(el);});
+  ['plate','car','phone'].forEach(k=>{const i=$('#'+k);i.value=S[k];i.oninput=()=>{S[k]=i.value;check();};});
+  function check(){$('#next').disabled=!(S.plate.trim()&&S.phone.replace(/\D/g,'').length>=10);}
+  $('#hint').textContent='Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();return;
+ }else{
+  b.insertAdjacentHTML('beforeend','<div class="ok"><div class="c"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>'+
+   '<div class="h" style="font-size:20px">Ви записані!</div><div style="font-size:14px;color:#C9CCD0">'+whenTxt()+'<br>'+chosen().map(s=>s.name).join(', ')+'<br>'+S.plate.toUpperCase()+(S.car?' · '+S.car:'')+'<br>вул. Шевченка, 24</div>'+
+   '<div class="small">Якщо плани змінились — напишіть у Telegram або подзвоніть.</div>'+
+   '<div class="demo">Тестова версія: запис нікуди не відправляється</div>'+
+   '<button class="tile" style="min-height:48px;width:100%" type="button" id="home">← На головну</button></div>');
+  $('#home').onclick=()=>go('links');
+ }
+ $('#next').textContent=S.step===2?'ЗАПИСАТИСЬ':'ДАЛІ';$('#next').disabled=!can;
+}
+$('#next').onclick=()=>{S.step=Math.min(3,S.step+1);render();};
+$('#back').onclick=()=>{if(S.step===0||S.step===3)go('links');else{S.step--;render();}};
+</script>
+</body>
+</html>
