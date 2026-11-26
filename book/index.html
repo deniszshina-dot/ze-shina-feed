@@ -169,6 +169,7 @@ function showHit(){const el=$('#hit');if(!el)return;const k=normPlate(S.plate);c
  if(h.found===false){el.className='hit info';el.textContent='За цим номером комплекту на зберіганні не знайшли. Якщо шини у нас — уточнимо при записі.';}}
 function lookup(){const k=normPlate(S.plate);if(HITS[k]){showHit();return;}HITS[k]='load';showHit();
  fetch(API+'?plate='+encodeURIComponent(k)).then(r=>r.json()).then(j=>{HITS[k]=j.error?null:j;if(j.found&&!j.unsure&&S.tyres!=='new'){S.tyres='storage';[...document.querySelectorAll('#ty .opt')].forEach((b,i)=>b.classList.toggle('on',TYO[i][0]==='storage'));}showHit();}).catch(()=>{HITS[k]=null;showHit();});}
+const EXCL={set:'tyres',tyres:'set'};
 function chosen(){return SV.filter(s=>S.picked[s.id]);}
 function render(){
  const b=$('#body');b.innerHTML='';
@@ -177,10 +178,10 @@ function render(){
  $('#foot').style.display=S.step<3?'flex':'none';
  let can=true;
  if(S.step===0){
-  b.insertAdjacentHTML('beforeend','<div class="small">Що робимо? Можна обрати кілька послуг</div>');
+  b.insertAdjacentHTML('beforeend','<div class="small">Що робимо? Перевзування або шиномонтаж — щось одне, решту можна додати</div>');
   SV.forEach(s=>{const on=!!S.picked[s.id];const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
    el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p"><b>'+s.price+'</b>'+s.min+' хв</span>';
-   el.onclick=()=>{S.picked[s.id]=!on;render();};b.appendChild(el);});
+   el.onclick=()=>{S.picked[s.id]=!on;if(!on&&EXCL[s.id])S.picked[EXCL[s.id]]=false;render();};b.appendChild(el);});
   const c=chosen();can=c.length>0;$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
  }else if(S.step===1){
   const cur=days[S.day];
