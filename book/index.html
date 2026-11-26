@@ -44,7 +44,7 @@ a{color:var(--acc)}
 .body{flex:1;overflow-y:auto;padding:0 16px 12px;display:flex;flex-direction:column;gap:10px}
 .svc{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--tx);font-family:inherit;cursor:pointer;min-height:64px;width:100%}
 .svc .box{width:22px;height:22px;flex:none;border-radius:7px;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:800}
-.svc.on{border-color:var(--acc)}.svc.on .box{background:var(--acc);border-color:var(--acc)}
+.svc .box.rad{border-radius:50%;font-size:12px}.svc.keep{margin-top:6px;border-style:dashed}.svc.on{border-color:var(--acc)}.svc.on .box{background:var(--acc);border-color:var(--acc)}
 .svc .t{display:flex;flex-direction:column;gap:3px;flex:1}.svc .t b{font-size:14px}.svc .t span{font-size:12px;color:var(--mut)}
 .svc .p{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:11px;color:var(--mut)}.svc .p b{font-size:13px;color:var(--acc)}
 .seg{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}.seg::-webkit-scrollbar{display:none}
@@ -154,16 +154,16 @@ input.good{border-color:#4ADE80}
 </div>
 <script>
 const SV=[
- {id:'set',name:'Перевзування (комплект)',desc:'Колеса на дисках, тиск',from:300,min:30},
- {id:'tyres',name:'Шиномонтаж (тільки шини)',desc:'Зняти й поставити шини на ваші диски, з балансуванням',from:900,min:60},
- {id:'bal',name:'Балансування',desc:'Прибираємо биття керма',from:400,min:30},
- {id:'store',name:'Зберігання шин',desc:'Здати або забрати комплект',from:0,min:15},
- {id:'fit',name:'Встановлення дисків',desc:'Підберемо й встановимо',from:300,min:60}];
+ {id:'set',name:'Перевзування',desc:'Колеса вже на дисках — зняти й поставити'},
+ {id:'tyres',name:'Шиномонтаж',desc:'Перебортувати шини на ваших дисках, балансування входить'},
+ {id:'bal',name:'Балансування',desc:'Без перебортування'},
+ {id:'fit',name:'Встановлення нових дисків',desc:'Купили у нас або привезли'},
+ {id:'other',name:'Інше',desc:'Ремонт, рихтування, датчики — напишіть, що потрібно'}];
 const DOW=['Нд','Пн','Вт','Ср','Чт','Пт','Сб'];
 const MONN=['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
 const MONS=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
 const MON=['січня','лютого','березня','квітня','травня','червня','липня','серпня','вересня','жовтня','листопада','грудня'];
-const S={step:0,picked:{set:true},day:0,time:null,tyres:'storage',plate:'',car:'',phone:''};
+const S={step:0,svc:null,keep:false,note:'',day:0,time:null,tyres:'storage',plate:'',car:'',phone:''};
 const days=[];{let d=new Date();d.setHours(0,0,0,0);while(days.length<60){days.push(new Date(d));d.setDate(d.getDate()+1);}}
 const $=s=>document.querySelector(s);
 const PRT=[
@@ -211,8 +211,7 @@ function showHit(){const el=$('#hit');if(!el)return;const k=normPlate(S.plate);c
  if(h.found===false){el.className='hit info';el.textContent='За цим номером комплекту на зберіганні не знайшли. Якщо шини у нас — уточнимо при записі.';}}
 function lookup(){const k=normPlate(S.plate);if(HITS[k]){showHit();return;}HITS[k]='load';showHit();
  fetch(API+'?plate='+encodeURIComponent(k)).then(r=>r.json()).then(j=>{HITS[k]=j.error?null:j;if(j.found&&!j.unsure&&S.tyres!=='new'){S.tyres='storage';[...document.querySelectorAll('#ty .opt')].forEach((b,i)=>b.classList.toggle('on',TYO[i][0]==='storage'));}showHit();}).catch(()=>{HITS[k]=null;showHit();});}
-const EXCL={set:'tyres',tyres:'set'};
-function chosen(){return SV.filter(s=>S.picked[s.id]);}
+function svcText(){const s=SV.find(x=>x.id===S.svc);if(!s)return '';return (s.id==='other'?'Інше: '+S.note.trim():s.name)+(S.keep?' · залишає шини на зберігання':'');}
 function render(){
  const b=$('#body');b.innerHTML='';
  $('#title').textContent=['Послуги','Оберіть час','Ваші дані','Готово'][S.step];
@@ -220,11 +219,15 @@ function render(){
  $('#foot').style.display=S.step<3?'flex':'none';
  let can=true;
  if(S.step===0){
-  b.insertAdjacentHTML('beforeend','<div class="small">Що робимо? Перевзування або шиномонтаж — щось одне, решту можна додати</div>');
-  SV.forEach(s=>{const on=!!S.picked[s.id];const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
-   el.innerHTML='<span class="box">'+(on?'✓':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span><span class="p">'+s.min+' хв</span>';
-   el.onclick=()=>{S.picked[s.id]=!on;if(!on&&EXCL[s.id])S.picked[EXCL[s.id]]=false;render();};b.appendChild(el);});
-  const c=chosen();can=c.length>0;$('#hint').textContent='Обрано '+c.length+' · приблизно '+c.reduce((a,s)=>a+s.min,0)+' хв';
+  b.insertAdjacentHTML('beforeend','<div class="small">Що потрібно зробити? Оберіть одне</div>');
+  SV.forEach(s=>{const on=S.svc===s.id;const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
+   el.innerHTML='<span class="box rad">'+(on?'●':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span>';
+   el.onclick=()=>{S.svc=s.id;render();if(s.id==='other'){const n=$('#note');if(n)n.focus();}};b.appendChild(el);
+   if(on&&s.id==='other'){b.insertAdjacentHTML('beforeend','<label>Що саме?<input id="note" maxlength="120" placeholder="напр. рихтування 2 дисків R18"></label>');const n=$('#note');n.value=S.note;n.oninput=()=>{S.note=n.value;$('#next').disabled=S.note.trim().length<3;};}});
+  const kb=document.createElement('button');kb.type='button';kb.className='svc keep'+(S.keep?' on':'');
+  kb.innerHTML='<span class="box">'+(S.keep?'✓':'')+'</span><span class="t"><b>Залишу шини на зберігання</b><span>Після монтажу — підготуємо пакети й місце</span></span>';
+  kb.onclick=()=>{S.keep=!S.keep;render();};b.appendChild(kb);
+  can=!!S.svc&&(S.svc!=='other'||S.note.trim().length>=3);$('#hint').textContent=S.svc?'':'Оберіть послугу';
  }else if(S.step===1){
   const cur=days[S.day];
   b.insertAdjacentHTML('beforeend','<div class="mon"><span>'+MONN[cur.getMonth()]+' '+cur.getFullYear()+'</span><label class="pick">📅 Інша дата<input type="date" id="dpick"></label></div>');
@@ -250,7 +253,7 @@ function render(){
    if(!SLv.length)sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">На цей день запису немає</div>';}
   b.appendChild(sl);can=!!S.time;$('#hint').textContent=S.time?'Обрано '+whenTxt():'Оберіть вільний час';
  }else if(S.step===2){
-  b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+chosen().map(s=>s.name).join(', ')+'</div>'+
+  b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+svcText()+'</div>'+
    '<label>Держномер *<input id="plate" placeholder="AX 1234 KA" style="text-transform:uppercase" autocomplete="off" maxlength="10"><span class="err" id="e-plate"></span></label><div class="hit" id="hit"></div>'+
    '<label>Марка і модель авто<input id="car" placeholder="BMW X5 G05"></label>'+
    '<label>Телефон *<span class="tel"><span class="pre">+38 0</span><input id="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="99 123 45 67" maxlength="20"></span><span class="err" id="e-phone"></span></label>'+
@@ -268,7 +271,7 @@ function render(){
   $('#hint').textContent='* Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();flash();return;
  }else{
   b.insertAdjacentHTML('beforeend','<div class="ok"><div class="c"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>'+
-   '<div class="h" style="font-size:20px">Ви записані!</div><div style="font-size:14px;color:#C9CCD0">'+whenTxt()+'<br>'+chosen().map(s=>s.name).join(', ')+'<br>'+S.plate+(S.car?' · '+S.car:'')+'<br>Шини: '+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase()+'<br>+38 0'+S.phone+'<br>вул. Шевченка, 24</div>'+
+   '<div class="h" style="font-size:20px">Ви записані!</div><div style="font-size:14px;color:#C9CCD0">'+whenTxt()+'<br>'+svcText()+'<br>'+S.plate+(S.car?' · '+S.car:'')+'<br>Шини: '+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase()+'<br>+38 0'+S.phone+'<br>вул. Шевченка, 24</div>'+
    '<div class="small">Якщо плани змінились — напишіть у Telegram або подзвоніть.</div>'+
    '<button class="tile" style="min-height:48px;width:100%" type="button" id="home">← На головну</button></div>');
   $('#home').onclick=()=>go('links');
@@ -281,7 +284,7 @@ $('#next').onclick=()=>{
  if(S.step<2){S.step++;render();return;}
  if(S.step!==2||!(plateOk(S.plate)&&phoneOk(S.phone))||S.sending)return;
  S.sending=true;const nb=$('#next');nb.disabled=true;nb.textContent='НАДСИЛАЄМО…';
- const body={action:'book',date:iso(days[S.day]),time:S.time,plate:normPlate(S.plate),car:S.car,phone:'0'+S.phone.replace(/\D/g,''),services:chosen().map(s=>s.name).join(', '),tyres:S.tyres};
+ const body={action:'book',date:iso(days[S.day]),time:S.time,plate:normPlate(S.plate),car:S.car,phone:'0'+S.phone.replace(/\D/g,''),services:svcText(),tyres:S.tyres};
  fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)}).then(r=>r.json()).then(j=>{
   S.sending=false;
   if(j.ok){delete SL[body.date];S.flash='';S.step=3;render();return;}
