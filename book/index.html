@@ -58,16 +58,16 @@ a{color:var(--acc)}
 .pcard{border-radius:14px;background:var(--card);border:1px solid var(--line);padding:12px}
 .pcard h3{margin:0 0 6px;font-size:16px}
 .ex{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:16px}.ex:first-of-type{border-top:0}.ex b{white-space:nowrap}
-.days{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.days{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;-webkit-overflow-scrolling:touch}
 .days::-webkit-scrollbar{display:none}
-.days .day{flex:0 0 52px;scroll-snap-align:start}
+.days .day{flex:0 0 60px;scroll-snap-align:start}
 .mon{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:16px;font-weight:700}
 .pick{position:relative;display:flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--acc);font-size:15px;font-weight:700;overflow:hidden}
 .pick input{position:absolute;inset:0;opacity:0;height:auto;padding:0;border:0;cursor:pointer}
 .day,.slot{display:flex;flex-direction:column;align-items:center;gap:2px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:#E6E7E9;font-family:inherit;cursor:pointer}
-.day{padding:9px 0;min-height:56px}.day span{font-size:14px;font-weight:600}.day b{font-size:18px}
-.slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.slot{padding:10px 0;min-height:54px}.slot b{font-size:18px}.slot span{font-size:14px}
+.day{padding:10px 0;min-height:66px}.day span{font-size:14px;font-weight:600}.day b{font-size:18px}
+.slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.slot{padding:12px 0;min-height:66px}.slot b{font-size:18px}.slot span{font-size:14px}
 .sel{background:var(--acc)!important;border-color:var(--acc)!important;color:var(--ink)!important}
 .off{background:#15171A!important;color:#5B6068!important;cursor:not-allowed}
 label{display:flex;flex-direction:column;gap:6px;font-size:15px;color:var(--mut)}
@@ -103,6 +103,24 @@ input.good{border-color:#4ADE80}
 .lnk{background:none;border:0;color:#F0A3A3;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;min-height:44px}
 .note{font-size:15px;color:var(--mut);line-height:1.5;text-align:left;width:100%}
 .demo{font-size:14px;color:#8A8F96;text-align:center;padding:6px}
+/* motion */
+.cta,.tile,.btn,.svc,.opt,.day,.slot,.next,.back,.pill,.tg,.seg button,.lnk{transition:transform .12s ease,background-color .2s,border-color .2s,color .2s;-webkit-tap-highlight-color:transparent}
+.cta:active,.tile:active,.btn:active,.svc:active,.opt:active,.day:not(:disabled):active,.slot:not(:disabled):active,.next:not(:disabled):active,.back:active,.pill:active,.tg:active,.seg button:active{transform:scale(.96)}
+@keyframes inR{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+@keyframes inL{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(.6);opacity:0}70%{transform:scale(1.08);opacity:1}100%{transform:scale(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.body.inR{animation:inR .25s ease-out}.body.inL{animation:inL .25s ease-out}
+.view.on{animation:fadeUp .22s ease-out}
+.hit.hok,.hit.info,.mycard,.errcard{animation:fadeUp .25s ease-out}
+.ok .c{animation:pop .4s ease-out}
+.ok .c path{stroke-dasharray:24;stroke-dashoffset:24;animation:draw .35s .25s ease-out forwards}
+.errcard{border-radius:14px;background:#2A1B1B;border:1px solid #5A2F2F;color:#F5C2C2;padding:12px 14px;font-size:16px;line-height:1.45;display:flex;flex-direction:column;gap:10px}
+.errcard b{color:#F87171}
+.errcard .btn{background:var(--acc);border-color:var(--acc);color:var(--ink);min-height:48px}
+.cd{display:inline-block;margin-top:4px;padding:3px 10px;border-radius:999px;background:#24402C;color:#9EF0B4;font-weight:700;font-size:15px}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.ok .c path{stroke-dashoffset:0}}
 </style>
 </head>
 <body>
@@ -194,7 +212,7 @@ function renderPrice(){
  pb.innerHTML=h;
  pb.querySelectorAll('[data-pt]').forEach(b=>b.onclick=()=>{PT=+b.dataset.pt;renderPrice();});
 }
-function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));window.scrollTo(0,0);if(v==='book'){S.step=0;render();}if(v==='price')renderPrice();}
+function go(v){LASTSTEP=-1;S.errCard='';document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));window.scrollTo(0,0);if(v==='book'){S.step=0;render();}if(v==='price')renderPrice();}
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
 function openNow(){const n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()/60;const end=d===0?0:d===6?15:18;const o=d!==0&&h>=9&&h<end;const e=$('#open');e.querySelector('span').textContent=o?'Відчинено до '+end+':00':'Зараз зачинено';e.style.background=o?'#1B2A1F':'#2A1B1B';e.style.color=o?'#7BE39A':'#F0A3A3';e.querySelector('i').style.background=o?'#4ADE80':'#F87171';}
 openNow();
@@ -203,8 +221,9 @@ function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)|
 function saveMine(o){ls('zb',o);showMine();}
 function showMine(){const el=document.getElementById('mybk');if(!el)return;const o=ls('zb');const t=new Date();const td=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
  if(!o||o.date<td){if(o)ls('zb',null);el.innerHTML='';return;}
- el.innerHTML='<div class="mycard"><div><b>Ваш запис</b><br>'+o.when+'<br>'+o.svc+(o.plate?'<br>'+o.plate:'')+'</div><div class="g2">'+(BOT?'<a class="btn" target="_blank" rel="noopener" href="https://t.me/'+BOT+'?start='+o.id+'">🔔 Нагадати</a>':'<span></span>')+'<button class="btn" type="button" id="mycxl">Скасувати</button></div></div>';
+ el.innerHTML='<div class="mycard"><div><b>Ваш запис</b><br>'+o.when+'<br>'+cdTxt(o.date)+o.svc+(o.plate?'<br>'+o.plate:'')+'</div><div class="g2">'+(BOT?'<a class="btn" target="_blank" rel="noopener" href="https://t.me/'+BOT+'?start='+o.id+'">🔔 Нагадати</a>':'<span></span>')+'<button class="btn" type="button" id="mycxl">Скасувати</button></div></div>';
  document.getElementById('mycxl').onclick=e=>cancelMine(e.currentTarget);}
+function cdTxt(ymd){const t=new Date();t.setHours(0,0,0,0);const p=ymd.split('-');const d=new Date(+p[0],p[1]-1,+p[2]);const n=Math.round((d-t)/864e5);if(n<0)return '';const w=n===0?'сьогодні':n===1?'завтра':'через '+n+' '+(n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?'дні':(n%10===1&&n%100!==11?'день':'днів'));return '<span class="cd">⏱ '+w+'</span><br>';}
 function cancelMine(btn){const o=ls('zb');if(!o)return;
  if(!btn.dataset.sure){btn.dataset.sure='1';btn.textContent='Точно скасувати? Натисніть ще раз';return;}
  btn.disabled=true;btn.textContent='Скасовуємо…';
@@ -234,8 +253,10 @@ function showHit(){const el=$('#hit');if(!el)return;const k=normPlate(S.plate);c
 function lookup(){const k=normPlate(S.plate);if(HITS[k]){showHit();return;}HITS[k]='load';showHit();
  fetch(API+'?plate='+encodeURIComponent(k)).then(r=>r.json()).then(j=>{HITS[k]=j.error?null:j;if(j.found&&!j.unsure&&S.tyres!=='new'){S.tyres='storage';[...document.querySelectorAll('#ty .opt')].forEach((b,i)=>b.classList.toggle('on',TYO[i][0]==='storage'));}showHit();}).catch(()=>{HITS[k]=null;showHit();});}
 function svcText(){const s=SV.find(x=>x.id===S.svc);if(!s)return '';return (s.id==='other'?'Інше: '+S.note.trim():s.name)+(S.rad&&s.id!=='other'?' · '+(S.rad==='?'?'радіус не знає':S.rad):'')+(S.rf&&s.id!=='other'?' · RunFlat/низький профіль':'')+(S.keep?' · залишає шини на зберігання':'');}
+let LASTSTEP=-1;
 function render(){
  const b=$('#body');b.innerHTML='';
+ if(S.step!==LASTSTEP){b.classList.remove('inR','inL');void b.offsetWidth;if(LASTSTEP>=0)b.classList.add(S.step>LASTSTEP?'inR':'inL');LASTSTEP=S.step;}
  $('#title').textContent=['Послуги','Оберіть час','Ваші дані','Готово'][S.step];
  [...$('#steps').children].forEach((x,i)=>{x.className=(i<=S.step?'done ':'')+(i===S.step?'cur':'');});
  $('#foot').style.display=S.step<3?'flex':'none';
@@ -278,8 +299,9 @@ function render(){
   else if(SLv==='err'){sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">Не вдалося завантажити розклад. Перевірте інтернет і спробуйте ще раз.</div>';delete SL[ymd];}
   else{SLv.forEach(x=>{const t=x.time,left=x.left;const el=document.createElement('button');el.type='button';
    el.className='slot'+(S.time===t?' sel':'')+(left===0?' off':'');el.disabled=left===0;
-   el.innerHTML='<b>'+t+'</b><span>'+(left===0?'зайнято':'вільно '+left+' з 2')+'</span>';el.onclick=()=>{S.time=t;S.flash='';render();};sl.appendChild(el);});
+   el.innerHTML='<b>'+t+'</b><span>'+(left===0?'зайнято':'вільно '+left+' з 2')+'</span>';el.onclick=()=>{S.time=t;S.flash='';S.errCard='';render();};sl.appendChild(el);});
    if(!SLv.length)sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">На цей день запису немає'+(SLv.why&&SLv.why!=='вихідний'?' ('+SLv.why+')':'')+'</div>';}
+  if(S.errCard){const ec=document.createElement('div');ec.className='errcard';ec.innerHTML='<div><b>⚠ </b>'+S.errCard+'</div>';const fr=Array.isArray(SLv)?SLv.find(x=>x.left>0):null;if(fr){const fb=document.createElement('button');fb.type='button';fb.className='btn';fb.textContent='Обрати найближчий вільний: '+fr.time;fb.onclick=()=>{S.time=fr.time;S.errCard='';S.flash='';render();};ec.appendChild(fb);}b.insertBefore(ec,b.firstChild);}
   b.appendChild(sl);
   if(Array.isArray(SLv)&&SLv.length&&ymd===iso(days[0]))b.insertAdjacentHTML('beforeend','<div class="small">На сьогодні записуємо щонайменше за 2 години</div>');
   if(Array.isArray(SLv)&&SLv.length&&SLv.every(x=>x.left===0)&&BOT)b.insertAdjacentHTML('beforeend','<div class="small">Місць на цей день немає. Можемо повідомити, якщо хтось скасує запис:</div><a class="tg" target="_blank" rel="noopener" href="https://t.me/'+BOT+'?start=w'+ymd.replace(/-/g,'')+'">🔔 Повідомити в Telegram</a>');can=!!S.time;$('#hint').textContent=S.time?'Обрано '+whenTxt():'Оберіть вільний час';
@@ -299,12 +321,14 @@ function render(){
    if(show==='p'||okP||S.plate.replace(/\s/g,'').length>=8||(S.plate&&show==='t')){pi.classList.toggle('bad',!okP);pi.classList.toggle('good',okP);$('#e-plate').textContent=okP?'':'Формат: 2 літери, 4 цифри, 2 літери — напр. AX 1234 KA';}
    if(show==='t'||okT||S.phone.replace(/\D/g,'').length>=9){ph.classList.toggle('bad',!okT);ph.classList.toggle('good',okT);$('#e-phone').textContent=okT?'':'Введіть мобільний номер повністю: +38 0XX XXX XX XX';}
    $('#next').disabled=!(okP&&okT);if(okP)lookup();else showHit();}
+  if(S.errCard)b.insertAdjacentHTML('afterbegin','<div class="errcard"><div><b>⚠ </b>'+S.errCard+'</div><a class="btn" href="tel:+380992232552">📞 Подзвонити 099 223 25 52</a></div>');
   $('#hint').textContent='* Номер авто і телефон — обов’язково';$('#next').textContent='ЗАПИСАТИСЬ';check();flash();return;
  }else{
   b.insertAdjacentHTML('beforeend','<div class="ok"><div class="c"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>'+
    '<div class="h" style="font-size:22px">Ви записані!</div><div style="font-size:17px;color:#C9CCD0">'+whenTxt()+'<br>'+svcText()+'<br>'+S.plate+(S.car?' · '+S.car:'')+'<br>Шини: '+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase()+'<br>+38 0'+S.phone+'<br>вул. Шевченка, 24</div>'+
    (BOT&&S.bid?'<a class="tg" target="_blank" rel="noopener" href="https://t.me/'+BOT+'?start='+S.bid+'">🔔 Нагадати мені в Telegram</a>':'')+
    '<div class="note">🔑 Не забудьте ключ від секреток, якщо вони стоять.<br>🚨 Під час повітряної тривоги роботу призупиняємо, можлива невелика затримка.<br>Плани змінились? Скасуйте запис — місце знадобиться іншим.</div>'+
+   '<a class="btn" style="width:100%;min-height:52px;font-size:17px" href="tel:+380992232552">📞 Подзвонити нам · 099 223 25 52</a>'+
    '<button class="lnk" type="button" id="cxl">Скасувати запис</button>'+
    '<button class="tile" style="min-height:48px;width:100%" type="button" id="home">← На головну</button></div>');
   $('#home').onclick=()=>go('links');$('#cxl').onclick=()=>cancelMine($('#cxl'));
@@ -320,11 +344,11 @@ $('#next').onclick=()=>{
  const body={action:'book',date:iso(days[S.day]),time:S.time,plate:normPlate(S.plate),car:S.car,phone:'0'+S.phone.replace(/\D/g,''),services:svcText(),tyres:S.tyres};
  fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)}).then(r=>r.json()).then(j=>{
   S.sending=false;
-  if(j.ok){delete SL[body.date];S.flash='';S.bid=j.id;if(j.bot)BOT=j.bot;
+  if(j.ok){delete SL[body.date];S.flash='';S.errCard='';S.bid=j.id;if(j.bot)BOT=j.bot;
    saveMine({id:j.id,phone:body.phone,date:body.date,time:body.time,svc:svcText(),plate:fmtPlate(body.plate),when:whenTxt()});S.step=3;render();return;}
   const msg={has_booking:'За цим номером уже є запис'+(j.date?' на '+j.date.slice(8)+'.'+j.date.slice(5,7)+' о '+j.time:'')+'. Скасуйте його на головній сторінці або подзвоніть нам.',too_soon:'На сьогодні записуємо щонайменше за 2 години — оберіть пізніший час.',closed:'Цей час щойно закрили для запису — оберіть інший.',full:'На цей час щойно записалися — оберіть інший.',dup:'Це авто вже записане на цей день. Якщо треба змінити час — напишіть нам.',bad_date:'Цей день недоступний для запису.',bad_time:'Цей час недоступний.',bad_plate:'Перевірте номер авто.',bad_phone:'Перевірте номер телефону.',busy:'Забагато запитів, спробуйте за хвилину.'}[j.error]||'Не вдалося записати, спробуйте ще раз.';
-  if(['full','bad_time','too_soon','closed'].includes(j.error)){delete SL[iso(days[S.day])];S.time=null;S.step=1;render();}else{render();}
-  S.flash=msg;flash();
+  if(['full','bad_time','too_soon','closed'].includes(j.error)){delete SL[iso(days[S.day])];S.time=null;S.step=1;}
+  S.errCard=msg;S.flash='';if(S.step===1||S.step===2)render();else{S.flash=msg;flash();}
  }).catch(()=>{S.sending=false;S.flash='Немає зв’язку з сервером, спробуйте ще раз.';render();});
 };
 $('#back').onclick=()=>{if(S.step===0||S.step===3)go('links');else{S.step--;render();}};
