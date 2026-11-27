@@ -32,6 +32,7 @@ button{transition:transform .12s,border-color .2s}button:active{transform:scale(
 .card{border-radius:16px;background:var(--card);border:1px solid var(--line);overflow:hidden}
 .ph{position:relative;aspect-ratio:1/1;background:#0D0F11}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .nop{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#9aa3ad;font-size:17px;line-height:1.5;padding:20px}
 .ph .dots{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:6px}
 .ph .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.4)}.ph .dots i.on{background:#fff}
 .ph .tag{position:absolute;top:10px;left:10px;padding:5px 10px;border-radius:999px;font-size:14px;font-weight:800}
@@ -77,7 +78,7 @@ textarea{height:80px;padding:10px 14px;font-size:16px}
 <div class="modal" id="m"><div class="sheet" id="sh"></div></div>
 <script>
 const API='https://script.google.com/macros/s/AKfycbyk9BTRvqwtN_wGF1GXqJUlCPCr5-xo1W13oyKEH8KktKd-5stX-nofwnBuSupRyaBo/exec';
-const NOTE={'BMW X5 (G05)':{18:'R18–R19 не стають на версії з М-гальмами (M50i/M60i).',19:'R18–R19 не стають на версії з М-гальмами (M50i/M60i).'},'BMW X6 (G06)':{19:'R19 не стає на версії з М-гальмами (M50i/M60i).'},'BMW 5 (G30/G31)':{17:'R17–R18 не стають на версії з М-гальмами (M550i, M Sport Pro).',18:'R17–R18 не стають на версії з М-гальмами (M550i, M Sport Pro).'},'BMW 3 (G20/G21)':{17:'R17–R18 не стають на M340i та версії з М-гальмами.',18:'R17–R18 не стають на M340i та версії з М-гальмами.'}};
+const NOTE=(()=>{const m=(r,v)=>r+' можуть не стати на '+v+' з М-гальмами (великі супорти). Надішліть фото супорта — перевіримо безкоштовно.';return{'BMW X5 (G05)':{18:m('R18–R19','M50i/M60i та версії'),19:m('R18–R19','M50i/M60i та версії')},'BMW X6 (G06)':{19:m('R19','M50i/M60i та версії')},'BMW 5 (G30/G31)':{17:m('R17–R18','M550i та версії'),18:m('R17–R18','M550i та версії')},'BMW 3 (G20/G21)':{17:m('R17–R18','M340i та версії'),18:m('R17–R18','M340i та версії')}};})();
 const YRS={'BMW X5 (G05)':'2018–2025','BMW X6 (G06)':'2019–2025','BMW X7 (G07)':'2019–2025','BMW 5 (G30/G31)':'2017–2023','BMW 3 (G20/G21)':'2019–2025'};
 let D={},S={step:0,car:null,R:null,f:'all'},LAST=-1;
 const $=s=>document.querySelector(s);
@@ -101,14 +102,14 @@ function render(){
   const nt=(NOTE[S.car]||{})[S.R];if(nt)b.insertAdjacentHTML('beforeend','<div class="note warn">⚠ '+nt+'</div>');
   if(S.f==='st')l=l.filter(x=>x.st);
   if(!l.length)b.insertAdjacentHTML('beforeend','<div class="note">В наявності в цьому радіусі зараз немає — дивіться «Усі», під замовлення привеземо за 3–5 днів.</div>');
-  l.forEach(x=>{const imgs=[x.w].concat(x.c||[]);let k=0;const e=document.createElement('div');e.className='card';
-   e.innerHTML='<div class="ph"><img loading="lazy" alt="Диски '+x.col+' R'+S.R+'" src="img/'+imgs[0]+'"><span class="tag '+(x.st?'st':'ord')+'">'+(x.st?'В наявності':'Під замовлення · 3–5 днів')+'</span>'+(imgs.length>1?'<button class="nav l" type="button" aria-label="Попереднє фото"></button><button class="nav r" type="button" aria-label="Наступне фото"></button><div class="dots">'+imgs.map((_,i)=>'<i class="'+(i?'':'on')+'"></i>').join('')+'</div>':'')+'</div>'+
+  l.forEach(x=>{const imgs=[x.w].concat(x.c||[]).filter(Boolean);let k=0;const e=document.createElement('div');e.className='card';
+   e.innerHTML='<div class="ph">'+(imgs.length?'<img loading="lazy" alt="Диски '+x.col+' R'+S.R+'" src="img/'+imgs[0]+'">':'<div class="nop">📷<br>Фото саме цього кольору<br>надішлемо в Telegram / Viber</div>')+'<span class="tag '+(x.st?'st':'ord')+'">'+(x.st?'В наявності':'Під замовлення · 3–5 днів')+'</span>'+(imgs.length>1?'<button class="nav l" type="button" aria-label="Попереднє фото"></button><button class="nav r" type="button" aria-label="Наступне фото"></button><div class="dots">'+imgs.map((_,i)=>'<i class="'+(i?'':'on')+'"></i>').join('')+'</div>':'')+'</div>'+
     '<div class="ci"><div class="t">R'+S.R+' · '+x.col+'</div><div class="sz">'+sz(x)+'</div><div class="small">Підходить для '+S.car+(imgs.length>1?' · гортайте фото, є на авто':'')+'</div><div class="pr"><span class="small">за комплект 4 шт.</span><b>'+fmt(x.p)+' грн</b></div><button class="cta" type="button">Хочу цей комплект</button></div>';
-   const im=e.querySelector('img'),dots=e.querySelectorAll('.dots i');
+   const im=e.querySelector('.ph img'),dots=e.querySelectorAll('.dots i');
    const show=i=>{k=(i+imgs.length)%imgs.length;im.src='img/'+imgs[k];dots.forEach((d,j)=>d.classList.toggle('on',j===k));};
    if(imgs.length>1){e.querySelector('.nav.l').onclick=()=>show(k-1);e.querySelector('.nav.r').onclick=()=>show(k+1);}
    e.querySelector('.cta').onclick=()=>lead(x);b.appendChild(e);});
-  b.insertAdjacentHTML('beforeend','<div class="note">Ціни за комплект із 4 дисків. Ковпачки в комплекті. Доставка Новою поштою по Україні, примірка та встановлення в Харкові (вул. Шевченка, 24). Остаточну наявність підтвердимо при замовленні.</div>');
+  b.insertAdjacentHTML('beforeend','<div class="note">Ціни за комплект із 4 дисків. Доставка Новою поштою по Україні, примірка та встановлення в Харкові (вул. Шевченка, 24). Остаточну наявність підтвердимо при замовленні.</div>');
  }}
 const LV={via:'tg'};
 function lead(x){const m=$('#m'),sh=$('#sh');
@@ -128,7 +129,7 @@ function lead(x){const m=$('#m'),sh=$('#sh');
   }).catch(()=>{btn.disabled=false;btn.textContent='Надіслати';$('#le').textContent='Немає зв’язку — спробуйте ще раз або подзвоніть 095 772 21 73';});};
  m.classList.add('on');}
 $('#back').onclick=()=>{if(S.step>0){S.step--;render();}};
-fetch('data.json?v=1').then(r=>r.json()).then(j=>{D=j;const q=new URLSearchParams(location.search);const c=q.get('car');if(c){const k=Object.keys(D).find(x=>x.toLowerCase().includes(c.toLowerCase()));if(k){S.car=k;S.step=1;const R=q.get('r');if(R&&D[k][R]){S.R=R;S.step=2;}}}render();}).catch(()=>{$('#body').innerHTML='<div class="note">Не вдалося завантажити каталог. Оновіть сторінку.</div>';});
+fetch('data.json?v=2').then(r=>r.json()).then(j=>{D=j;const q=new URLSearchParams(location.search);const c=q.get('car');if(c){const k=Object.keys(D).find(x=>x.toLowerCase().includes(c.toLowerCase()));if(k){S.car=k;S.step=1;const R=q.get('r');if(R&&D[k][R]){S.R=R;S.step=2;}}}render();}).catch(()=>{$('#body').innerHTML='<div class="note">Не вдалося завантажити каталог. Оновіть сторінку.</div>';});
 </script>
 </body>
 </html>
