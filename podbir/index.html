@@ -33,8 +33,18 @@ button{transition:transform .12s,border-color .2s}button:active{transform:scale(
 .ph{position:relative;aspect-ratio:1/1;background:#0D0F11}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
 .ph .nop{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#9aa3ad;font-size:17px;line-height:1.5;padding:20px}
-.ph .dots{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:6px}
-.ph .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.4)}.ph .dots i.on{background:#fff}
+.ph .cnt{position:absolute;bottom:10px;right:10px;padding:3px 9px;border-radius:999px;background:rgba(0,0,0,.55);font-size:13px;color:#fff}
+.th{display:flex;gap:6px;padding:8px 10px 0;overflow-x:auto;scrollbar-width:none}.th::-webkit-scrollbar{display:none}
+.th button{flex:none;width:62px;height:62px;padding:0;border-radius:10px;border:2px solid transparent;overflow:hidden;background:#0D0F11;cursor:pointer;opacity:.7}
+.th button.on{border-color:var(--acc);opacity:1}.th img{width:100%;height:100%;object-fit:cover;display:block}
+.tag.eu{background:#16233A;color:#8EC5FF;border:1px solid #2B4A75}
+.eu-box{border-radius:16px;background:var(--card);border:1px solid var(--line);overflow:hidden}
+.eu-h{width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px;background:none;border:0;color:var(--tx);font-family:inherit;font-size:16px;font-weight:800;cursor:pointer;text-align:left}
+.eu-h span{color:var(--mut);font-weight:500;font-size:14px;display:block;margin-top:3px}
+.row{display:flex;align-items:center;gap:10px;padding:12px 16px;border-top:1px solid var(--line)}
+.row .i{flex:1;min-width:0}.row .i b{display:block;font-size:16px}.row .i div{font-size:14px;color:var(--mut)}
+.row .p{font-family:Unbounded,sans-serif;font-size:16px;color:var(--acc);white-space:nowrap}
+.row button{flex:none;min-height:40px;padding:0 12px;border-radius:10px;border:0;background:var(--acc);color:var(--ink);font-family:inherit;font-weight:800;font-size:14px;cursor:pointer}
 .ph .tag{position:absolute;top:10px;left:10px;padding:5px 10px;border-radius:999px;font-size:14px;font-weight:800}
 .tag.st{background:#1B2A1F;color:var(--ok);border:1px solid #2F5A3A}.tag.ord{background:#2A2312;color:var(--acc);border:1px solid #5A4A22}
 .ph .nav{position:absolute;top:0;bottom:0;width:30%;background:none;border:0;cursor:pointer}
@@ -83,6 +93,8 @@ const YRS={'BMW X5 (G05)':'2018–2025','BMW X6 (G06)':'2019–2025','BMW X7 (G0
 let D={},S={step:0,car:null,R:null,f:'all'},LAST=-1;
 const $=s=>document.querySelector(s);
 const fmt=n=>n.toLocaleString('uk-UA').replace(/ /g,' ');
+const TAG={own:['st','В наявності'],ws:['ord','Під замовлення · 1–2 дні'],eu:['eu','Під замовлення з ЄС · 10–14 днів']};
+const STK={own:'в наявності',ws:'під замовлення (Україна, 1–2 дні)',eu:'під замовлення з ЄС (10–14 днів)'};
 const sz=x=>x.t==='st'?'перед '+x.f[0]+'J ET'+x.f[1]+' · зад '+x.r[0]+'J ET'+x.r[1]:x.f[0]+'J ET'+x.f[1]+' · 4 однакових';
 function render(){
  const b=$('#body');b.innerHTML='';if(S.step!==LAST){b.classList.remove('in');void b.offsetWidth;b.classList.add('in');LAST=S.step;}
@@ -94,21 +106,26 @@ function render(){
   b.insertAdjacentHTML('beforeend','<div class="note">Немає вашого авто? Напишіть нам — підберемо вручну.<br><a href="https://t.me/Den_ZEshina" style="color:var(--acc)">Telegram</a> · <a href="tel:+380957722173" style="color:var(--acc)">095 772 21 73</a></div>');
  }else if(S.step===1){$('#title').textContent=S.car;
   b.insertAdjacentHTML('beforeend','<div class="small">Оберіть радіус дисків</div><div class="chips" id="ch"></div>');
-  Object.keys(D[S.car]).forEach(R=>{const l=D[S.car][R],st=l.filter(x=>x.st).length;const e=document.createElement('button');e.type='button';e.className='chip';e.innerHTML='<b>R'+R+'</b><span>'+l.length+' вар.'+(st?' · '+st+' в наявн.':'')+'</span>';e.onclick=()=>{S.R=R;S.step=2;S.f='all';render();window.scrollTo(0,0);};$('#ch').appendChild(e);});
+  Object.keys(D[S.car]).forEach(R=>{const l=D[S.car][R],st=l.filter(x=>x.s==='own').length;const e=document.createElement('button');e.type='button';e.className='chip';e.innerHTML='<b>R'+R+'</b><span>'+l.length+' вар.'+(st?' · '+st+' в наявн.':'')+'</span>';e.onclick=()=>{S.R=R;S.step=2;S.f='all';S.open=false;render();window.scrollTo(0,0);};$('#ch').appendChild(e);});
  }else{$('#title').textContent=S.car+' · R'+S.R;
-  let l=D[S.car][S.R];const ns=l.filter(x=>x.st).length;
-  b.insertAdjacentHTML('beforeend','<div class="filt"><button type="button" data-f="all">Усі ('+l.length+')</button><button type="button" data-f="st">В наявності ('+ns+')</button></div>');
+  let l=D[S.car][S.R];const ns=l.filter(x=>x.s==='own').length,no=l.length-ns;
+  b.insertAdjacentHTML('beforeend','<div class="filt"><button type="button" data-f="all">Усі ('+l.length+')</button><button type="button" data-f="st">В наявності ('+ns+')</button><button type="button" data-f="ord">Під замовл. ('+no+')</button></div>');
   b.querySelectorAll('[data-f]').forEach(x=>{x.classList.toggle('on',x.dataset.f===S.f);x.onclick=()=>{S.f=x.dataset.f;render();};});
   const nt=(NOTE[S.car]||{})[S.R];if(nt)b.insertAdjacentHTML('beforeend','<div class="note warn">⚠ '+nt+'</div>');
-  if(S.f==='st')l=l.filter(x=>x.st);
-  if(!l.length)b.insertAdjacentHTML('beforeend','<div class="note">В наявності в цьому радіусі зараз немає — дивіться «Усі», під замовлення привеземо за 3–5 днів.</div>');
-  l.forEach(x=>{const imgs=[x.w].concat(x.c||[]).filter(Boolean);let k=0;const e=document.createElement('div');e.className='card';
-   e.innerHTML='<div class="ph">'+(imgs.length?'<img loading="lazy" alt="Диски '+x.col+' R'+S.R+'" src="img/'+imgs[0]+'">':'<div class="nop">📷<br>Фото саме цього кольору<br>надішлемо в Telegram / Viber</div>')+'<span class="tag '+(x.st?'st':'ord')+'">'+(x.st?'В наявності':'Під замовлення · 3–5 днів')+'</span>'+(imgs.length>1?'<button class="nav l" type="button" aria-label="Попереднє фото"></button><button class="nav r" type="button" aria-label="Наступне фото"></button><div class="dots">'+imgs.map((_,i)=>'<i class="'+(i?'':'on')+'"></i>').join('')+'</div>':'')+'</div>'+
-    '<div class="ci"><div class="t">R'+S.R+' · '+x.col+'</div><div class="sz">'+sz(x)+'</div><div class="small">Підходить для '+S.car+(imgs.length>1?' · гортайте фото, є на авто':'')+'</div><div class="pr"><span class="small">за комплект 4 шт.</span><b>'+fmt(x.p)+' грн</b></div><button class="cta" type="button">Хочу цей комплект</button></div>';
-   const im=e.querySelector('.ph img'),dots=e.querySelectorAll('.dots i');
-   const show=i=>{k=(i+imgs.length)%imgs.length;im.src='img/'+imgs[k];dots.forEach((d,j)=>d.classList.toggle('on',j===k));};
-   if(imgs.length>1){e.querySelector('.nav.l').onclick=()=>show(k-1);e.querySelector('.nav.r').onclick=()=>show(k+1);}
+  if(S.f==='st')l=l.filter(x=>x.s==='own');if(S.f==='ord')l=l.filter(x=>x.s!=='own');
+  if(!l.length)b.insertAdjacentHTML('beforeend','<div class="note">В наявності в цьому радіусі зараз немає — дивіться «Під замовлення».</div>');
+  const cards=l.filter(x=>x.s!=='eu'||x.im.length),rows=l.filter(x=>x.s==='eu'&&!x.im.length);
+  cards.forEach(x=>{const imgs=x.im||[];const e=document.createElement('div');e.className='card';const tg=TAG[x.s];
+   e.innerHTML='<div class="ph">'+(imgs.length?'<img loading="lazy" alt="Диски '+x.col+' R'+S.R+'" src="img2/'+imgs[0]+'">':'<div class="nop">📷<br>Фото саме цього кольору<br>надішлемо в Telegram / Viber</div>')+'<span class="tag '+tg[0]+'">'+tg[1]+'</span>'+(imgs.length>1?'<span class="cnt">1 / '+imgs.length+'</span>':'')+'</div>'+
+    (imgs.length>1?'<div class="th">'+imgs.map((f,i)=>'<button type="button" class="'+(i?'':'on')+'" aria-label="Фото '+(i+1)+'"><img loading="lazy" alt="" src="img2/'+f+'"></button>').join('')+'</div>':'')+
+    '<div class="ci"><div class="t">R'+S.R+' · '+x.col+'</div><div class="sz">'+sz(x)+'</div><div class="small">Підходить для '+S.car+'</div><div class="pr"><span class="small">за комплект 4 шт.</span><b>'+fmt(x.p)+' грн</b></div><button class="cta" type="button">Хочу цей комплект</button></div>';
+   const im=e.querySelector('.ph img'),tb=e.querySelectorAll('.th button'),cn=e.querySelector('.cnt');
+   tb.forEach((t,i)=>t.onclick=()=>{im.src='img2/'+imgs[i];tb.forEach((u,j)=>u.classList.toggle('on',i===j));if(cn)cn.textContent=(i+1)+' / '+imgs.length;t.scrollIntoView({block:'nearest',inline:'nearest',behavior:'smooth'});});
    e.querySelector('.cta').onclick=()=>lead(x);b.appendChild(e);});
+  if(rows.length){const bx=document.createElement('div');bx.className='eu-box';
+   bx.innerHTML='<button type="button" class="eu-h"><div>Ще '+rows.length+' варіантів з Європи<span>Під замовлення 10–14 днів · фото надішлемо в Telegram / Viber</span></div><b>'+(S.open?'−':'+')+'</b></button>';
+   if(S.open)rows.forEach(x=>{const r=document.createElement('div');r.className='row';r.innerHTML='<div class="i"><b>'+x.col+'</b><div>'+sz(x)+'</div></div><div class="p">'+fmt(x.p)+' грн</div><button type="button">Хочу</button>';r.querySelector('button').onclick=()=>lead(x);bx.appendChild(r);});
+   bx.querySelector('.eu-h').onclick=()=>{S.open=!S.open;render();};b.appendChild(bx);}
   b.insertAdjacentHTML('beforeend','<div class="note">Ціни за комплект із 4 дисків. Доставка Новою поштою по Україні, примірка та встановлення в Харкові (вул. Шевченка, 24). Остаточну наявність підтвердимо при замовленні.</div>');
  }}
 const LV={via:'tg'};
@@ -122,14 +139,14 @@ function lead(x){const m=$('#m'),sh=$('#sh');
  $('#lx').onclick=()=>m.classList.remove('on');m.onclick=e=>{if(e.target===m)m.classList.remove('on');};
  $('#ls').onclick=()=>{const ph=lp.value.replace(/\D/g,'');if(!/^(39|50|63|66|67|68|73|75|77|91|92|93|94|95|96|97|98|99)\d{7}$/.test(ph)){$('#le').textContent='Введіть мобільний номер повністю';return;}
   const btn=$('#ls');btn.disabled=true;btn.textContent='Надсилаємо…';
-  const body={action:'lead',id:x.id,car:S.car,R:S.R,col:x.col,size:sz(x),price:x.p,stock:x.st?'в наявності':'під замовлення',name:$('#ln').value.trim().slice(0,60),phone:'0'+ph,via:LV.via,note:$('#lc').value.trim().slice(0,300),src:new URLSearchParams(location.search).get('src')||''};
+  const body={action:'lead',id:x.id,car:S.car,R:S.R,col:x.col,size:sz(x),price:x.p,stock:STK[x.s],name:$('#ln').value.trim().slice(0,60),phone:'0'+ph,via:LV.via,note:$('#lc').value.trim().slice(0,300),src:new URLSearchParams(location.search).get('src')||''};
   fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)}).then(r=>r.json()).then(j=>{
    if(j.ok){sh.innerHTML='<div class="okbox"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg><div class="h" style="font-size:20px">Заявку надіслано!</div><div class="small">Менеджер зв’яжеться з вами найближчим часом'+(LV.via==='call'?' дзвінком':LV.via==='viber'?' у Viber':' у Telegram')+'.</div><a class="cta" href="tel:+380957722173">📞 Подзвонити · 095 772 21 73</a><button class="lnk" type="button" id="lx2">Закрити</button></div>';$('#lx2').onclick=()=>m.classList.remove('on');}
    else{btn.disabled=false;btn.textContent='Надіслати';$('#le').textContent='Не вдалося надіслати — подзвоніть 095 772 21 73';}
   }).catch(()=>{btn.disabled=false;btn.textContent='Надіслати';$('#le').textContent='Немає зв’язку — спробуйте ще раз або подзвоніть 095 772 21 73';});};
  m.classList.add('on');}
 $('#back').onclick=()=>{if(S.step>0){S.step--;render();}};
-fetch('data.json?v=2').then(r=>r.json()).then(j=>{D=j;const q=new URLSearchParams(location.search);const c=q.get('car');if(c){const k=Object.keys(D).find(x=>x.toLowerCase().includes(c.toLowerCase()));if(k){S.car=k;S.step=1;const R=q.get('r');if(R&&D[k][R]){S.R=R;S.step=2;}}}render();}).catch(()=>{$('#body').innerHTML='<div class="note">Не вдалося завантажити каталог. Оновіть сторінку.</div>';});
+fetch('data.json?v=3').then(r=>r.json()).then(j=>{D=j;const q=new URLSearchParams(location.search);const c=q.get('car');if(c){const k=Object.keys(D).find(x=>x.toLowerCase().includes(c.toLowerCase()));if(k){S.car=k;S.step=1;const R=q.get('r');if(R&&D[k][R]){S.R=R;S.step=2;}}}render();}).catch(()=>{$('#body').innerHTML='<div class="note">Не вдалося завантажити каталог. Оновіть сторінку.</div>';});
 </script>
 </body>
 </html>
