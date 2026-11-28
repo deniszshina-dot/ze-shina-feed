@@ -171,7 +171,7 @@ input.good{border-color:#4ADE80}
     <button class="back" id="back" type="button" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
     <div><div class="h" style="font-size:18px" id="title">Послуги</div><div class="small">ZE-Shina · вул. Шевченка, 24</div></div>
   </div>
-  <div class="steps" id="steps"><div>Послуги</div><div>Час</div><div>Контакти</div></div>
+  <div class="steps" id="steps"><div>Час</div><div>Шини і послуги</div><div>Контакти</div></div>
   <div class="body" id="body"></div>
   <div class="foot" id="foot"><div class="i"><span class="small" id="hint"></span></div><button class="next" id="next" type="button">ДАЛІ</button></div>
 </section>
@@ -188,7 +188,7 @@ const DOW=['Нд','Пн','Вт','Ср','Чт','Пт','Сб'];
 const MONN=['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
 const MONS=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
 const MON=['січня','лютого','березня','квітня','травня','червня','липня','серпня','вересня','жовтня','листопада','грудня'];
-const S={step:0,svc:null,keep:false,note:'',rad:'',rf:false,day:0,time:null,tyres:'storage',plate:'',car:'',phone:''};
+const S={step:0,svc:null,keep:false,note:'',rad:'',rf:false,day:0,time:null,tyres:null,plate:'',car:'',phone:''};
 const days=[];{let d=new Date();d.setHours(0,0,0,0);while(days.length<60){days.push(new Date(d));d.setDate(d.getDate()+1);}}
 const $=s=>document.querySelector(s);
 const PRT=[
@@ -248,38 +248,33 @@ const HITS={};
 function showHit(){const el=$('#hit');if(!el)return;const k=normPlate(S.plate);const h=plateOk(S.plate)?HITS[k]:null;el.className='hit';el.innerHTML='';
  if(!h)return;
  if(h==='load'){el.className='hit info';el.textContent='Шукаємо ваш комплект на зберіганні…';return;}
- if(h.found&&!h.unsure){el.className='hit hok';el.innerHTML='<b>✅ У вас на зберіганні</b><br>'+h.tyres+(h.discs?'<br>+ диски':'')+(h.since?'<br><span style="opacity:.75">здано '+h.since+'</span>':'');return;}
+ if(h.found&&!h.unsure){el.className='hit hok';el.innerHTML='<b>✅ У вас на зберіганні</b><br>'+h.tyres+(h.discs?'<br>+ диски':'')+(h.since?'<br><span style="opacity:.75">здано '+h.since+'</span>':'')+(S.tyres&&S.tyres!=='storage'?'<br><span style="opacity:.85">Ви обрали «'+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase()+'». Ставимо ці шини зі зберігання?</span> <button type="button" class="opt" id="usest" style="margin-top:6px">Так, ставимо їх</button>':'');const us=$('#usest');if(us){us.onmousedown=e=>e.preventDefault();us.ontouchstart=()=>{};}if(us)us.onclick=()=>{S.tyres='storage';S.car=$('#car').value;S.phone=$('#phone').value;render();};return;}
  if(h.found&&h.unsure){el.className='hit info';el.textContent='За цим номером є запис про зберігання — уточнимо деталі при підтвердженні запису.';return;}
  if(h.found===false){el.className='hit info';el.textContent='За цим номером комплекту на зберіганні не знайшли. Якщо шини у нас — уточнимо при записі.';}}
 function lookup(){const k=normPlate(S.plate);if(HITS[k]){showHit();return;}HITS[k]='load';showHit();
- fetch(API+'?plate='+encodeURIComponent(k)).then(r=>r.json()).then(j=>{HITS[k]=j.error?null:j;if(j.found&&!j.unsure&&S.tyres!=='new'){S.tyres='storage';[...document.querySelectorAll('#ty .opt')].forEach((b,i)=>b.classList.toggle('on',TYO[i][0]==='storage'));}showHit();}).catch(()=>{HITS[k]=null;showHit();});}
+ fetch(API+'?plate='+encodeURIComponent(k)).then(r=>r.json()).then(j=>{HITS[k]=j.error?null:j;showHit();}).catch(()=>{HITS[k]=null;showHit();});}
 function svcText(){const s=SV.find(x=>x.id===S.svc);if(!s)return '';return (s.id==='other'?'Інше: '+S.note.trim():s.name)+(S.rad&&s.id!=='other'?' · '+(S.rad==='?'?'радіус не знає':S.rad):'')+(S.rf&&s.id!=='other'?' · RunFlat/низький профіль':'')+(S.keep?' · залишає шини на зберігання':'');}
 let LASTSTEP=-1;
 function render(){
  const b=$('#body');b.innerHTML='';
  if(S.step!==LASTSTEP){b.classList.remove('inR','inL');void b.offsetWidth;if(LASTSTEP>=0)b.classList.add(S.step>LASTSTEP?'inR':'inL');LASTSTEP=S.step;}
- $('#title').textContent=['Послуги','Оберіть час','Ваші дані','Готово'][S.step];
+ $('#title').textContent=['Оберіть час','Шини і послуги','Ваші дані','Готово'][S.step];
  [...$('#steps').children].forEach((x,i)=>{x.className=(i<=S.step?'done ':'')+(i===S.step?'cur':'');});
  $('#foot').style.display=S.step<3?'flex':'none';
  let can=true;
- if(S.step===0){
-  b.insertAdjacentHTML('beforeend','<div class="small">Що потрібно зробити? Оберіть одне</div>');
+ if(S.step===1){
+  b.insertAdjacentHTML('beforeend','<div class="small">Де ваші шини?</div><div class="tyo" id="ty"></div>');
+  TYO.forEach(([id,l,s])=>{const el=document.createElement('button');el.type='button';el.className='opt'+(S.tyres===id?' on':'');el.innerHTML=l+(s?'<span>'+s+'</span>':'');el.onclick=()=>{S.tyres=id;render();};$('#ty').appendChild(el);});
+  b.insertAdjacentHTML('beforeend','<div class="small" style="margin-top:6px">Що потрібно зробити? Оберіть одне</div>');
   SV.forEach(s=>{const on=S.svc===s.id;const el=document.createElement('button');el.type='button';el.className='svc'+(on?' on':'');
    el.innerHTML='<span class="box rad">'+(on?'●':'')+'</span><span class="t"><b>'+s.name+'</b><span>'+s.desc+'</span></span>';
    el.onclick=()=>{S.svc=s.id;render();if(s.id==='other'){const n=$('#note');if(n)n.focus();}};b.appendChild(el);
    if(on&&s.id==='other'){b.insertAdjacentHTML('beforeend','<label>Що саме?<input id="note" maxlength="120" placeholder="напр. рихтування 2 дисків R18"></label>');const n=$('#note');n.value=S.note;n.oninput=()=>{S.note=n.value;$('#next').disabled=S.note.trim().length<3;};}});
-  if(S.svc&&S.svc!=='other'){
-   b.insertAdjacentHTML('beforeend','<div class="small">Радіус дисків</div><div class="chips" id="rad"></div>');
-   ['R13','R14','R15','R16','R17','R18','R19','R20','R21','R22','R23','?'].forEach(r=>{const el=document.createElement('button');el.type='button';el.className='opt'+(S.rad===r?' on':'');el.textContent=r==='?'?'не знаю':r;el.onclick=()=>{S.rad=r;render();};$('#rad').appendChild(el);});
-   const rf=document.createElement('button');rf.type='button';rf.className='svc'+(S.rf?' on':'');
-   rf.innerHTML='<span class="box">'+(S.rf?'✓':'')+'</span><span class="t"><b>RunFlat або низький профіль (45 і нижче)</b><span>Якщо не впевнені — не ставте галочку</span></span>';
-   rf.onclick=()=>{S.rf=!S.rf;render();};b.appendChild(rf);
-  }
   const kb=document.createElement('button');kb.type='button';kb.className='svc keep'+(S.keep?' on':'');
   kb.innerHTML='<span class="box">'+(S.keep?'✓':'')+'</span><span class="t"><b>Залишу шини на зберігання</b><span>Після монтажу — підготуємо пакети й місце</span></span>';
   kb.onclick=()=>{S.keep=!S.keep;render();};b.appendChild(kb);
-  can=!!S.svc&&(S.svc==='other'?S.note.trim().length>=3:!!S.rad);$('#hint').textContent=!S.svc?'Оберіть послугу':(S.svc!=='other'&&!S.rad)?'Оберіть радіус дисків':'';
- }else if(S.step===1){
+  can=!!S.tyres&&!!S.svc&&(S.svc==='other'?S.note.trim().length>=3:true);$('#hint').textContent=!S.tyres?'Оберіть, де ваші шини':!S.svc?'Оберіть послугу':'';
+ }else if(S.step===0){
   const cur=days[S.day];
   b.insertAdjacentHTML('beforeend','<div class="mon"><span>'+MONN[cur.getMonth()]+' '+cur.getFullYear()+'</span><label class="pick">📅 Інша дата<input type="date" id="dpick"></label></div>');
   const dp=$('#dpick');
@@ -295,7 +290,7 @@ function render(){
   b.insertAdjacentHTML('beforeend','<div class="row small"><span>2 машини на годину</span><span>'+(sat?'субота: останній запис 14:00':'неділя — вихідний')+'</span></div>');
   const sl=document.createElement('div');sl.className='slots';
   const ymd=iso(days[S.day]);const SLv=SL[ymd];
-  if(!SLv){SL[ymd]='load';fetch(API+'?slots='+ymd).then(r=>r.json()).then(j=>{SL[ymd]=j.slots||[];SL[ymd].why=j.closed?(j.why||'вихідний'):'';if(S.step===1)render();}).catch(()=>{SL[ymd]='err';if(S.step===1)render();});}
+  if(!SLv){SL[ymd]='load';fetch(API+'?slots='+ymd).then(r=>r.json()).then(j=>{SL[ymd]=j.slots||[];SL[ymd].why=j.closed?(j.why||'вихідний'):'';if(S.step===0)render();}).catch(()=>{SL[ymd]='err';if(S.step===0)render();});}
   if(!SLv||SLv==='load'){sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">Завантажуємо вільний час…</div>';}
   else if(SLv==='err'){sl.innerHTML='<div class="small" style="grid-column:1/-1;padding:14px 0">Не вдалося завантажити розклад. Перевірте інтернет і спробуйте ще раз.</div>';delete SL[ymd];}
   else{SLv.forEach(x=>{const t=x.time,left=x.left;const el=document.createElement('button');el.type='button';
@@ -307,12 +302,11 @@ function render(){
   if(Array.isArray(SLv)&&SLv.length&&ymd===iso(days[0]))b.insertAdjacentHTML('beforeend','<div class="small">На сьогодні записуємо щонайменше за 2 години</div>');
   if(Array.isArray(SLv)&&SLv.length&&SLv.every(x=>x.left===0)&&BOT)b.insertAdjacentHTML('beforeend','<div class="small">Місць на цей день немає. Можемо повідомити, якщо хтось скасує запис:</div><a class="tg" target="_blank" rel="noopener" href="https://t.me/'+BOT+'?start=w'+ymd.replace(/-/g,'')+'">🔔 Повідомити в Telegram</a>');can=!!S.time;$('#hint').textContent=S.time?'Обрано '+whenTxt():'Оберіть вільний час';
  }else if(S.step===2){
-  b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+svcText()+'</div>'+
+  b.insertAdjacentHTML('beforeend','<div class="sum"><b style="color:#F2F2F0">'+whenTxt()+'</b><br>'+svcText()+(S.tyres?'<br>Шини: '+TYO.find(x=>x[0]===S.tyres)[1].toLowerCase():'')+'</div>'+
    '<label>Держномер *<input id="plate" placeholder="AX 1234 KA" style="text-transform:uppercase" autocomplete="off" maxlength="10"><span class="err" id="e-plate"></span></label><div class="hit" id="hit"></div>'+
    '<label>Марка і модель авто<input id="car" placeholder="BMW X5 G05"></label>'+
    '<label>Телефон *<span class="tel"><span class="pre">+38 0</span><input id="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="99 123 45 67" maxlength="20"></span><span class="err" id="e-phone"></span></label>'+
-   '<div class="small">Шини</div><div class="tyo" id="ty"></div>');
-  TYO.forEach(([id,l,s])=>{const el=document.createElement('button');el.type='button';el.className='opt'+(S.tyres===id?' on':'');el.innerHTML=l+(s?'<span>'+s+'</span>':'');el.onclick=()=>{S.tyres=id;S.plate=$('#plate').value;S.car=$('#car').value;S.phone=$('#phone').value;render();};$('#ty').appendChild(el);});
+   '');
   const pi=$('#plate'),ph=$('#phone'),ci=$('#car');pi.value=S.plate;ph.value=S.phone;ci.value=S.car;
   ci.oninput=()=>{S.car=ci.value;};
   pi.oninput=()=>{const v=fmtPlate(pi.value);pi.value=v;S.plate=v;check(false);};
@@ -348,8 +342,8 @@ $('#next').onclick=()=>{
   if(j.ok){delete SL[body.date];S.flash='';S.errCard='';S.bid=j.id;if(j.bot)BOT=j.bot;
    saveMine({id:j.id,phone:body.phone,date:body.date,time:body.time,svc:svcText(),plate:fmtPlate(body.plate),when:whenTxt()});S.step=3;render();return;}
   const msg={has_booking:'За цим номером уже є запис'+(j.date?' на '+j.date.slice(8)+'.'+j.date.slice(5,7)+' о '+j.time:'')+'. Скасуйте його на головній сторінці або подзвоніть нам.',too_soon:'На сьогодні записуємо щонайменше за 2 години — оберіть пізніший час.',closed:'Цей час щойно закрили для запису — оберіть інший.',full:'На цей час щойно записалися — оберіть інший.',dup:'Це авто вже записане на цей день. Якщо треба змінити час — напишіть нам.',bad_date:'Цей день недоступний для запису.',bad_time:'Цей час недоступний.',bad_plate:'Перевірте номер авто.',bad_phone:'Перевірте номер телефону.',busy:'Забагато запитів, спробуйте за хвилину.'}[j.error]||'Не вдалося записати, спробуйте ще раз.';
-  if(['full','bad_time','too_soon','closed'].includes(j.error)){delete SL[iso(days[S.day])];S.time=null;S.step=1;}
-  S.errCard=msg;S.flash='';if(S.step===1||S.step===2)render();else{S.flash=msg;flash();}
+  if(['full','bad_time','too_soon','closed'].includes(j.error)){delete SL[iso(days[S.day])];S.time=null;S.step=0;}
+  S.errCard=msg;S.flash='';if(S.step<=2)render();else{S.flash=msg;flash();}
  }).catch(()=>{S.sending=false;S.flash='Немає зв’язку з сервером, спробуйте ще раз.';render();});
 };
 $('#back').onclick=()=>{if(S.step===0||S.step===3)go('links');else{S.step--;render();}};
